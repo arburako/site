@@ -33,17 +33,9 @@
 
 @media screen and (min-width: 71em) {
    .case{
-      max-width: 60em; }
+      max-width: 60%; }
 }
 
-.case {
-   padding: 1em;
-   margin-top: 5%;
-   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-   font-size: 1.2em;
-   color: #7c8087;
-   line-height: 1.7em;
-} /*  color: #454545; is the color from the original page */
 
 .wrap {
    margin-left: auto;
@@ -51,7 +43,18 @@
 }
 
 
-/* case font */
+
+
+/* everything should be in the "case" .... this controls the main font size, line height, alignment, etc. DEFAULT STYLES */
+
+.case {
+   padding: 1em;
+   margin-top: 5%;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   color: #454545;
+   line-height: 1.7em;
+   font-size: 1.2em;
+} /*  color: #454545;7c8087 is the color from the original page */
 
 .case h1 {
    text-align: center;
@@ -64,9 +67,7 @@
 
 .case p {
    line-height: 1.5;
-   text-align: left;
 }
-
 
 .case h3 {
    font-size: 1.75rem;
@@ -80,26 +81,80 @@
    margin-top: 5%;
 }
 
+
+
+
+/* the overview and my role text */
+
+.summary p {
+   text-align: left;
+   font-size: 1em;
+}
+
+
+
+
+
+
+
+/* use when you have a small point next to an image that you want to have smaller text than everything else */
+
+
+.sub-point p {
+   font-size: .8em;
+   text-align: left;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+.sub-point h3 {
+   text-align: left;
+}
+
+
+
+
+/* this is for the "more case studies" button and section */
+
+.end-section {
+   margin-bottom: 200px;
+}
+
+
+
+
+/* the larger text under a section header */
+
+.title-header p{
+   text-align: center;
+   font-size: 1.4em;
+   line-height: 1.7em;
+}
+
+
+
+
+
+
+/* creating a section with the alternating grey bg */
+
+.grey-section {
+   background: #ededed;
+   width: 100%;
+   margin-top: 80px;
+   padding-top: 80px;
+   padding-bottom: 200px;
+}
+
+
+
+
+
+
 p.role {
    text-align: center;
    color: white;
    font-size: 80%;
    padding: 1em 0 2em 0;
    letter-spacing: 2px;
-}
-
-.twocol:after{
-   content: "";
-   display: table;
-   clear: both;
-}
-
-
-
-@media screen and (min-width: 71em){
-   .cleft {
-      float: left;
-      max-width: 40em;
-      margin-right: 2em;
-   }
 }
