@@ -37,9 +37,22 @@
 
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider, .team, .quotes, .portfolio-slider {margin: 0; padding: 0;}
-.flexslider .slides > li, .team .slides > li, .quotes .slides > li, .portfolio-slider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img, .team .slides img, .quotes .slides img, .portfolio-slider .slides img {width: 100%; display: block;}
+.flexslider, .team, .quotes, .portfolio-slider {
+	margin: 0; 
+	padding: 0;
+	margin-left: 20%;
+}
+
+.flexslider .slides > li, .team .slides > li, .quotes .slides > li, .portfolio-slider .slides > li {
+	display: none; -webkit-backface-visibility: hidden;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flexslider .slides img, .team .slides img, .quotes .slides img, .portfolio-slider .slides img {
+	width: 100%; 
+	display: block;
+}
+
+
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */

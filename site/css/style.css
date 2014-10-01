@@ -266,7 +266,9 @@ header.header nav .fa-search:hover { color: #009989; }
 
 /* ABOUT */
 
-#about { padding-bottom: 90px; }
+#about { padding-bottom: 90px;
+background-color: #ededed; 
+width: 100%; }
 
 #about .col-centered > p {
 	font-size: 16px;
@@ -295,6 +297,79 @@ header.header nav .fa-search:hover { color: #009989; }
 
 #about .fadeInDown { margin-bottom: 55px; }
 #about .col-centered > div { margin-top: 20px; }
+
+
+
+
+
+/* FEATURED PROJECT */
+
+#featured { 
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+.wow p {
+	text-align: left;}
+
+#featured h2 {
+	padding-bottom: 50px;
+}
+
+.details-btn {
+	float:left;
+}
+
+
+/*=== Large title and subtitle ===*/
+.lg-title {
+  text-align: center;
+  position: relative;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 36px;
+}
+.lg-title .lg-title-border::after {
+  content: "";
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-title {
+  text-align: center;
+  color: #777777;
+  font-size: 16px;
+  margin-top: -20px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+
+
+.space,
+.space-sm,
+.space-md,
+.space-lg {
+  display: block;
+  float: none;
+  clear: both;
+}
+.space-sm {
+  padding-top: 15px;
+}
+.space-md {
+  padding-top: 20px;
+}
+.space {
+  padding-top: 30px;
+}
+.space-lg {
+  padding-top: 50px;
+}
 
 
 /* WORKS */
@@ -400,7 +475,8 @@ header.header nav .fa-search:hover { color: #009989; }
 
 
 .brwsr-img {
-	width: 70%;
+	width: 60%;
+	margin-right: 30%;
 }
 
 /* TEAM */
@@ -511,12 +587,12 @@ header.header nav .fa-search:hover { color: #009989; }
 }
 
 
-/* STATS */
+/* EXPERIENCE */
 
-#stats { 
-	margin-top: 35px; 
+#stats {  
 	padding-bottom: 110px; 
 	background-color: #009989; 
+	width:100%;
 }
 
 #stats .container > .row { margin-top: 0; }
