@@ -11,7 +11,7 @@
 
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #e0e0e0;
+  background-color: #F15A29;
   background-position: 0 -15px;
 }
 
@@ -38,8 +38,8 @@
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #2d6ca2;
-  border-color: #2b669a;
+  background-color: #F15A29;
+  border-color: #B1421E;
 }
 
 /*.btn-success {
