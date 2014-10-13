@@ -11,41 +11,70 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Bootstrap Core CSS -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style2.css?v=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/animate.css"> 
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/colio.css">
   <link rel="stylesheet" href="css/jquery.maximage.css">
-  <link rel="stylesheet" href="css/circle_slider.css">
 
 
-  <!-- Main Style -->
-  <link rel="stylesheet" href="css/style.css?v=1.0">
-
+  <script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/javascripts/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="js/javascripts/fullcalendar.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.easy-pie-chart.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.isotope.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="js/javascripts/select2.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.inputmask.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.validate.js" type="text/javascript"></script>
+	<script src="js/javascripts/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="js/javascripts/bootstrap-timepicker.js" type="text/javascript"></script>
+	<script src="js/javascripts/bootstrap-colorpicker.js" type="text/javascript"></script>
+	<script src="js/javascripts/daterange-picker.js" type="text/javascript"></script>
+	<script src="js/javascripts/date.js" type="text/javascript"></script>
+	<script src="js/javascripts/fitvids.js" type="text/javascript"></script>
+	<script src="js/javascripts/jquery.sparkline.min.js" type="text/javascript"></script>
+	<script src="js/javascripts/main.js" type="text/javascript"></script>
+  
   <!-- FontAwesome -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   
   <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
-  <script src="js/modernizr-2.6.2.min.js"></script>
-
+  <link href="fonts/NanumPen.otf" rel='stylesheet' type='text/css'>
+	
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
 
-    
 
+  <!-- apple slider --> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/apple_slider/script.js"></script>
+
+  <!--[if lte IE 7]>
+<style type="text/css">
+ul li{
+  display:inline;
+  /*float:left;*/
+}
+</style>
+<![endif]-->
 </head>
 
 <body class="home">
@@ -58,7 +87,7 @@
 	
 
 <!-- HOME -->
-	<div class="menu_target" id="index-slider">
+	<div class="menu-target" id="index-slider">
 		<a href="#" id="arrow_left"><img src="img/arrow_left.png" alt="Slide Left" /></a>
 		<a href="#" id="arrow_right"><img src="img/arrow_right.png" alt="Slide Right" /></a>
 		<div id="holder">
@@ -125,30 +154,32 @@
 
 
 <!-- ABOUT -->	
-	<div class="menu_target wrapper wrapper-style2" id="about">
+	<div class="menu_target section-grey" id="about">
 		<div class="container">
-			<div class="row row-sm text-centered">
-				<div class="col-sm-12 triggerAnimation animated" data-animate="fadeInDown">
-					<h2>Hi, I'm Alexa</h2>
-					<p>I design engaging user experiences and go-to-market strategies for startups with big ideas. The word design means a lot to me - it infiltrates everything from the product specifications to the implementation strategy and the process that surrounds it. I am passionate about the experience of users and helping the team achieve their best work. This belief has led me to become proficient in all facets of product development including: </p>
+			<div class="row">
+				<div class="col-sm-10 col-centered">
+					<div class="triggerAnimation animated" data-animate="fadeInDown">
+						<h2>Hi, I'm Alexa</h2>
+						<p>I design engaging user experiences and go-to-market strategies for startups with big ideas. The word design means a lot to me - it infiltrates everything from the product specifications to the implementation strategy and the process that surrounds it. I am passionate about the experience of users and helping the team achieve their best work. This belief has led me to become proficient in all facets of product development including: </p>
+					</div> <!-- END .triggerAnimation, .animated -->
 				</div> <!-- END .col-sm-10, .col-centered -->
 			</div> <!-- END .row --> 
 
-			<div class="row row-sm text-centered">
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<i class="fa fa-book icon-fancy icon-md"></i>
+			<div class="row col-centered">
+				<div class="triggerAnimation animated col-sm-4" data-animate="fadeInUp">
+					<i class="fa fa-book"></i>
 					<h5>Research</h5>
 					<p>Understand the business and competitive landscape. Learn how people interact with the brand and product. Identify strategic opportunities and design goals.</p>
 				</div> <!-- END triggerAnimation, .animated, .col-sm-4 -->
 				
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<i class="fa fa-cube icon-fancy icon-md"></i>
+				<div class="triggerAnimation animated col-sm-4" data-animate="fadeInUp">
+					<i class="fa fa-cube"></i>
 					<h5>Design</h5>
 					<p>Define and design the product. Combine smart interaction, interface, and visual design into a compelling product that resonates with the target audience.</p>
 				</div> <!-- END triggerAnimation, .animated, .col-sm-4 -->
 				
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<span class="fa fa-heart icon-fancy icon-md"></span>
+				<div class="triggerAnimation animated col-sm-4" data-animate="fadeInUp">
+					<span class="fa fa-heart"></span>
 					<h5>Refine</h5>
 					<p>Test concepts, designs, and prototypes with real users. Combine learnings with gut instinct and experience. Iterate and refine in pursuit of perfection.</p>
 				</div> <!-- END .triggerAnimation, .animated, .col-sm-4 -->
@@ -157,19 +188,28 @@
 	</div> <!-- END, .menu_target -->
 
 
+
 	
 
 <!-- FEATURED PROJECT -->
-    <div class="menu_target wrapper" id="featured">
+    <div class="menu_target section-white" id="featured">
     	<div class="container">
-	    	<h2 class="section-title">Featured Projects</h2>
+
+		<!--section title-->
+	        <div class="row triggerAnimation animated" data-animate="fadeInDown" >
+		        <div class="col-md-12 col-centered" > 
+		            <h2>Featured Projects</h2>
+		        </div>
+	        </div>
 
 		<!--parkplease project-->
-	        <div class="row border-row row-lg" >
+	        <div class="row portfolio-feature" >
 	            <div class="col-sm-4 text-left triggerAnimation animated" data-animate="fadeInLeft">
 	            	<h3> ParkPlease </h3>
 	                <p>In the summer of 2012, I co-founded ParkPlease, an online service allowing anyone to rent a space parking space to those who need to park. I led the product strategy, design and execution through a successful launch for the Outside Lands Music festival. Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking.</p>
+	                <div class="space-sm"></div>
 					<a href="parkplease.html" class="btn btn-primary btn-lg details-btn">View Details</a>
+	                <div class="space visible-xs"></div>
 	            </div>
 	            <div class="col-sm-2" >
 	            	<div class="space"></div>
@@ -177,23 +217,28 @@
 	            <div class="col-sm-6 triggerAnimation animated" data-animate="fadeInLeft">
 	                <img class="img-responsive" src="img/featured/pp_osl.png" alt="ParkPlease OSL">
 	            </div>	    	           
+	            <div class="space-lg"></div>
 	        </div>
 
 
-
-
-
 		<!--dinamundo project-->
-	        <div class="row row-lg">
+	        <div class="row portfolio-feature">
 	            <div class="col-sm-6 triggerAnimation animated" data-animate="fadeInRight">
 	                <img class="img-responsive" src="img/featured/dinamundo.png" alt="Dinamundo">
 	            </div>
-	            <div class="col-sm-2" ></div>
+	            <div class="col-sm-2" >
+	            	<div class="space"></div>
+	            </div>
 	            <div class="col-sm-4 triggerAnimation animated" data-animate="fadeInRight">
 	            	<h3> Dinamundo </h3>
 	                <p>In the summer of 2012, I co-founded ParkPlease, an online service allowing anyone to rent a space parking space to those who need to park. I led the product strategy, design and execution through a successful launch for the Outside Lands Music festival. Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking.</p>
+	                <div class="space-sm"></div>
 					<a href="dinamundo.html" class="btn btn-primary btn-lg details-btn">View Details</a>
+	                <div class="space visible-xs"></div>
 	            </div>
+
+
+	            <div class="space-lg"></div>
 	        </div>
 
 
@@ -206,166 +251,166 @@
 	
 
 <!-- WORKS -->
-	<div class="menu_target wrapper wrapper-style2" id="works">
+	<div class="menu_target section-grey" id="works">
 		<div class="container">
-			<h2 class="section-title">Other Works</h2>
 			<section class="row triggerAnimation animated" data-animate="fadeInDown">
 				<div class="col-md-12 col-centered">
-					<div class="triggerAnimation animated flexslider" data-animate="fadeInUp">
-						<ul class="cs-style-3 slides">
-							<li>
-								<ul class="grid">
+					<h2>Other Works</h2>
+						<div class="triggerAnimation animated flexslider" data-animate="fadeInUp">
+							<ul class="cs-style-3 slides">
+								<li>
+									<ul class="grid">
 
 
 
 
 
-									<li data-content="#16fours_account">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/16fours_account.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>16Fours Account</h3>  
-														<span>Details</span>
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#16fours_account">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/16fours_account.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>16Fours Account</h3>  
+															<span>Details</span>
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
 
-									<li data-content="#pp_admin">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_admin.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease Admin</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-									
+										<li data-content="#pp_admin">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/pp_admin.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>ParkPlease Admin</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
+										
 
 
 
 
 
-									<li data-content="#pp_hiw">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease HIW</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#pp_hiw">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>ParkPlease HIW</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
-									<li data-content="#pp_hiw1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/PP_spotminder.PNG" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease Spot Minder</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#pp_hiw1">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/PP_spotminder.PNG" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>ParkPlease Spot Minder</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/DM.PNG" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Dinamundo</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#folio1">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/DM.PNG" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>Dinamundo</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Quinton Elwood Video</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#folio1">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>Quinton Elwood Video</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Quinton Elwood Website</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
+										<li data-content="#folio1">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>Quinton Elwood Website</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
 
 
 
 
 
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/PP_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>A Creative Studio</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-									
-								</ul>
-							</li>
-						</ul> <!-- END .slides -->
-					</div> <!-- END .flexslider, triggerAnimation, .animated -->
+										<li data-content="#folio1">
+											<div class="item col-lg-4 col-sm-4 col-xs-12">
+												<div class="item-wrap">
+													<figure class="colio-link">
+														<img src="img/works/PP_hiw.png" class="img-responsive" alt="" />
+														<figcaption>
+															<h3>A Creative Studio</h3>  
+															<span>Details</span>  
+														</figcaption>
+													</figure>
+												</div> <!-- END .item-wrap -->
+											</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
+										</li>
+										
+									</ul>
+								</li>
+							</ul> <!-- END .slides -->
+						</div> <!-- END .flexslider, triggerAnimation, .animated -->
 
 
 
@@ -633,37 +678,49 @@
 
 
 	
+
+<!-- EXPERIENCE -->
+
+
+
+
+	
+
 <!-- TIMELINE -->
-	<div class="menu_target wrapper wrapper-style2" id="times" >
+	<div class="menu_target section-grey" id="times" >
 		<div class="container" >
-			<h2 class="section-title">Experience</h2>
+			<div class="row triggerAnimation animated" data-animate="fadeInDown" >
+				<div class="col-md-12 col-centered" >
+					<h2> Experience </h2>
+				</div>
+			</div>
 			<div class="row" >
 				<div class="col-md-12" >
 					<ul class="timeline seven">
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
+						<li class="active triggerAnimation animated" data-animate="fadeInLeft">
 							<div class="timeline-time">
 								<strong>Oct 3</strong>4:53 PM
 							</div>
 							<div class="timeline-icon">
 								<div class="bg-primary">
-									<i class="fa fa-pencil"></i>
+									<i class="icon-pencil"></i>
 								</div>
 							</div>
-							<div class="box-content">
-								<h3> This is a title for this timeline post </h3>
+							<div class="timeline-content">
+								<h2> This is a title for this timeline post </h2>
 								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
+						<li class="active triggerAnimation animated" data-animate="fadeInRight">
 							<div class="timeline-time">
 							  <strong>Oct 5</strong>6:14 PM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-dark">
-							    <i class="fa fa-quote-right"></i>
+							  <div class="bg-warning">
+							    <i class="icon-quote-right"></i>
 							  </div>
 							</div>
-							<div class="box-content">
+							<div class="timeline-content">
 							  <blockquote>
 							    <p>
 							      Lorem ipsum velit ullamco anim pariatur proident eu deserunt laborum. Lorem ipsum ad in nostrud adipisicing cupidatat anim officia ad id cupidatat veniam quis elit ullamco.
@@ -671,36 +728,38 @@
 							    <small>John Smith</small></blockquote>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
+						<li class="active triggerAnimation animated" data-animate="fadeInLeft">
 							<div class="timeline-time">
 							  <strong>Oct 6</strong>9:00 AM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-bright">
-							    <i class="fa fa-camera"></i>
+							  <div class="bg-info">
+							    <i class="icon-camera"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3> This is an image posted on my timeline </h3>
-							  <img src="img/img-coast.jpg" class="img-responsive" />
+							<div class="timeline-content image">
+							  <h2>
+							    This is an image posted on my timeline
+							  </h2>
+							  <img src="images/img-coast.jpg" />
 							  <p>
 							    Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 							  </p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
+						<li class="active triggerAnimation animated" data-animate="fadeInRight">
 							<div class="timeline-time">
 							  <strong>Oct 8</strong>2:01 PM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-warning">
-							    <i class="fa fa-pencil"></i>
+							  <div class="bg-danger">
+							    <i class="icon-pencil"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3>
+							<div class="timeline-content">
+							  <h2>
 							    This is a title for this timeline post
-							  </h3>
+							  </h2>
 							  <p>
 							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 							  </p>
@@ -712,74 +771,93 @@
 							  </p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
+						<li class="active triggerAnimation animated" data-animate="fadeInLeft">
 							<div class="timeline-time">
 							  <strong>Oct 11</strong>10:33 AM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-primary">
-							    <i class="fa fa-camera"></i>
+							  <div class="bg-success">
+							    <i class="icon-camera"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3>
+							<div class="timeline-content">
+							  <h2>
 							    This is a title for this timeline post
-							  </h3>
+							  </h2>
 							  <p>
 							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 							  </p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
+						<li class="active triggerAnimation animated" data-animate="fadeInRight">
+							<div class="timeline-time">
+							  <strong>Oct 12</strong>1:14 PM
+							</div>
+							<div class="timeline-icon">
+							  <div class="bg-primary">
+							    <i class="icon-facetime-video"></i>
+							  </div>
+							</div>
+							<div class="timeline-content video">
+							  <h2>
+							    This is a title for this timeline post
+							  </h2>
+							  <iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" src="http://player.vimeo.com/video/16202331?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+							  <p>
+							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+							  </p>
+							</div>
+						</li>
+						<li class="active triggerAnimation animated" data-animate="fadeInLeft">
 							<div class="timeline-time">
 							  <strong>Oct 18</strong>8:45 AM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-dark">
-							    <i class="fa fa-pencil"></i>
+							  <div class="bg-warning">
+							    <i class="icon-pencil"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3>
+							<div class="timeline-content">
+							  <h2>
 							    Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing
-							  </h3>
+							  </h2>
 							  <p>
 							    Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante.
 							  </p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
+						<li class="active triggerAnimation animated" data-animate="fadeInRight">
 							<div class="timeline-time">
 							  <strong>Oct 21</strong>9:55 AM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-primary">
-							    <i class="fa fa-clock-o"></i>
+							  <div class="bg-success">
+							    <i class="icon-time"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3>
+							<div class="timeline-content">
+							  <h2>
 							    This is a title for this timeline post
-							  </h3>
+							  </h2>
 							  <p>
 							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 							  </p>
 							</div>
 						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
+						<li class="active triggerAnimation animated" data-animate="fadeInLeft">
 							<div class="timeline-time">
 							  <strong>Oct 6</strong>9:00 AM
 							</div>
 							<div class="timeline-icon">
-							  <div class="bg-warning">
-							    <i class="fa fa-coffee"></i>
+							  <div class="bg-info">
+							    <i class="icon-camera"></i>
 							  </div>
 							</div>
-							<div class="box-content">
-							  <h3>
+							<div class="timeline-content image">
+							  <h2>
 							    This is an image posted on my timeline
-							  </h3>
-							  <img src="img/img-coast.jpg" class="img-responsive" />
+							  </h2>
+							  <img src="images/img-coast.jpg" />
 							  <p>
 							    Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 							  </p>
@@ -793,109 +871,103 @@
 
 
 
-
-
 	
 
-<!-- STATS -->
-	<div class="wrapper bg-primary" id="stats">
-		<div class="container">
-			<h2 class="section-title text-white">Stats</h2>
-
-
-			<div class="row text-centered">
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-users icon-lg text-white"></i>
-					<p><strong class="timer" data-to="253" data-speed="1000">0</strong></p>
-					<span class="text-white">Clients</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-send icon-lg text-white"></i>
-					<p><strong class="timer" data-to="883" data-speed="1500">0</strong></p>
-					<span class="text-white">Projects</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-laptop icon-lg text-white"></i>
-					<p><strong class="timer" data-to="6452" data-speed="2000">0</strong></p>
-					<span class="text-white">Lines of Code</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-moon-o icon-lg text-white"></i>
-					<p><strong class="timer" data-to="97" data-speed="2500">0</strong></p>
-					<span class="text-white">Sleepless Nights</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-			</div> <!-- END .row -->
-		</div> <!-- END .container -->
-	</div> <!-- END #stats -->
-
-
-
-
-
-
-<!-- QUOTES -->
-	<div class="wrapper">
-		<div class="container" id="quotes">
-			<div class="row">
-				<div class="col-lg-12 quotes">
-					<ul class="slides text-centered">
-
-						<li>
-							<div class="col-md-offset-1 col-md-10 col-sm-10 col-xs-9 focal-text">
-								<i class="fa fa-quote-right icon-sm"></i>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-								<footer>
-									<cite>Norah Maryalice</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-
-
-						<li>
-							<div class="col-md-offset-1 col-md-10  col-sm-10 col-xs-9 focal-text">
-								<p><i class="fa fa-quote-right icon-sm"></i></p>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<footer>
-									<cite>Barney Donny</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-
-
-						<li>
-							<div class="col-md-offset-1 col-md-10  col-sm-10 col-xs-9 focal-text">
-								<p><i class="fa fa-quote-right icon-sm"></i></p>	
-								<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								<footer>
-									<cite>Riva Parthenia</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-					</ul> <!-- END .slides -->
-				</div> <!-- END .quotes -->
-			</div> <!-- END .row -->
-		</div> <!-- END .container, #quotes -->
+<!-- TIMELINE BUTTON -->
+	<div class="row btn-centered" >
+		<div class="col-md-12">
+			<a href="timeline.html" class="btn btn-primary btn-lg">Timeline</a>
+		</div>
+		<div class="space-xlg"></div>
 	</div>
 
 
 
 	
 
-<!-- CONTACT -->
-	<div class="wrapper bg-darkest menu_target" id="contact">
+<!-- STATS -->
+	<div id="stats">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 text-white">
-				
-					<h2 class="section-title text-white">Get in Touch!</h2>
-
+				<div class="col-md-11 col-centered">
 					<div class="row">
+						<h2>STATS</h2>
+						<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
+							<i class="fa fa-users"></i>
+							<p><strong class="timer" data-to="253" data-speed="1000">0</strong></p>
+							<span>Clients</span>
+						</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
 
+						<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
+							<i class="fa fa-send"></i>
+							<p><strong class="timer" data-to="883" data-speed="1500">0</strong></p>
+							<span>Projects</span>
+						</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
+
+						<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
+							<i class="fa fa-laptop"></i>
+							<p><strong class="timer" data-to="6452" data-speed="2000">0</strong></p>
+							<span>Lines of Code</span>
+						</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
+						<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
+							<i class="fa fa-moon-o"></i>
+							<p><strong class="timer" data-to="97" data-speed="2500">0</strong></p>
+							<span>Sleepless Nights</span>
+						</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
+					</div> <!-- END .row -->
+				</div> <!-- END .col-md-11, .col-centered -->
+			</div> <!-- END .row -->
+		</div> <!-- END .container -->
+	</div> <!-- END #stats -->
+
+	<div class="container" id="quotes">
+		<div class="row">
+			<div class="quotes">
+				<ul class="slides">
+					<li>
+						<blockquote class="col-md-10 col-sm-10 col-xs-9 col-centered">
+							<p><i class="fa fa-quote-right"></i></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<footer>
+								<cite>Norah Maryalice</cite>
+							</footer>
+						</blockquote> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
+					</li>
+					<li>
+						<blockquote class="col-md-10 col-sm-10 col-xs-9 col-centered">
+							<p><i class="fa fa-quote-right"></i></p>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<footer>
+								<cite>Barney Donny</cite>
+							</footer>
+						</blockquote> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
+					</li>
+					<li>
+						<blockquote class="col-md-10 col-sm-10 col-xs-9 col-centered">
+							<p><i class="fa fa-quote-right"></i></p>	
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<footer>
+								<cite>Riva Parthenia</cite>
+							</footer>
+						</blockquote> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
+					</li>
+				</ul> <!-- END .slides -->
+			</div> <!-- END .quotes -->
+		</div> <!-- END .row -->
+	</div> <!-- END .container, #quotes -->
+
+
+
+	
+
+<!-- CONTACT -->
+	<div class="contact-bg menu_target" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-centered">
+				
+					<h2>GET IN TOUCH</h2>
+					<div class="row">
 						<div class="triggerAnimation animated contact-wrap col-md-7 col-xs-12" data-animate="fadeInLeft">
 							<form action="#" id="contact-form">
 								<div id="success"></div>
@@ -915,9 +987,10 @@
 								</ul> <!-- END #contact -->
 								<button type="submit" class="btn btn-primary btn-lg pull-right">Send Message</button>
 							</form> 
+							
 						</div> <!-- END .col-md-7 -->
-						
 						<div class="triggerAnimation animated col-md-5 col-xs-12" data-animate="fadeInRight">
+							<h4>Drop a line anytime!</h4>
 							<p><i class="fa fa-map-marker"></i> 441 14th St San Francisco, CA 94103</p>
 							<p><i class="fa fa-phone"></i> 617.584.4479/p>
 							<p><i class="fa fa-envelope"></i> alexaburakoff@gmail.com</p>
@@ -934,10 +1007,10 @@
 	
 
 <!-- FOOTER -->
-	<div class="wrapper" id="footer">
+	<div id="footer">
 		<div class="container">
-			<div class="row text-centered">
-				<ul class="triggerAnimation animated social text-white" data-animate="pulse">
+			<div class="row col-centered">
+				<ul class="triggerAnimation animated social" data-animate="pulse">
 					<li class="remove-left">
 						<a href="#"><i class="fa fa-twitter"></i></a>
 					</li>
@@ -976,28 +1049,6 @@
 
 
 <!--<script src="http:///ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
-	<script src="js/javascripts/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-	<script src="js/javascripts/fullcalendar.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.dataTables.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.easy-pie-chart.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.isotope.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
-	<script src="js/javascripts/select2.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.inputmask.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.validate.js" type="text/javascript"></script>
-	<script src="js/javascripts/bootstrap-fileupload.js" type="text/javascript"></script>
-	<script src="js/javascripts/bootstrap-timepicker.js" type="text/javascript"></script>
-	<script src="js/javascripts/bootstrap-colorpicker.js" type="text/javascript"></script>
-	<script src="js/javascripts/daterange-picker.js" type="text/javascript"></script>
-	<script src="js/javascripts/date.js" type="text/javascript"></script>
-	<script src="js/javascripts/fitvids.js" type="text/javascript"></script>
-	<script src="js/javascripts/jquery.sparkline.min.js" type="text/javascript"></script>
-	<script src="js/javascripts/main.js" type="text/javascript"></script>
-
-
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/jquery.contactForm.js"></script>
 	<script src="js/scripts.js"></script>
