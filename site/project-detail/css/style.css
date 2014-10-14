@@ -618,48 +618,7 @@ zoom: 1;
 
 
 
-.image-collage-wide {
-	display:none;
-}
-	.image-collage-wide .left {
-		height: 440px;
-		margin-left:0px;
-	}
 
-	.image-collage-wide .right .top{
-		height: 210px;
-		margin-bottom: 20px;
-	}
-
-	.image-collage-wide .right .bottom{
-		height: 210px;
-	}
-
-.image-collage .left {
-	height: 585px;
-	margin-left:0px;
-}
-
-.image-collage .right .top{
-	height: 280px;
-	margin-bottom: 25px;
-}
-
-.image-collage .right .bottom{
-	height: 280px;
-
-
-}
-
-
-
-.image-collage img {
-	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
-	   -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
-	        box-shadow: 0 8px 6px -6px rgba(0,0,0,.1);
-	border: 1px solid rgba(0,0,0,.1);
-	border-radius: 5px;
-}
 
 
 
@@ -888,36 +847,6 @@ ul.ps_nav li.ps_preview span{
 
 
 
-		body, input, textarea
-		{
-			font-family: Calluna-Regular;
-			-webkit-font-smoothing: antialiased !important; 
-			font-size: 1.5em;
-			line-height: 1.5em;
-
-			color: #404040;
-			font-weight: 300;
-		}
-
-		.calluna-regular { 
-			font-family: Calluna-Regular;
-			font-weight: normal;
-			font-style: normal;
-		}
-
-		h1, h2, h3, h4 {
-			color: #31302e;
-			font-family: 'Oswald', sans-serif;
-			-webkit-font-smoothing: antialiased !important; 			
-		}
-
-
-
-		ul, ol { 
-			list-style-type: none; 
-			margin: 0; 
-			padding: 0; 
-		}
 
 
 
@@ -934,7 +863,6 @@ ul.ps_nav li.ps_preview span{
 		.phase { 
 			padding: 8em 0 8em 0;
 			width: 100%;
-			border-top:1px solid rgba(0,0,0,.1)
 		}
 
 		.phase-alt {
@@ -956,27 +884,24 @@ ul.ps_nav li.ps_preview span{
 
 		.wrapper-nav ul li {
 			display: inline-block;
-			font-size: 17px;
-			padding: 0 15px;
+			padding: 0 12px;
 			text-align: center;
 		}
 
-		.nav-sub-menu {
-			background-color: #fff;
-			display: inline-block;
-			font-family: 'Oswald', sans-serif;
-			text-decoration: none;
-			position: relative;
-			outline: none;
-			
-		}
 
-		.nav-sub-menu li a {
+		.nav-sub-menu li a{
 			color: rgba(0,0,0,.3);
 			font-size: .7em;
+			font-family: "Oswald", sans-serif;
 			font-weight: 400;
 			text-transform: uppercase;
 			text-align: center;
+			letter-spacing: .5px; }
+
+		.nav-sub-menu {
+			width:80%;
+			margin-left: 15%;
+			margin-right: 10%;
 		}
 
 		.navbar {
@@ -1050,6 +975,52 @@ ul.ps_nav li.ps_preview span{
 			float: left;
 		}
 
+
+		.block4-left .img-responsive {
+			max-width: 80%;
+			max-height: 80%;
+			margin: 10% 20% 10% 0;
+		}
+
+		.block4-right .img-responsive {
+			max-width: 80%;
+			max-height: 80%;
+			margin: 10% 0 10% 20%;
+		}
+
+		
+
+
+		.block6 .img-responsive {
+			width: 100%;
+			margin: 15% 0;
+
+		}
+
+
+		.text-block {
+			width: 90%;
+			padding: 2%;
+		}
+
+
+	/* =youarehere!! */
+		.block8-left .img-responsive {
+			max-width: 98%;
+			max-height: 90%;
+			margin: 5% 2% 5% 0;
+		}
+
+		
+
+		.block8-right .img-responsive {
+			width: 98%;
+			max-height: 90%;
+			margin: 5% 0 5% 2%;
+		}
+
+
+
 /*********************************************************************************/
 /* =HEADER                                                                         */
 /*********************************************************************************/
@@ -1062,6 +1033,47 @@ ul.ps_nav li.ps_preview span{
 /* =TYPOGRAPHY                                                                         */
 /*********************************************************************************/
 
+		body, input, textarea
+		{
+			font-family: Calluna-Regular;
+			-webkit-font-smoothing: antialiased !important; 
+			font-size: 18px;
+			line-height: 1.6em;
+			color: #404040;
+			font-weight: 300;
+		}
+
+		.calluna-regular { 
+			font-family: Calluna-Regular;
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		h1, h2, h3, h4 {
+			color: #333;
+			font-family: 'Oswald', sans-serif;
+			-webkit-font-smoothing: antialiased !important;
+			padding: .02em 0 .1em 0; 			
+		}
+
+
+
+		ul, ol { 
+			list-style-type: none; 
+			margin: 0; 
+			padding: 0; 
+		}
+
+		h3 {
+			font-weight:700;
+			line-height: 1.4em;
+		}
+
+
+	
+
+
+
 
 	/* main titles and headers (different on homepage vs. project page) */
 
@@ -1070,17 +1082,19 @@ ul.ps_nav li.ps_preview span{
 			text-align: center;
 			font-weight: 400;
 			font-size: 3em;
-			margin-bottom: 100px;
 		}
 
 		h1.phase-title {
-			margin-top:0;
-			margin-bottom: .5em;
-			font-size: 4em;
+			font-size: 3em;
 			font-weight: 700;
 		}
 
 	/* text colors */
+
+		.text-block {
+			padding-right: 8%;
+		}
+
 
 		.text-white {
 			color: #fff;
@@ -1110,7 +1124,7 @@ ul.ps_nav li.ps_preview span{
 
 
 		.intro-text {
-			font-size: 1.5em;
+			font-size: 1.3em;
 			line-height: 1.5em;
 			padding-right: 5%;
 		}
@@ -1126,9 +1140,9 @@ ul.ps_nav li.ps_preview span{
 
 		.handwritten {
 			font-family: 'Shadows Into Light', cursive;
-			font-size: 1.5em;
+			font-size: 1.4em;
 			padding-top: 20px;
-			margin-bottom: 1.5em;
+			margin-bottom: 1.8em;
 		}
 
 
@@ -1148,7 +1162,7 @@ ul.ps_nav li.ps_preview span{
 			display: inline-block;
 			font-family: 'Oswald', sans-serif;
 			font-weight: 400;
-			font-size: 13px;
+			font-size: .7em;
 			text-transform: uppercase;
 			text-decoration: none;
 			position: relative;
@@ -1174,9 +1188,50 @@ ul.ps_nav li.ps_preview span{
 	}
 
 
-img.pull-right {
-	float: right;
-	padding-right:0!important;
+	img.pull-right {
+		float: right;
+		padding-right:0!important;
+	}
+
+	.image-box-style {
+		background-color: white;
+		padding: 10px;
+		margin-left: 40px;
+		box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+		border:1px solid rgba(0,0,0,.1);
+		border-radius: 5px;
+	}
+
+	.image-box-style img {
+		border-radius: 5px;
+		border:1px solid rgba(0,0,0,.1);
+	}
+
+.image-stack .first{
+	height: 45%;
+	margin: 0 0 5% 5%;
+	position: absolute;
+}
+
+
+.image-stack .last{
+	height: 45%;
+	margin: 75% 0 0 5%;
+	position: absolute;
+}
+
+
+.image-collage {
+	width: 100%;
+	margin-left: -7%;
+}
+
+
+
+
+.img-grid img {
+	height:350px;
+	overflow-y: hidden;
 }
 
 /*********************************************************************************/
