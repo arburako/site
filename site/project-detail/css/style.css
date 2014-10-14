@@ -1223,15 +1223,17 @@ ul.ps_nav li.ps_preview span{
 
 .image-collage {
 	width: 100%;
-	margin-left: -7%;
+	margin-left: -5%;
+	margin-right: 5%;
 }
 
 
 
 
 .img-grid img {
-	height:350px;
+	height:340px;
 	overflow-y: hidden;
+
 }
 
 /*********************************************************************************/
