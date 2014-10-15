@@ -604,61 +604,6 @@ zoom: 1;
 
 
 
-/*----------------------------------------------------------------------------------- */
-/*  MAIN NAV 
-/*----------------------------------------------------------------------------------- */
-#nav ul {
-	position: relative;
-	z-index: 789;	
-}
-#nav ul li {
-	display: inline-block;
-	font-size: 17px;
-	padding: 0 20px;
-}
-#nav ul li a {
-	padding: 0;
-}
-#nav ul li a:hover,#nav ul li a:focus {
-	background: none;
-}
-#nav ul li.active a{
-	border-bottom: 2px solid #fff;
-}
-#nav .menu-left {
-	float: left;
-}
-#nav .menu-left li:first-child {
-	padding-left: 0;
-}
-#nav .menu-right {
-	float: right;
-}
-#nav .menu-right li:last-child {
-	padding-right: 0;
-}
-
-#header #nav {
-	margin-top: -120px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-#header #nav ul {
-	margin-top: 45px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-#header #nav ul li {
-	line-height: 35px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
 
 
 
@@ -683,26 +628,9 @@ zoom: 1;
 
 
 
-/*----------------------------------------------------------------------------------- */
-/*  HEADER FIXED 
-/*----------------------------------------------------------------------------------- */
-#header.fixed {
-	height: 90px;
-	background: rgba(0,0,0,0.9);
-}
-#header.fixed .site {
-	line-height: 84px;
-	font-size: 37px;
-}
-#header.fixed #nav {
-	margin-top: -90px;
-}
-#header.fixed #nav ul {
-	margin-top: 30px;
-}
-#header #nav ul li {
-	line-height: 30px;
-}
+
+
+
 
 
 
