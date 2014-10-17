@@ -421,7 +421,7 @@
 
 
 			body, input, textarea {
-				font-family: 'Calluna-Regular';
+				font-family: 'calluna';
 				-webkit-font-smoothing: antialiased !important; 
 				font-size: 20px;
 				line-height: 1.5em;
