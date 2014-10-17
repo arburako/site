@@ -423,8 +423,8 @@
 			body, input, textarea {
 				font-family:'Merriweather', serif;;
 				-webkit-font-smoothing: antialiased !important; 
-				font-size: 20px;
-				line-height: 1.7em;
+				font-size: 17px;
+				line-height: 1.65em;
 				color: #222;
 				font-weight: 300;
 			}
