@@ -11,20 +11,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 
-      <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
-    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css' rel='stylesheet' type='text/css'/>
 
 
   <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
 
+  <!-- FontAwesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Main Style -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/colio.css">
+    <link rel="stylesheet" href="css/jquery.maximage.css">
+    <link rel="stylesheet" href="css/circle_slider.css">
     <link rel="stylesheet" href="css/style.css?v=1.0">
 
   <!-- Google Fonts -->
@@ -34,20 +38,20 @@
     <link rel="stylesheet" type="text/css" href="css/calluna-font.css">
     <link rel="stylesheet" type="text/css" href="css/bebas-font.css">
     <link rel="stylesheet" type="text/css" href="css/nanum-pen-font.css">
+  
 
+    <script src="js/modernizr-2.6.2.min.js"></script>
 
+  <!-- FOR THE FLIPPY img -->
+     <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
 
-
- 
   <!-- STICK NAVBAR -->
-
-
-
-    <link href='css/stickynavbar.css' rel='stylesheet' type='text/css'/>
-    <link href='css/animate.css' rel='stylesheet' type='text/css'/>
-
-
-
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
+    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css' rel='stylesheet' type='text/css'/>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -79,7 +83,7 @@
 
       <!-- summary section -->
         <div class="container">
-            <div class="row row-md">
+            <div class="row row-sm">
                 <div class="col-md-8 col8 first">
                     <h3>Overview</h3>
                     <p>The Dinamundo iPhone app is based on a simple yet powerful principle - to use smartphones to enable and enhance our personal connections. Our phones are intimate parts of lives, like it or not. Instead of letting them constantly distract us from the world around us, we can use them to engage with our surroundings at a deeper level. That's the core concept behind Dinamundo, a travel check in game that uses popular gaming strategies to bring people together in the real world and help them create a meaningful connection. </p>
@@ -91,8 +95,12 @@
             </div> <!-- end row -->
         </div> <!-- end container -->
 
-      <!-- NAV BAR -->
-        <div id="header" class="header">
+
+
+    </div>  <!-- end overview phase -->
+
+          <!-- NAV BAR -->
+        <div id="header" class="header triggerAnimation animated" data-animate="fadeIn">
             <div id="nav" class="sub-header">
                 <ul class="nav nav-sub">
                       <li class="menuItem">
@@ -123,8 +131,6 @@
             </div> 
         </div> <!-- end nav -->
 
-    </div>  <!-- end overview phase -->
-
 <!-- OBJECTIVE -->
     <div id="objective" class="scrollto">
         <div class="phase phase-alt slideUp">
@@ -143,7 +149,7 @@
                         <p>  Dinamundo started back in 2011 with the mission of using modern technology to enhance and facilitate meaningful interactions in the real world, rather than distracting us from them. Dinamundo started back in 2011 with the mission of using modern technology to enhance and facilitate meaningful interactions in the real world, rather than distracting us from them. Founder Erik Blachford (formed Expedia CEO), knew his way around the travel space and saw an opportunity to crack the traveler/local meet up nut, which still remains truly unbroken even today. Erik contracted developers from Pivotal Labs Agency to build the first iteration of his vision. </p>
                     </div>             
                     <div class="col-md-4 col4">
-                        <img src="img/dinamundo/suitcase.png" class="img-responsive eight5" >
+                        <img src="img/dinamundo/suitcase.png" class="img-responsive tilt eight5" >
                     </div>
                 </div> <!-- end row -->
 
@@ -162,7 +168,7 @@
 
 <!-- APPROACH -->
   <div id="approach" class="scrollto">
-    <div class="phase phase-alt">
+    <div class="phase">
         <div class="container">
 
           <!-- start row -->
@@ -183,36 +189,37 @@
           <!-- start row -->
             <div class="row row-md border-row image-grid">
                 <div class="col-md-8 col8 first" >
-                    <img src="img/dinamundo/persona.JPG" class="img-responsive image-box-style" >
+                    <img src="img/dinamundo/persona.JPG" class="img-responsive image-box-large" >
                 </div> 
                 <div class="col-md-4 col4 last">
                     <ul class="image-stack">
                         <li class="top">
-                          <img src="img/dinamundo/estimating.JPG" class="img-responsive image-box-style" >
+                          <img src="img/dinamundo/estimating.JPG" class="img-responsive image-box-large" >
                         </li>
 
                         <li class="bottom">
-                          <img src="img/dinamundo/brainstorm.JPG" class="img-responsive image-box-style" >
+                          <img src="img/dinamundo/brainstorm.JPG" class="img-responsive image-box-large" >
                         </li>
                     </ul>
                 </div>
             </div> <!-- end row -->
 
-          <!-- start row -->
-            <div class="row row-md border-row">
-                <div class="col-md-6 col6 first">
-                    <h3> The Three Page Book </h3>
-                    <p> Create a check in experience that was similar to other check in apps (i.e. Foursquare, Gowalla, more) but had the unique characteristic of requiring two people Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   </p>           
+          
+            <p class="handwritten text-light text-centered"> hover on image </hp>
+            <!-- start row -->
+            <div class="row row-fixed row-md border-row text-on-hover">               
+                <div class="col-md-10 col10">
+                    <img src="img/dinamundo/magazine2.png" class="img-responsive seven5">
                 </div>
-                <div class="col-md-6 col6 last">
-                    <img src="img/dinamundo/magazine_presentation2_f8.png" class="img-responsive">
+                <div class="col-md-2 col2">
+                    <p> Three Page Book</p>           
                 </div>
             </div> <!-- end row -->
 
           <!-- start row -->
-            <div class="row row-md">
+            <div class="row row-lg">
                 <div class="col-md-6 col6 first">
-                    <img src="img/dinamundo/magazine_presentation1_f8.png" class="img-responsive">
+                    <img src="img/dinamundo/magazine1.png" class="img-responsive">
                 </div>
                 <div class="col-md-6 col6 last">         
                     <h3> The Sideways Down Books </h3>
@@ -227,7 +234,7 @@
 <!-- RESEARCH -->
 
     <div id="research" class="scrollto" >
-        <div class="phase">        
+        <div class="phase phase-alt">        
             <div class="container">       
 
               <!-- start row -->   
@@ -248,7 +255,7 @@
               <!-- start row -->
                 <div class="row row-md border-row">
                     <div class="col-md-12 col12">
-                        <img src="img/dinamundo/magazine_presentation2_trans.png" class="img-responsive" >
+                        <img src="img/dinamundo/magazine3.png" class="bw img-responsive" >
                     </div>
                 </div> <!-- end row -->
 
@@ -259,7 +266,7 @@
                         <p> Created product positioning and execution strategy - Identified the main product pillars (differentiators / priorities) to keep top of mind as we fleshed out the rest of the details; identified the main knowns (founding concepts... I suppose same as above) and main unknowns (what we needed to figure out first); laid out high level plan of attack and orchestrated inception meeting to inform team of strategy and war room to move quickly through filling in the strategy/product holes to get to execution </p>
                     </div>
                     <div class="col-md-8 col8 last">
-                      <img src="img/dinamundo/work1-large.jpg" class="img-responsive inline-block image-box-style six6" >
+                      <img src="img/dinamundo/work1-large.jpg" class="img-responsive inline-block image-box-large six6 bw" >
                     </div>
                 </div> <!-- end  row -->   
 
@@ -267,7 +274,7 @@
               <!-- start row -->
                 <div class="row row-md">
                     <div class="col-md-8 col8 first">
-                      <img src="img/dinamundo/work2-large.jpg" class="img-responsive image-box-style six6" >
+                      <img src="img/dinamundo/work2-large.jpg" class="img-responsive image-box-large six6 bw-i" >
                     </div>
                     <div class="col-md-4 col4 last">
                       <h3> Orange Paper and Rulers</h3>
@@ -281,7 +288,7 @@
 
 <!-- STRATEGY -->
     <div id="strategy" class="scrollto" >
-        <div class="phase phase-alt">
+        <div class="phase">
             <div class="container">
 
             <!-- start row -->          
@@ -334,7 +341,7 @@
 
 <!-- IDEATION -->
     <div id="ideation" class="scrollto" >
-        <div class="phase">
+        <div class="phase phase-alt">
             <div class="container">
               
 
@@ -363,94 +370,285 @@
     </div> <!-- end section -->
 
 <!-- INTERSTITIAL -->
-    <div class="phase phase-alt-dark" id="interstitial">
-      <div class="container">
-        <div class="row" >
-          <div class="col-md-12 col12 text-centered">
-            <h1 class="text-white text-centered"> Important Pontification </h1>
-          </div>
-        </div>
+    <div class="phase phase-dark" id="interstitial">
+        <div class="container">
+            <div class="row row-md" >
+                <div class="col-md-12 col12 text-centered">
+                    <h1 class="text-white text-centered"> Important Pontification </h1>
+                </div>
+            </div> <!-- end  row --> 
 
-        <div class="row">
-          <div class="col-md-12 col12">
-            <p class="interstitial text-centered text-on-dark"> Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex.  </p>
-          </div>
-
-        </div> <!-- end  row -->    
-      </div> <!-- end container  -->
-    </div> <!-- end white iteration -->
+            <div class="row end-section">
+                <div class="col-md-12 col12">
+                    <p class="interstitial text-centered text-on-dark"> Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex.  </p>
+                </div>
+            </div> <!-- end  row -->    
+        </div> <!-- end container  -->
+    </div> <!-- end interstitial -->
 
 <!-- ITERATION -->
     <div id="iteration" class="scrollto" >
         <div class="phase phase-alt">
-          <div class="container">
+            <div class="container">
 
-          <!-- start row --> 
-            <div class="row row-md">
-              <div class="col-md-12 col12">
-                  <h5 class="handwritten  text-centered text-light">Iteration</h5>
-                  <h1 class="text-centered"> Putting the Petal to The Metal </h1>
-                  <p class="text-centered"> Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. </p>
-              </div>
-            </div> <!-- end row -->
+                <!-- start row --> 
+                <div class="row row-sm">
+                  <div class="col-md-12 col12">
+                      <h5 class="handwritten  text-centered text-light">Iteration</h5>
+                      <h1 class="text-centered"> Putting the Petal to The Metal </h1>
+                  </div>
+                </div><!-- end row -->
 
-          <!-- start row --> 
-            <div class="row img-grid">
-              <div class="col-md-6 col6">
-                <img src="img/dinamundo/hyperlapse.jpg" class="img-responsive img-grid image-box-style">
-              </div>
-              <div class="col-md-6 col6">
-                <img src="img/dinamundo/section-3-sf.jpg" class="img-responsive img-grid image-box-style">
-              </div>
-            </div> <!-- end  row -->    
+                <!-- start row -->
+                <div class="row row-sm">
+                  <div class="col-md-12 col12">
+                      <p class="text-centered"> Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. Built multiple paper prototypes along the way. As things started coming together organized feedback gathering session. Sourced users, ran testing, summarized feedback, created recommendations. Adjusted product requirements. Got rid off game board. Too complex. </p>
+                  </div>
+                </div> <!-- end row -->
 
-          <!-- start row --> 
-            <div class="row img-grid">
-              <div class="col-md-6 col6">
-                <img src="img/dinamundo/section-5.jpg" class="img-responsive img-grid image-box-style">
-              </div>
-              <div class="col-md-6 col6">
-                <img src="img/dinamundo/section-7.jpg" class="img-responsive img-grid image-box-style">
-              </div>
-            </div> <!-- end  row --> 
+                <!-- start row --> 
+                <div class="row row-md mage-grid">
+                  <div class="col-md-6 col6">
+                    <img src="img/dinamundo/img-grid-1.jpg" class="img-responsive bw-i image-box-large pointer" data-toggle="modal" data-target="#carousel-modal">>
+                  </div>
+                  <div class="col-md-6 col6">
+                    <img src="img/dinamundo/img-grid-2.jpg" class="img-responsive bw-i image-box-large">
+                  </div>
+                </div> <!-- end  row -->    
 
-          </div> <!-- end container  -->
-        </div> <!-- end white iteration -->
-    </div>
+                <!-- start row --> 
+                <div class="row image-grid">
+                  <div class="col-md-6 col6">
+                    <img src="img/dinamundo/img-grid-3.jpg" class="img-responsive bw-i image-box-large">
+                  </div>
+                  <div class="col-md-6 col6">
+                    <img src="img/dinamundo/img-grid-4.jpg" class="img-responsive bw-i image-box-large">
+                  </div>
+                </div> <!-- end  row --> 
+
+                <!-- start row --> 
+                <div class="row row-lg">
+                  <div class="col-md-3 col3 tilt" data-toggle="modal" data-target="#img-grid-modal-1">
+                    <img src="img/dinamundo/img-grid-thumb-1.png" class="img-responsive img-box-sm pointer">
+                  </div>
+                  <div class="col-md-3 col3 tilt" data-toggle="modal" data-target="#img-grid-modal-2">
+                    <img src="img/dinamundo/img-grid-thumb-2.png" class="img-responsive img-box-sm pointer">
+                  </div>
+                  <div class="col-md-3 col3 " data-toggle="modal" data-target="#img-grid-modal-3">
+                    <img src="img/dinamundo/img-grid-thumb-3.png" class="img-responsive morph img-box-sm pointer">
+                  </div>
+                  <div class="col-md-3 col3 " data-toggle="modal" data-target="#img-grid-modal-4">
+                    <img src="img/dinamundo/img-grid-thumb-4.png" class="img-responsive  morph img-box-sm pointer">
+                  </div>
+                </div> <!-- end  row --> 
+
+
+                <!-- start row --> 
+                <ul class="row end-section">
+                  
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-1.png" class="img-responsive">
+                    </li>
+                   
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-2.png" class="img-responsive">
+                    </li>
+                   
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-3.png" class="img-responsive">
+                    </li>
+                   
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-4.png" class="img-responsive">
+                    </li>
+                   
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-1.png" class="img-responsive">
+                    </li>
+                   
+                    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 img-thumb" data-toggle="modal" data-target="#img-grid-modal-1">
+                        <img src="img/dinamundo/img-grid-thumb-1.png" class="img-responsive">
+                    </li>
+                </ul> <!-- end  row --> 
+
+            <!-- modal content --> 
+                <div class="modal fade" id="img-grid-modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-body">
+                            <img src="img/dinamundo/img-grid-1a.png" class="img-responsive">
+                            <div class="carousel-caption caption-bg"><p>Your caption here</p></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="modal fade" id="img-grid-modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-body">
+                            <img src="img/dinamundo/img-grid-2.png" class="img-responsive">
+                            <div class="carousel-caption caption-bg"><p>Your caption here</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="img-grid-modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-body">
+                            <img src="img/dinamundo/img-grid-3.png" class="img-responsive">
+                            <div class="carousel-caption caption-bg"><p>Your caption here</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="img-grid-modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-body">
+                            <img src="img/dinamundo/img-grid-4.png" class="img-responsive">
+                            <div class="carousel-caption caption-bg"><p>Your caption here</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="carousel-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-body">
+                            <div id="carousel-modal-modal" class="carousel slide" data-interval="false">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-modal-modal" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-modal-modal" data-slide-to="1"></li>
+                                <li data-target="#carousel-modal-modal" data-slide-to="2"></li>
+                              </ol>
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="img/dinamundo/img-grid-3.png" class="img-responsive">
+                                  <div class="carousel-caption">
+                                      <h3> Inside The Modal </h3>
+                                      <p> This is a very important caption </p>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img src="img/dinamundo/img-grid-4.png" class="img-responsive">
+                                  <div class="carousel-caption">
+                                    <h3> This is Inside the Modal </h3>
+                                    <p> This is a very important caption </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel-modal-modal" role="button" data-slide="prev">
+                                <span class="icon-prev fa fa-chevron-left "></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-modal-modal" role="button" data-slide="next">
+                                <span class="icon-next fa-chevron-right"></span>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end container -->
+        </div> <!-- end phase -->
+    </div> <!-- end iteration -->
+
 
 <!-- DESIGN -->
     <div id="design" class="scrollto">
       <div class="phase">
         <div class="container">
-
-        <!-- start row --> 
-          <div class="row">
+          
+          <!-- start row --> 
+          <div class="row row-sm">
             <div class="col-md-12 col12">
                 <h5 class="handwritten text-centered text-light">Design</h5>
                 <h1 class="text-centered"> Detailed Design</h1>
             </div>
           </div> <!-- end row -->
+
+          <!-- start  row --> 
           <div class="row row-md">
-              <div class="col-md-6 col6">
-             
+              <div class="col-md-6 col6">             
                   <h3> Detailed Design</h3>
                   <p> Created app assets, FB branding, logo, app icon, your screens, website. Made guides for development </p>
-
               </div>
               <div class="col-md-6 col6">
-                  <img src="img/dinamundo/work1-large.jpg" class="img-responsive image-box-style" >
+                  <img src="img/dinamundo/work1-large.jpg" class="img-responsive image-box-large" >
               </div>
           </div> <!-- end  row -->    
-        </div> <!-- end container  -->
-      </div> <!-- end grey design -->
-    </div>
+      </div><!-- end  container --> 
+
+     
+      <!-- start container --> 
+      <div class="container-fluid">
+              <div id="ri-grid" class="ri-grid row-lg ri-grid-size-2">
+                <img class="ri-loading-image" src="img/loading.gif"/>
+                    <ul>
+                      <li><a href="#"><img src="img/medium/24.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/25.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/26.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/27.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/28.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/29.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/30.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/31.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/32.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/33.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/24.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/25.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/26.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/27.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/28.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/29.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/30.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/31.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/32.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/33.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/24.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/25.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/26.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/27.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/28.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/29.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/30.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/31.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/32.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/33.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/24.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/25.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/26.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/27.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/28.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/29.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/30.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/31.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/32.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/33.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/24.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/25.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/26.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/27.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/28.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/29.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/30.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/31.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/32.jpg"/></a></li>
+                      <li><a href="#"><img src="img/medium/33.jpg"/></a></li>
+      
+                    </ul>
+              </div>
+        </div> <!-- end container --> 
+ </div> <!-- end grey design -->
+  
+   
+
 
 <!-- RESULTS -->
     <div id="results" class="scrollto" >
       <div class="phase phase-alt">
         <div class="container">
 
-        <!-- start row --> 
+          <!-- start row --> 
           <div class="row row-lg">
             <div class="col-md-12 col12">
                 <h5 class="handwritten text-centered text-light">Results</h5>
@@ -463,20 +661,66 @@
     </div>
 
 <!-- BUTTON -->
-      <div class="container end-section triggerAnimation animated" data-animate="fadeInUpBig">
-        <div class="row border-row row-lg align-center" >
-          <div class="col-md-12 col12">
-            <a href="http://alexa-burakoff.com/site/index#featured" class="btn btn-lg btn-primary pop">More Case Studies</a>
+    <div class="container end-section triggerAnimation animated" data-animate="fadeInUpBig">
+
+        <!-- more case studies button -->
+            <div class="row border-row row-lg align-center" >
+                <div class="col-md-12 col12">
+                    <a href="///Users/alexa/site/site/index.html#featured" class="btn btn-lg btn-primary pop">More Case Studies</a>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row row-md">
+            <div id="carousel-example-generic" class="carousel slide" data-interval="false">
+            <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/dinamundo/img-grid-1.jpg" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h3> Image 1 </h3>
+                        <p> This is a very important caption </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/dinamundo/img-grid-2.jpg" class="img-responsive">
+                    <div class="carousel-caption">
+                      <h3> Image 2 </h3>
+                      <p> This is a very important caption </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="icon-prev fa fa-chevron-left "></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="icon-next fa-chevron-right"></span>
+                </a>
           </div>
-        </div>
       </div>
+    </div>
+
+
+
 
 <!-- FOOTER -->
-  <div class="phase-alt-dark" id="footer">
+  <div class="phase-dark" id="footer">
     <div class="container">
       <div class="row row-sm text-centered">
         <ul class="triggerAnimation animated social" data-animate="pulse">
-          <li class="remove-left">
+          <li>
             <a href="#"><i class="fa fa-twitter"></i></a>
           </li>
           <li>
@@ -485,19 +729,9 @@
           <li>
             <a href="#"><i class="fa fa-dribbble"></i></a>
           </li>
-          <!--          
-          <li>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </li>
-          -->
           <li>
             <a href="#"><i class="fa fa-google-plus"></i></a>
           </li>
-          <!--          
-          <li>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </li> 
-          -->
         </ul> <!-- END .triggerAnimation, .animated, .social -->
         <footer class="copyright">
           <p>&copy; Alexa Burakoff 2014. All rights reserved.</p>
@@ -510,31 +744,92 @@
 
 
 
-  <!-- STANDARD FROM TEMPLATE-->
 
 
 
-  <!-- STICKY NAVBAR -->
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'></script>
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'></script>
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'></script>
-  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script>
-  <script language='javascript'> 
-    SyntaxHighlighter.config.bloggerMode = true;
-  SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
-  SyntaxHighlighter.all();
-  </script>
+  <!-- FROM ORIGINAL TEMPLATE -->
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.contactForm.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/toucheffects.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/preloader.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.colio.min.js"></script>
+        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.cycle.all.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.maximage.min.js"></script>
+        <script>
+          $(function(){
+          // Trigger maximage
+          $('#maximage').maximage({
+            cycleOptions: {
+              prev: '#arrow_left',
+              next: '#arrow_right'
+            },
+            fillElement: '#holder',
+            backgroundSize: 'contain'
+          });
+        });
+        </script>
 
-  <script src="js/jquery.stickyNavbar.min.js"></script>
-  <script src="js/jquery.stickyNavbar.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/stickyscripts.js"></script>
 
 
+  <!-- FOR MODAL - THIS MAKES IT SO THAT THE MODAL IS CENTERED ON THE PAGE AND DOES NOT HIDE UNDER THE NAV -->     
+    <script>
+          function centerModal() {
+              $(this).css('display', 'block');
+              var $dialog = $(this).find(".modal-dialog");
+              var offset = ($(window).height() - $dialog.height()) / 2;
+              // Center modal vertically in window
+              $dialog.css("margin-top", offset);
+          }
 
+          $('.modal').on('show.bs.modal', centerModal);
+          $(window).on("resize", function () {
+              $('.modal:visible').each(centerModal);
+          });
+      </script>
+
+
+  <!-- FOR THE FLIPPY img -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+    <script type="text/javascript"> 
+      $(function() {
+      
+        $( '#ri-grid' ).gridrotator( {
+          rows    : 2,
+          columns   : 6,
+          animType  : 'fadeInOut',
+          animSpeed : 250,
+          interval  : 3000,
+          step    : 3,
+          w320    : {
+            rows  : 3,
+            columns : 4
+          },
+          w240    : {
+            rows  : 3,
+            columns : 4
+          }
+        } );
+      
+      });
+    </script>
+
+
+    <!-- STICKY NAVBAR -->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="//cdn.jsdelivr.net/stickynavbar.js/1.1.2/jquery.stickyNavbar.min.js"></script>
+        <script src="js/stickyscripts.js"></script>
 
 </body>
 </html>
