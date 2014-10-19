@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Slider 6</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="jquery plugin, item slider, categories, apple slider, css animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+		<script src="assets/js/modernizr.custom.63321.js"></script>
+			<!-- bootstrap + core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="../../css/alexa.css" rel="stylesheet">
+	</head>
+	
+
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="index.html">Alexa's Site</a>
+	        </div>
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li>
+	                    <a href="index.html">Slider 1</a>
+	                </li>
+	                <li>
+	                    <a href="slider2.html">Slider 2</a>
+	                </li>
+	                <li>
+	                    <a href="slider3.html">Slider 3</a>
+	                </li>
+	                <li>
+	                    <a href="slider4.html">Slider 4</a>
+	                </li>
+	                <li>
+	                    <a href="slider4.html">Slider 5</a>
+	                </li>
+                    <li  class="active"><a href="slider6.html">Slider 6</a></li>
+
+	            </ul>
+	        </div>
+	        <!-- /.navbar-collapse -->
+	    </div>
+	    <!-- /.container -->
+	</nav>
+
+	<div class="container-fluid" id="slider-fancy">	
+		<header class="clearfix">
+			<h1 class="page-title">Simple Multi-Item Slider <span>Category slider with CSS animations</span></h1>
+		</header>
+		<div class="main">
+			<div id="mi-slider" class="mi-slider">
+				<ul>
+					<li><a href="#"><img src="assets/img/1.png" alt="img01"><h4>Boots</h4></a></li>
+					<li><a href="#"><img src="assets/img/2.png" alt="img02"><h4>Oxfords</h4></a></li>
+					<li><a href="#"><img src="assets/img/3.png" alt="img03"><h4>Loafers</h4></a></li>
+					<li><a href="#"><img src="assets/img/4.png" alt="img04"><h4>Sneakers</h4></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="assets/img/5.png" alt="img05"><h4>Belts</h4></a></li>
+					<li><a href="#"><img src="assets/img/6.png" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
+					<li><a href="#"><img src="assets/img/7.png" alt="img07"><h4>Sunglasses</h4></a></li>
+					<li><a href="#"><img src="assets/img/8.png" alt="img08"><h4>Scarves</h4></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="assets/img/9.png" alt="img09"><h4>Casual</h4></a></li>
+					<li><a href="#"><img src="assets/img/10.png" alt="img10"><h4>Luxury</h4></a></li>
+					<li><a href="#"><img src="assets/img/11.png" alt="img11"><h4>Sport</h4></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="assets/img/12.png" alt="img12"><h4>Carry-Ons</h4></a></li>
+					<li><a href="#"><img src="assets/img/13.png" alt="img13"><h4>Duffel Bags</h4></a></li>
+					<li><a href="#"><img src="assets/img/14.png" alt="img14"><h4>Laptop Bags</h4></a></li>
+					<li><a href="#"><img src="assets/img/15.png" alt="img15"><h4>Briefcases</h4></a></li>
+				</ul>
+				<nav>
+					<a href="#">UX </a>
+					<a href="#">UI </a>
+					<a href="#">Planning</a>
+					<a href="#">Whores</a>
+				</nav>
+			</div>
+		</div>
+	</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+	</body>
+</html>

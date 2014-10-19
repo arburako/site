@@ -1,0 +1,334 @@
+body {
+  padding-top: 50px;
+}
+
+
+/* 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+        ALEXA STYLES
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+/*  Wrappers - taken from the miniport display */
+
+	.wrapper
+	{
+		background-image: url('../images/bg.png');
+		box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+	}
+
+	.wrapper-first
+	{
+		box-shadow: none;
+	}
+
+	.wrapper-style1
+	{
+		background-image: none;
+		background-color: #fff;
+	}
+	
+	.wrapper-style2
+	{
+		background-color: #fafafa;
+		text-shadow: 1px 1px 0px #fff;
+	}
+	
+	.wrapper-style3
+	{
+		background-color: #f4f4f4;
+		text-shadow: 1px 1px 0px #fff;
+	}
+
+	.wrapper-style4
+	{
+		background-color: #303030;
+		color: #999;
+		text-shadow: -1px -1px 0px #181818;
+	}
+
+		.wrapper-style4 h1, 
+		.wrapper-style4 h2, 
+		.wrapper-style4 h3, 
+		.wrapper-style4 h4, 
+		.wrapper-style4 h5, 
+		.wrapper-style4 h6
+		{
+			color: #fff;
+		}
+		
+		.wrapper-style4 .row-special
+		{
+			border-top: solid 1px rgba(0,0,0,0.5);
+			border-bottom: solid 1px rgba(0,0,0,0.5);
+			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.1), 0px 1px 0px 0px rgba(255,255,255,0.1);
+		}
+
+
+
+
+
+
+
+/*buttons*/
+
+.btn-row {
+    margin-bottom: 30px;
+}
+
+
+
+/* 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+        FEATURE DEMO STYLES
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 992px) {
+  .the-icons li {
+    width: 12.5%;
+  }
+}
+  
+.the-buttons > li {
+  float: left;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 -1px -1px 0;
+}
+  
+.the-icons .glyphicon {
+  display: block;
+  margin: 5px auto;
+  vertical-align: middle;
+  margin-right: 3px;
+  font-size: 24px;
+}
+
+.the-icons li {
+  float: left;
+  width: 100px;
+  height: 110px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.the-icons, .the-buttons {
+	list-style:none;
+}
+
+.the-icons .glyphicon {
+	display:inline;
+}
+
+
+
+
+/* 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+        LANDING PAGE STYLES (cheatsheet)
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------- */
+
+
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("../images/bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 100px;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 100px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+
+a.btn-purchase {
+    background: #475168;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    margin-top: 30px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+a.btn-purchase:hover, a.btn-purchase:focus{
+    background: #F77B6F;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+
+
+
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+

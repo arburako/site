@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+
+  <title>AB Sliders</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/colio.css">
+  <link rel="stylesheet" href="css/jquery.maximage.css">
+  <link rel="stylesheet" href="css/circle_slider.css">
+
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+
+  <!-- FontAwesome -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Slippry slider -->
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/slippry.min.js"></script>
+  <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+  <link rel="stylesheet" href="css/slippry.css">
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- Slider -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Alexa's Site</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="index.html">Slider 1</a>
+                    </li>
+                    <li>
+                        <a href="slider2.html">Slider 2</a>
+                    </li>
+                    <li>
+                        <a href="slider3.html">Slider 3</a>
+                    </li>
+                    <li>
+                        <a href="slider4.html">Slider 4</a>
+                    </li>
+                    <li>
+                        <a href="slider4.html">Slider 5</a>
+                    </li>
+                                        <li>
+                        <a href="slider6.html">Slider 6</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Slider -->
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="section-title">Slippry Slider</h1>
+      <div class="row image-slider">
+        <div class="col-md-12">
+          <ul id="demo1">
+            <li>
+              <a href="#slide1">
+                <img src="img/slippry/image-1.jpg" alt="This is caption 1 <a href='#link'>Even with links!</a>" class="img-responsive">
+              </a>
+            </li>
+            <li>
+              <a href="#slide2">
+                <img src="img/slippry/image-2.jpg"  alt="This is caption 2" class="img-responsive">
+              </a>
+            </li>
+            <li>
+              <a href="#slide3">
+                <img src="img/slippry/image-4.jpg" alt="And this is some very long caption for slide 3. Yes, really long." class="img-responsive">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script>
+      $(function() {
+        var demo1 = $("#demo1").slippry({
+          transition: 'fade',
+          useCSS: true,
+          speed: 1000,
+          pause: 3000,
+          auto: true,
+          preload: 'visible'
+        });
+
+        $('.stop').click(function () {
+          demo1.stopAuto();
+        });
+
+        $('.start').click(function () {
+          demo1.startAuto();
+        });
+
+        $('.prev').click(function () {
+          demo1.goToPrevSlide();
+          return false;
+        });
+        $('.next').click(function () {
+          demo1.goToNextSlide();
+          return false;
+        });
+        $('.reset').click(function () {
+          demo1.destroySlider();
+          return false;
+        });
+        $('.reload').click(function () {
+          demo1.reloadSlider();
+          return false;
+        });
+        $('.init').click(function () {
+          demo1 = $("#demo1").slippry();
+          return false;
+        });
+      });
+    </script>
+
+
+    
+  </body>
