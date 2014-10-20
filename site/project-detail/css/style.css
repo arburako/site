@@ -257,7 +257,7 @@
 	/*---------------------------------*/
 
 			.phase { 
-				padding: 2em 0 4em 0;
+				padding: 200px 0;
 				width: 100%;
 				
 			}
@@ -274,7 +274,11 @@
 			}
 
 			.end-section {
-				margin-bottom: 20em;
+				padding-bottom: 120px;
+			}
+
+			.first-section {
+				padding-top: 120px;
 			}
 
 	/*---------------------------------/
@@ -287,16 +291,16 @@
 			}
 
 			.row-sm {
-				padding: 2em 0;
+				padding: 60px 0;
 			}
 
 			.row-md {
-				padding: 5em 0;
+				padding: 120px 0;
 			}
 
 
 			.row-lg {
-				padding: 8em 0;
+				padding: 180px 0;
 			}
 
 
@@ -423,8 +427,8 @@
 			body, input, textarea {
 				font-family:'Merriweather', serif;
 				-webkit-font-smoothing: antialiased !important; 
-				font-size: 18px;
-				line-height: 1.8em;
+				font-size: 17px;
+				line-height: 1.6em;
 				color: #222;
 				font-weight: 300;
 			}
@@ -452,6 +456,7 @@
 				font-weight: 700;
 				letter-spacing: .5px;
 				text-transform: uppercase;
+				padding-bottom: 20px;
 			}
 
 			a {
@@ -459,10 +464,7 @@
 			}
 
 
-			.text-md {
-				font-size: 1.4em;
-				line-height: 1.7em;
-			}
+
 
 	/*---------------------------------/
 	/* =TITLES  */
@@ -498,62 +500,49 @@
 	/* =ALIGNMENT  */
 	/*---------------------------------*/
 
-			.text-centered {
+			.text-center {
 				text-align: center;
 			}
-
-
+				.text-center img {
+					vertical-align: middle;
+				}
+				.text-center .col12 p, 
+				.text-center .col12 img,
+				.text-center .col12 h1,
+				.text-center .col12 h3 {
+					max-width: 90%;
+					margin: auto 5%;
+				}
+			
 			.text-left {
 				text-align: left;
 			}
 
+			.text-smaller p,
+			.text-smaller h3 {
+				font-size: .8em;
+				line-height: 1.8em;
+				padding: 0 15px;
+				margin: 0;
+			}
+			.text-smaller h3 {
+				font-size: 1.2em;
+				padding-top: 25px;
+				padding-bottom: 8px;
+			}			
 			
-			/* col 10 - 12 */
-
-					.col12 p, .col12 p, .col10 p  {
-						padding-right: 8%;
-					}
-
-					.col12 .text-centered, .col11 .text-centered, .col10 .text-centered{
-						padding-left: 4%;
-						padding-right: 4%
-					}
-
-
-			/* col 7 to 9 */
-
-					.col9 p, .col8 p, .col7 p  {
-						padding-right: 6%;
-					}
-
-					.col9 .text-centered, .col8 .text-centered, .col7 .text-centered{
-						padding-left: 3%;
-						padding-right: 3%
-					}
+			.interstitial{
+				font-size: 1.3em;
+				line-height: 1.5em;
+				padding-bottom: 20px;
+				font-weight: normal;
+			}
+				.text-center .intersitial p  {
+					padding-right: 100px;
+					padding-left: 40px;
+				}
 
 
-			/* col 5 and 6 */
-
-					.col5 p, .col6 p{
-						padding-right: 4%;
-					}
-
-					.col5 .text-centered, .col4 .text-centered {
-						padding-left: 2%;
-						padding-right: 2%
-					}
-
-
-			/* col 3 and 4 */
-
-					.col4 p, .col3 p {
-						padding-right: 2%;
-					}
-
-					.col4 .text-centered, .col3 .text-centered {
-						padding-left: 1%;
-						padding-right: 1%
-					}
 
 	/*---------------------------------/
 	/* =SPECIAL-STYLES  */
@@ -565,57 +554,17 @@
 				font-size: 12px;
 				font-weight: bold;
 			}
-
-
-
 			.handwritten {
 				font-family: 'Shadows Into Light', cursive;
 				font-size: 1.2em;
 				margin-bottom: 1.6em;
 			}
-
-			.sub-point p {
-				font-size: .8em;
-				text-align: left;
-				margin-right: 20px;
-				margin-top: 20px;
-			}
-
-			.sub-point h3 {
-				text-align: left;
-			}
-
-
 			.hand-font {
 			  font-family: 'Gochi hand', Handlee, Roboto, serif;
 			  font-size: 1.2em;
 			  display: inline-block;
 			  font-weight: 400;
 			}
-
-			p.introduction{
-				font-size: 1.4em;
-				line-height: 1.8em;
-
-			}
-
-			.text-centered .introductions p{
-				padding-right: 8%;
-				padding-left: 20%;
-			}
-
-			p.interstitial{
-				font-size: 1.6em;
-				line-height: 2em;
-				padding: 0.3833em 5%;
-			}
-			
-			.text-smaller {
-				font-size: .5em;
-				text-transform: none;
-				line-height: 1em;
-			}
-
 			.caption-text {
 				font-size: 30px;
 				font-style: italic;
@@ -670,7 +619,10 @@
 					.eight5 {max-width:85%;}
 					.seven5 {max-width:75%;}
 					.six6 {max-width:66%;}
-					.half {max-width:50%;}
+					.half {
+						max-width:50%;
+						margin-left: 25%;
+						margin-right: 25%;}
 					.third {max-width:33%;}
 					.quarter {max-width:25%;}
 
@@ -765,6 +717,12 @@
 		.carousel-control{
 
     bottom: 20px;
+}
+
+.hands {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: -200px;
 }
 /*********************************************************************************/
 /* =GENERAL-STYLES                                                                         */
