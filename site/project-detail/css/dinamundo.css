@@ -1,0 +1,59 @@
+body {
+	color: #8c8c8c;
+	font: 16px/28px "Open Sans","Helvetica Neue",sans-serif;
+text-align: center;
+height: 100%;
+background: #fff;
+}
+
+
+h1 {
+font: 700 30px/30px "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #383838;
+text-transform: uppercase;
+}
+
+
+
+
+.hero {
+	background: #eff2f5 url(../img/dinamundo/main.png) 50% 50px no-repeat;
+	position: relative;
+	background: #eff2f5;
+	padding: 101px 0 60px;
+	min-height: 800px;
+}
+
+.hero h1 {
+	background: 0;
+	font-size: 46px;
+	line-height: 46px;
+	font: 400 46px/46px "Open Sans","Helvetica Neue",sans-serif;
+	text-transform: none;
+}
+
+.hero h1+h2 {
+	font-size: 31px;
+	line-height: 31px;
+	font-weight: 300;
+	color: #a6a6a6;
+}
+
+.hero h1, .hero h2, .hero .upperquad, .hero img {
+	position: relative;
+	z-index: 1;
+}
+
+
+.detail {
+border-top: 1px solid #d8dcdf;
+color: #a1a2a3;
+x-color: #848484;
+}
+.hero h1, .hero h2, .hero .upperquad, .hero img {
+position: relative;
+z-index: 1;
+}
+.box h2 {
+color: #777;
+}
