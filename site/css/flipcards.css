@@ -1,0 +1,222 @@
+	.bg-num {
+		opacity: .3;
+		font-size: .7em;
+		font-style: italic;
+		text-align: center;
+		line-height: 10px;
+		padding-top: 10px;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 10px;
+		right: 25px;
+	}
+
+	.dark .bg-num {
+		color: rgba(255, 255, 255,.5);
+		border: 1px solid rgba(255, 255, 255,.5);
+	}
+
+
+	.background .bg-num{
+		color: rgba(0, 0, 0,.4);
+		border: 1px solid rgba(0, 0, 0,.4);
+	}
+	.green .bg-num, .text .bg-num{
+		color: rgba(0, 0, 0,.6);
+		border: 1px solid rgba(0, 0, 0,.6);
+	}
+
+	.modal-close-overlay {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+	.info-link {
+		padding: 10px 20px; 
+		font-size: .6em;
+		background-color: #20C3C4;
+		color: #fff;
+		text-align: center;
+		border-radius: 3px;
+		margin: 20px auto;
+		font-weight: 400;
+		letter-spacing: .5px;
+	}
+
+/*******************************************************************************************************/
+/* =flipcard                                                                         */
+/*******************************************************************************************************/
+
+.flipcards {
+	padding-bottom: 400px;
+}
+
+	.card-container {
+		-webkit-perspective: 800px;
+		-moz-perspective: 800px;
+		-o-perspective: 800px;
+		perspective: 800px;
+		padding-bottom: 100px;
+	}
+
+				.card-container:hover .card, 
+				.card-container.hover .card {
+					-webkit-transform: rotateY( 180deg );
+					-moz-transform: rotateY( 180deg );
+					-o-transform: rotateY( 180deg );
+					transform: rotateY( 180deg );
+					background: none repeat scroll 0 0 #FFFFFF;
+				}
+				.card-container.static:hover .card, 
+				.card-container.static.hover .card {
+					-webkit-transform: none;
+					-moz-transform: none;
+					-o-transform: none;
+					transform: none;
+				}
+				.card {
+					-webkit-transition: -webkit-transform .9s;
+					-moz-transition: -moz-transform .9s;
+					-o-transition: -o-transform .9s;
+					transition: transform .9s;
+					-webkit-transform-style: preserve-3d;
+					-moz-transform-style: preserve-3d;
+					-o-transform-style: preserve-3d;
+					transform-style: preserve-3d;
+					position: relative;
+				    border-radius: 4px;
+				    color: #444444;			
+				}
+				.front, .back {
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-o-backface-visibility: hidden;
+					backface-visibility: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+					box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.14);
+					background-color: #fff;
+					min-width: 100%;
+					min-height: 400px;	
+					background-color: #fff;
+				}
+				.front {
+					z-index: 2;
+				}
+				.back {
+					-webkit-transform: rotateY( 180deg );
+					-moz-transform: rotateY( 180deg );
+					-o-transform: rotateY( 180deg );
+					transform: rotateY( 180deg );
+					z-index: 3;
+				}
+	
+	.card .content {
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.header {		
+		text-align: center;	
+		height: 300px;	
+	}
+	.back .header {
+		padding: 40px 20px;
+	}
+			.header .cover {	
+				height: 100%;
+				border-bottom: 1px solid #eee;
+				margin-bottom: 20px;
+				padding: 0;		
+			}
+					.header .cover img{
+						max-height: 100%;
+						width: 100%;
+						overflow: hidden;
+						border-radius: 4px 4px 0 0;
+					}
+
+			.header h3 {
+				font-weight: 700;
+				font-size: 22px;
+				color: #3E3E3F;
+				text-transform: uppercase;
+			}
+
+			.header p {
+				color: #869096;
+			    font-size: 16px;
+			    line-height: 30px;
+			    font-weight: 300;
+			    margin-bottom: 15px;
+			}
+
+	.main {
+		height: 80px;	
+		padding: 8px 30px;	
+	}
+
+			
+			.front .main h3 {
+				font-weight: 700;
+				font-size: 18px;
+				color: #3E3E3F;
+				margin-top: 15px;
+
+			}
+			.front .main p {
+				font-style: italic;
+				color: rgba(0,0,0,.4);
+			    font-size: 14px;
+			    font-weight: 300;
+			    margin-top: -15px;
+			}
+			.main .btn {
+				width: 100%;
+			}
+
+			.main a.btn {
+				text-decoration: none;
+			}
+
+
+	.footer {    
+	    color: rgba(0,0,0,.07);
+	    padding: 10px;
+	    text-align: center;
+	    border-radius: 4px 4px 0 0;
+	    height: 20px;
+	}
+
+
+
+
+
+
+
+	/*       Fix bug for IE      */
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	    .front, .back{
+	        -ms-backface-visibility: visible;    
+	        backface-visibility: visible;
+	    }
+	    
+	    .back {
+	        visibility: hidden;
+	        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+	    }
+	    .front{
+	        z-index: 4;
+	    }
+	    .card-container:hover .back{
+	        z-index: 5;
+	        visibility: visible;
+	    }
+	}

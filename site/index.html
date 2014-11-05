@@ -1,993 +1,497 @@
-<!doctype html>
 
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AB Portfolio</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/flexslider.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/animate.css"> 
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" href="css/colio.css">
-  <link rel="stylesheet" href="css/jquery.maximage.css">
-  <link rel="stylesheet" href="css/circle_slider.css">
-
-
-  <!-- Main Style -->
-  <link rel="stylesheet" href="css/style.css?v=1.0">
-
-  <!-- FontAwesome -->
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
-
-
-
-  <script src="js/modernizr-2.6.2.min.js"></script>
-
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
-
-    
-
-</head>
-
-<body class="home">
-	<div id="preloader">
-	  <div id="status">&nbsp;</div>
-	</div> <!-- END #preloader -->
-
-
-
-	
-
-<!-- HOME -->
-	<div class="menu_target" id="index-slider">
-		<a href="#" id="arrow_left"><img src="img/arrow_left.png" alt="Slide Left" /></a>
-		<a href="#" id="arrow_right"><img src="img/arrow_right.png" alt="Slide Right" /></a>
-		<div id="holder">
-			<div id="maximage">
-				<div>
-					<img src="img/slideOne.jpg" alt="" />
-				</div>
-				<div>
-					<img src="img/slideTwo.jpg" alt="" />
-				</div>
-				<div>
-					<img src="img/slideThree.jpg" alt="" />
-				</div>
-				<div>
-					<img src="img/slideFour.jpg" alt="" />
-				</div>
-				<div>
-					<img src="img/slideFive.jpg" alt="" />
-				</div>
-			</div> <!-- END #maximage -->
-		</div> <!-- END #holder -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>undefined</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="pivot/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="pivot/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="pivot/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="pivot/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="pivot/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="pivot/css/theme-aquatica.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="pivot/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    	<div class="loader">
+    		<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+    	</div>
+				
+		<div class="nav-container">
+		</div>
 		
-
-		<div class="container">
-			<header class="header">
-				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="container">
-						<div class="logo pull-left"></div>
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div> <!-- .navbar-header -->
-						<div class="collapse navbar-collapse nav-main-menu" id="collapse">
-							<ul class="cl-effect-3 nav nav-justified" id="cl-effect-3">
-								<li id="current_menu_item"><a href="#index-slider">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#featured">Featured</a></li>							
-								<li><a href="#works">Works</a></li>
-								<li><a href="#times">Experience</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul> <!-- END .cl-effect-3, .nav, .nav-justified -->
-						</div> <!-- END .collapse, .navbar-collapse -->
-					</div> <!-- END .container -->
-				</nav> <!-- END .navbar, .navbar-default, navbar-fiexed-top -->
-			</header> <!-- END .header -->
-			
-			<div class="intro">
-				<div class="intro-inner">
-					<h1>Alexa Burakoff</h1>
-					<p>Product Design Strategist and User Experience Professional</p>
-					<a href="#featured" class="btn btn-primary btn-lg">My Work</a>
-				</div> <!-- END .intro-inner -->
-			</div> <!-- END .intro -->
-			
-		</div> <!-- END .container -->
-	</div> <!-- END #home -->
-
-<!-- ABOUT -->	
-	<div class="menu_target wrapper wrapper-style2" id="about">
-		<div class="container">
-			<div class="row row-sm text-centered">
-				<div class="col-sm-12 triggerAnimation animated" data-animate="fadeInDown">
-					<h2>Hi, I'm Alexa</h2>
-					<p>I design engaging user experiences and go-to-market strategies for startups with big ideas. The word design means a lot to me - it infiltrates everything from the product specifications to the implementation strategy and the process that surrounds it. I am passionate about the experience of users and helping the team achieve their best work. This belief has led me to become proficient in all facets of product development including: </p>
-				</div> <!-- END .col-sm-10, .col-centered -->
-			</div> <!-- END .row --> 
-
-			<div class="row row-sm text-centered">
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<i class="fa fa-book icon-fancy icon-md"></i>
-					<h5>Research</h5>
-					<p>Understand the business and competitive landscape. Learn how people interact with the brand and product. Identify strategic opportunities and design goals.</p>
-				</div> <!-- END triggerAnimation, .animated, .col-sm-4 -->
+		<div class="main-container">
+			<header class="page-header resume-header">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="pivot/img/hero21.jpg">
+				</div>
 				
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<i class="fa fa-cube icon-fancy icon-md"></i>
-					<h5>Design</h5>
-					<p>Define and design the product. Combine smart interaction, interface, and visual design into a compelling product that resonates with the target audience.</p>
-				</div> <!-- END triggerAnimation, .animated, .col-sm-4 -->
-				
-				<div class="col-sm-4 triggerAnimation animated" data-animate="fadeInUp">
-					<span class="fa fa-heart icon-fancy icon-md"></span>
-					<h5>Refine</h5>
-					<p>Test concepts, designs, and prototypes with real users. Combine learnings with gut instinct and experience. Iterate and refine in pursuit of perfection.</p>
-				</div> <!-- END .triggerAnimation, .animated, .col-sm-4 -->
-			</div> <!-- END .row --> 
-		</div> <!-- END .container --> 
-	</div> <!-- END, .menu_target -->	
-
-<!-- FEATURED PROJECT -->
-    <div class="menu_target wrapper" id="featured">
-    	<div class="container">
-	    	<h2 class="section-title">Featured Projects</h2>
-
-		<!--parkplease project-->
-	        <div class="row border-row row-lg" >
-	            <div class="col-sm-4 text-left triggerAnimation animated" data-animate="fadeInLeft">
-	            	<h3> ParkPlease </h3>
-	                <p>In the summer of 2012, I co-founded ParkPlease, an online service allowing anyone to rent a space parking space to those who need to park. I led the product strategy, design and execution through a successful launch for the Outside Lands Music festival. Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking.</p>
-					<a href="parkplease.html" class="btn btn-primary btn-lg details-btn">View Details</a>
-	            </div>
-	            <div class="col-sm-2" >
-	            	<div class="space"></div>
-	            </div>
-	            <div class="col-sm-6 triggerAnimation animated" data-animate="fadeInLeft">
-	                <img class="img-responsive" src="img/featured/pp_osl.png" alt="ParkPlease OSL">
-	            </div>	    	           
-	        </div>
-
-
-
-
-
-		<!--dinamundo project-->
-	        <div class="row row-lg">
-	            <div class="col-sm-6 triggerAnimation animated" data-animate="fadeInRight">
-	                <img class="img-responsive" src="img/dinamundo_main.png" alt="Dinamundo">
-	            </div>
-	            <div class="col-sm-2" ></div>
-	            <div class="col-sm-4 triggerAnimation animated" data-animate="fadeInRight">
-	            	<h3> Dinamundo </h3>
-	                <p>In the summer of 2012, I co-founded ParkPlease, an online service allowing anyone to rent a space parking space to those who need to park. I led the product strategy, design and execution through a successful launch for the Outside Lands Music festival. Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking.</p>
-					<a href="project-detail/dinamundo.html" class="btn btn-primary btn-lg details-btn">View Details</a>
-	            </div>
-	        </div>
-
-
-
-	    </div> <!--end container-->
-    </div>	
-
-<!-- WORKS -->
-	<div class="menu_target wrapper wrapper-style2" id="works">
-		<div class="container">
-			<h2 class="section-title">Other Works</h2>
-			<section class="row triggerAnimation animated" data-animate="fadeInDown">
-				<div class="col-md-12 col-centered">
-					<div class="triggerAnimation animated flexslider" data-animate="fadeInUp">
-						<ul class="cs-style-3 slides">
-							<li>
-								<ul class="grid">
-
-
-
-
-
-									<li data-content="#16fours_account">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/16fours_account.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>16Fours Account</h3>  
-														<span>Details</span>
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-
-									<li data-content="#pp_admin">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_admin.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease Admin</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-									
-
-
-
-
-
-									<li data-content="#pp_hiw">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease HIW</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-									<li data-content="#pp_hiw1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/PP_spotminder.PNG" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>ParkPlease Spot Minder</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/DM.PNG" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Dinamundo</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Quinton Elwood Video</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/pp_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>Quinton Elwood Website</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-
-
-
-
-
-									<li data-content="#folio1">
-										<div class="item col-lg-4 col-sm-4 col-xs-12">
-											<div class="item-wrap">
-												<figure class="colio-link">
-													<img src="img/works/PP_hiw.png" class="img-responsive" alt="" />
-													<figcaption>
-														<h3>A Creative Studio</h3>  
-														<span>Details</span>  
-													</figcaption>
-												</figure>
-											</div> <!-- END .item-wrap -->
-										</div> <!-- END .col-lg-4, .col-sm-4, .col-xs-12 -->
-									</li>
-									
-								</ul>
-							</li>
-						</ul> <!-- END .slides -->
-					</div> <!-- END .flexslider, triggerAnimation, .animated -->
-
-
-
-
-
-
-
-
-					
-						<div id="folio1" class="colio-content">
-							
-							<div class="portfolio-title">
-								<h4>Folio 1</h4>
-								<span>Design, Development</span>
-							</div> <!-- END .portfolio-title -->
-							<div class="portfolio-desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div> <!-- .portfolio-desc -->
-							
-							<div class="portfolio-slider">
-								<ul class="slides">
-									<li><img src="img/works/pp_admin/screens.png" alt="" /></li>
-									<li><img src="img/work2-large.jpg" alt="" /></li>
-									<li><img src="img/work3-large.jpg" alt="" /></li>
-									<li><img src="img/work4-large.jpg" alt="" /></li>
-								</ul> <!-- END .slides -->
-							</div> <!-- END .portfolio-slider -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Challenge</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Solution</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Result</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-						</div> <!-- END #folio1, .colio-content -->
-
-
-
-
-
-
-
-
-
-						<div id="pp_admin" class="colio-content">
-							
-							<div class="portfolio-title">
-								<h4>ParkPlease Admin</h4>
-								<span>Product Planning, Interaction + Visual Design</span>
-							</div> <!-- END .portfolio-title -->
-							<div class="portfolio-desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div> <!-- .portfolio-desc -->
-
-							
-							<div class="portfolio-slider">
-								<ul class="slides">
-									<li><img src="img/works/pp_admin/1.png" alt="" /></li>
-									<li><img src="img/works/pp_admin/2.png" alt="" /></li>
-								</ul> <!-- END .slides -->
-							</div> <!-- END .portfolio-slider -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Challenge</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Solution</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Result</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-						</div> <!-- END #folio1, .colio-content -->
-
-
-
-
-
-
-
-
-
-						<div id="pp_hiw1" class="colio-content">
-							
-							<div class="portfolio-title">
-								<h4>ParkPlease How It Works</h4>
-								<span>Product Planning, Interaction + Visual Design</span>
-							</div> <!-- END .portfolio-title -->
-							<div class="portfolio-desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div> <!-- .portfolio-desc -->
-
-							
-							<div class="portfolio-slider">
-								<ul class="slides">
-									<li><img src="img/works/pp_hiw1/1.png" alt="" /></li>
-									<li><img src="img/works/pp_hiw1/2.png" alt="" /></li>
-									<li><img src="img/works/pp_hiw1/3.png" alt="" /></li>
-									<li><img src="img/works/pp_hiw1/4.png" alt="" /></li>
-								</ul> <!-- END .slides -->
-							</div> <!-- END .portfolio-slider -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Challenge</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Solution</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Result</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-						</div> <!-- END #folio1, .colio-content -->
-
-
-
-
-
-
-
-
-						<div id="pp_hiw" class="colio-content">
-							
-							<div class="portfolio-title">
-								<h4>ParkPlease How It Works</h4>
-								<span>Product Planning, Interaction + Visual Design</span>
-							</div> <!-- END .portfolio-title -->
-							<div class="portfolio-desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div> <!-- .portfolio-desc -->
-							
-							<div class="portfolio-slider">
-								<ul class="slides">
-									<li><img src="img/works/pp_hiw/1.png" alt="" /></li>
-									<li><img src="img/works/pp_hiw/2.png" alt="" /></li>
-									<li><img src="img/works/pp_hiw/3.png" alt="" /></li>
-								</ul> <!-- END .slides -->
-							</div> <!-- END .portfolio-slider -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Challenge</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Solution</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Result</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-						</div> <!-- END #folio1, .colio-content -->
-
-
-
-
-
-
-
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="text-white space-bottom-medium">Samuel Thompson</h1>
+							<span>Web &amp; Interaction Designer</span>
+							<ul class="social-icons">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_dribbble"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
 			
-						<div id="16fours_account" class="colio-content">
-							
-							<div class="portfolio-title">
-								<h4>16Fours Account</h4>
-								<span>Interaction Design + Visual Design</span>
-							</div> <!-- END .portfolio-title -->
-							<div class="portfolio-desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div> <!-- .portfolio-desc -->
-							
-							<div class="portfolio-slider">
-								<ul class="slides">
-									<li><img src="img/works/16fours_account/1.png" alt="" /></li>
-									<li><img src="img/works/16fours_account/2.png" alt="" /></li>
-									<li><img src="img/works/16fours_account/3.png" alt="" /></li>
-									<li><img src="img/works/16fours_account/4.png" alt="" /></li>
-
-								</ul> <!-- END .slides -->
-							</div> <!-- END .portfolio-slider -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Challenge</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Solution</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-							<article class="col-md-4 col-sm-4">
-								<h5>The Result</h5>
-								<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate 
-								the look and feel of finished, typeset text. He who searches for meaning here will 
-								be sorely disappointed.</p>
-							</article> <!-- .col-md-4, .col-sm-4 -->
-							
-						</div> <!-- END #folio1, .colio-content -->
-						
-
-
-
-
-
-
-
-
-						
-					
-				</div> <!-- END .col-md-12, .col-centered -->
-			</section> <!-- END .row --> 
-		</div> <!-- END .container -->
-	</div> <!-- END #works, .menu_target -->
-	
-<!-- TIMELINE -->
-	<div class="menu_target wrapper wrapper-style2" id="times" >
-		<div class="container" >
-			<h2 class="section-title">Experience</h2>
-			<div class="row" >
-				<div class="col-md-12" >
-					<ul class="timeline seven">
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
-							<div class="timeline-time">
-								<strong>Oct 3</strong>4:53 PM
+			<section class="duplicatable-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature">
+								<h5>Amazingly Simple Use</h5>
+								<p>
+									Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus
+								</p>
 							</div>
-							<div class="timeline-icon">
-								<div class="bg-primary">
-									<i class="fa fa-pencil"></i>
+						</div>
+					
+						<div class="col-sm-4">
+							<div class="feature">
+								<h5>Built on Bootstrap 3</h5>
+								<p>
+									Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus
+								</p>
+							</div>
+						</div>
+					
+						<div class="col-sm-4">
+							<div class="feature">
+								<h5>Rock Solid Flexibility</h5>
+								<p>
+									Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="inline-image-right">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 align-vertical no-align-mobile">
+							<h1>Advertise product features simply and elegantly with Pivot</h1>
+							<h6>Clean, Simple &amp; Impactful</h6>
+							<p class="lead">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,.
+							</p>
+						</div>
+						
+						<div class="col-sm-6 text-center">
+							<img alt="Product Image" class="product-image" src="pivot/img/devices.png">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="expanding-list">
+			
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="pivot/img/hero22.jpg">
+				</div>
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1>Education &amp; Employment</h1>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+							<ul class="expanding-ul">
+								<li>
+									<div class="title">
+										<i class="icon icon-pencil"></i>
+										<span><strong>Bachelor of Design &amp; Communication</strong> RMIT University</span>
+									</div>
+									
+									<div class="text-content">
+										<p>
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+										</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="title">
+										<i class="icon icon-briefcase"></i>
+										<span><strong>Junior Interaction Designer</strong> Corp &amp; Co.</span>
+									</div>
+									
+									<div class="text-content">
+										<p>
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+										</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="title">
+										<i class="icon icon-briefcase"></i>
+										<span><strong>User Engagement Facilitator</strong> Leehan &amp; Tax</span>
+									</div>
+									
+									<div class="text-content">
+										<p>
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+										</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="title">
+										<i class="icon icon-trophy"></i>
+										<span><strong>PhD. Contemporary Media</strong> University of Melbourne</span>
+									</div>
+									
+									<div class="text-content">
+										<p>
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="no-pad clearfix">
+				
+				<div class="col-md-4 col-sm-6 no-pad">
+					<div class="feature-box bg-primary">
+						<h1 class="text-white">Here is a large, attention seeking feature box</h1>
+						<p class="text-white">
+							This will go to ParkPlease.html et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+						</p>
+						<a href="parkplease.html" class="btn btn-primary btn-white">Tell Me More</a>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 no-pad">
+					<div class="feature-box bg-secondary-1">
+						<h1 class="text-white">Here is a large, attention seeking feature box</h1>
+						<p class="text-white">
+							This will go to the original version I was working on of ParkPlease. aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+						</p>
+						<a href="site.html" class="btn btn-primary btn-white">Tell Me More</a>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 no-pad">
+					<div class="feature-box bg-muted">
+						<h1>Here is a large, attention seeking feature box</h1>
+						<p>
+							Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+						</p>
+						<a href="#" class="btn btn-primary">Tell Me More</a>
+					</div>
+				</div>
+				
+			</section>
+			
+			<section class="pure-text-centered">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							<span class="sub alt-font">Simple Text Section</span>
+							<h1><strong>This heading requires a little emphasis</strong></h1>
+							<p class="lead">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+							</p>
+						</div>
+					</div>
+		
+				</div>
+			</section>
+			
+			<section class="strip bg-secondary-1">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="col-sm-6 col-xs-12 pull-left">
+							<h3 class="text-white"><strong>Join with us.</strong> It will only take a minute</h3>
+						</div>
+						
+						<div class="col-sm-4 col-xs-12 pull-right text-right">
+							<a href="#" class="btn btn-primary btn-white">Join Today</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="side-image clearfix">
+				<div class="image-container col-md-5 col-sm-4 pull-left">
+					<div class="background-image-holder">
+						<img class="background-image" alt="Background Image" src="pivot/img/side1.jpg">
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5 content clearfix">
+							<h1>Pivot includes many element<br>variations to showcase your content.</h1>
+							<p class="lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+							</p>
+						
+							<div class="row">
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-genius"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Clear Documentation</h6>
+											<p>
+												Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. 
+											</p>
+										</div>
+									</div>
+								</div>
+						
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-flag"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Support Forum Access</h6>
+											<p>
+												Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. 
+											</p>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="box-content">
-								<h3> This is a title for this timeline post </h3>
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+						
+							<div class="row">
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-mobile"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Optimized For Mobile</h6>
+											<p>
+												Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. 
+											</p>
+										</div>
+									</div>
+								</div>
+						
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon-clipboard"></i>
+										</div>
+										<div class="feature-text">
+											<h6>Fully Featured &amp; Flexible</h6>
+											<p>
+												Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. 
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
-							<div class="timeline-time">
-							  <strong>Oct 5</strong>6:14 PM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-dark">
-							    <i class="fa fa-quote-right"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <blockquote>
-							    <p>
-							      Lorem ipsum velit ullamco anim pariatur proident eu deserunt laborum. Lorem ipsum ad in nostrud adipisicing cupidatat anim officia ad id cupidatat veniam quis elit ullamco.
-							    </p>
-							    <small>John Smith</small></blockquote>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
-							<div class="timeline-time">
-							  <strong>Oct 6</strong>9:00 AM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-bright">
-							    <i class="fa fa-camera"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3> This is an image posted on my timeline </h3>
-							  <img src="img/img-coast.jpg" class="img-responsive" />
-							  <p>
-							    Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-							  </p>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
-							<div class="timeline-time">
-							  <strong>Oct 8</strong>2:01 PM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-warning">
-							    <i class="fa fa-pencil"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3>
-							    This is a title for this timeline post
-							  </h3>
-							  <p>
-							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-							  </p>
-							  <p>
-							    Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
-							  </p>
-							  <p>
-							    Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante.
-							  </p>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
-							<div class="timeline-time">
-							  <strong>Oct 11</strong>10:33 AM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-primary">
-							    <i class="fa fa-camera"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3>
-							    This is a title for this timeline post
-							  </h3>
-							  <p>
-							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-							  </p>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
-							<div class="timeline-time">
-							  <strong>Oct 18</strong>8:45 AM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-dark">
-							    <i class="fa fa-pencil"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3>
-							    Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing
-							  </h3>
-							  <p>
-							    Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante.
-							  </p>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInLeft">
-							<div class="timeline-time">
-							  <strong>Oct 21</strong>9:55 AM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-primary">
-							    <i class="fa fa-clock-o"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3>
-							    This is a title for this timeline post
-							  </h3>
-							  <p>
-							    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-							  </p>
-							</div>
-						</li>
-						<li class="timeline-post active triggerAnimation animated" data-animate="fadeInRight">
-							<div class="timeline-time">
-							  <strong>Oct 6</strong>9:00 AM
-							</div>
-							<div class="timeline-icon">
-							  <div class="bg-warning">
-							    <i class="fa fa-coffee"></i>
-							  </div>
-							</div>
-							<div class="box-content">
-							  <h3>
-							    This is an image posted on my timeline
-							  </h3>
-							  <img src="img/img-coast.jpg" class="img-responsive" />
-							  <p>
-							    Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-							  </p>
-							</div>
-						</li>
-					</ul>
+					
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>  <!-- END CONTAINER -->
-	</div> <!-- END TMELINE SECTION -->
-
-<!-- STATS -->
-	<div class="wrapper bg-primary" id="stats">
-		<div class="container">
-			<h2 class="section-title text-white">Stats</h2>
-
-
-			<div class="row text-centered">
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-users icon-lg text-white"></i>
-					<p><strong class="timer" data-to="253" data-speed="1000">0</strong></p>
-					<span class="text-white">Clients</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-send icon-lg text-white"></i>
-					<p><strong class="timer" data-to="883" data-speed="1500">0</strong></p>
-					<span class="text-white">Projects</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-laptop icon-lg text-white"></i>
-					<p><strong class="timer" data-to="6452" data-speed="2000">0</strong></p>
-					<span class="text-white">Lines of Code</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-				<div class="triggerAnimation animated col-md-3 col-sm-6 col-xs-6" data-animate="fadeInUp">
-					<i class="fa fa-moon-o icon-lg text-white"></i>
-					<p><strong class="timer" data-to="97" data-speed="2500">0</strong></p>
-					<span class="text-white">Sleepless Nights</span>
-				</div> <!-- END .triggerAnimation, .animated, .col-md-3, .col-sm-6, .col-xs-6 -->
-
-			</div> <!-- END .row -->
-		</div> <!-- END .container -->
-	</div> <!-- END #stats -->
-
-<!-- QUOTES -->
-	<div class="wrapper">
-		<div class="container" id="quotes">
-			<div class="row">
-				<div class="col-lg-12 quotes">
-					<ul class="slides text-centered">
-
-						<li>
-							<div class="col-md-offset-1 col-md-10 col-sm-10 col-xs-9 focal-text">
-								<i class="fa fa-quote-right icon-sm"></i>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-								<footer>
-									<cite>Norah Maryalice</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-
-
-						<li>
-							<div class="col-md-offset-1 col-md-10  col-sm-10 col-xs-9 focal-text">
-								<p><i class="fa fa-quote-right icon-sm"></i></p>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<footer>
-									<cite>Barney Donny</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-
-
-						<li>
-							<div class="col-md-offset-1 col-md-10  col-sm-10 col-xs-9 focal-text">
-								<p><i class="fa fa-quote-right icon-sm"></i></p>	
-								<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								<footer>
-									<cite>Riva Parthenia</cite>
-								</footer>
-							</div> <!-- END .col-md-10, .col-sm-10, .col-xs-9, .col-centered -->
-						</li>
-					</ul> <!-- END .slides -->
-				</div> <!-- END .quotes -->
-			</div> <!-- END .row -->
-		</div> <!-- END .container, #quotes -->
-	</div>
-
-<!-- CONTACT -->
-	<div class="wrapper bg-darkest menu_target" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-white">
-				
-					<h2 class="section-title text-white">Get in Touch!</h2>
-
+			</section>
+			
+			<section class="bg-primary">
+				<div class="container">
 					<div class="row">
-
-						<div class="triggerAnimation animated contact-wrap col-md-7 col-xs-12" data-animate="fadeInLeft">
-							<form action="#" id="contact-form">
-								<div id="success"></div>
-								<ul>
-									<li class="input-name">
-										<input type="text" id="name" class="required" placeholder="Name">
-									</li> <!-- END input-name -->
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="testimonials-slider text-center">
+								<ul class="slides">
+									<li>
+										<p class="text-white lead">Pivot is hands down the most flexible and enjoyable HTML template I've ever used. I was a startup framework die-hard but now my eyes have been opened to the sheer power of Variant page builder, I won't be going back!</p>
+										<span class="author text-white">Louise Duke - Mother Goose</span>
+									</li>
 									
-									<li class="input-email">
-										<input type="text" id="email" class="email" placeholder="Email Address">
-									</li> <!-- END input-name -->
+									<li>
+										<p class="text-white lead">I was getting fed up with the hassle of setting up bloated WordPress themes. Luckily I've now found Pivot with Variant. Building pages in real-time without a CMS gives me all the power and flexibility I could want.</p>
+										<span class="author text-white">Elizabeth Atkinson - Shapewear Australia</span>
+									</li>
 									
-									<li class="input-subject">
-										<input type="text" id="subject" placeholder="Subject">
-									</li> <!-- END input-name -->
-									
-									<li class="input-subject">
-										<textarea rows="7" cols="50" id="message" class="required" placeholder="Message"></textarea>
-									</li> <!-- END input-name -->
-								</ul> <!-- END #contact -->
-								<button type="submit" class="btn btn-primary btn-lg pull-right">Send Message</button>
-							</form> 
-						</div> <!-- END .col-md-7 -->
+									<li>
+										<p class="text-white lead">The plethora of content blocks available in Pivot has made it my go-to template of choice. I've already used it for a number of clients - all of which have been thrilled with the outcome. Well done Medium Rare!</p>
+										<span class="author text-white">Toby Whittaker - Design Dojo</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="no-pad-bottom no-pad-top projects-gallery">
+				
+				<div class="projects-wrapper clearfix">
+					
+					<div class="projects-container">
 						
-						<div class="triggerAnimation animated col-md-5 col-xs-12" data-animate="fadeInRight">
-							<p><i class="fa fa-map-marker"></i> 441 14th St San Francisco, CA 94103</p>
-							<p><i class="fa fa-phone"></i> 617.584.4479/p>
-							<p><i class="fa fa-envelope"></i> alexaburakoff@gmail.com</p>
-						</div> <!-- END .col-md-5 -->						
+						<div class="col-md-4 col-sm-6 no-pad project print image-holder">
+							<div class="background-image-holder">
+								<img class="background-image" alt="Background Image" src="pivot/img/project1.jpg">
+							</div>
+							<div class="hover-state">
+								<div class="align-vertical">
+									<h3 class="text-white"><strong>Identity</strong> Mockup</h3>
+									<p class="text-white">
+										Showcase your new identity with<br>this sleek mockup.
+									</p>
+									<a href="project-single.html" class="btn btn-primary btn-white">See Project</a>
+								</div>
+							</div>
+						</div>
 						
-					</div> <!-- END .row -->	
-				</div> <!-- END .col-md-10 -->
-			</div> <!-- END .row -->
-		</div> <!-- END .container -->
-	</div> <!-- END .contact-bg -->	
-
-<!-- FOOTER -->
-	<div class="wrapper" id="footer">
-		<div class="container">
-			<div class="row text-centered">
-				<ul class="triggerAnimation animated social text-white" data-animate="pulse">
-					<li class="remove-left">
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-					</li>
-					<!-- 					
-					<li>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-					</li>
-					-->
-					<li>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-					</li>
-					<!-- 					
-					<li>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-					</li> 
-					-->
-				</ul> <!-- END .triggerAnimation, .animated, .social -->
-				<footer class="copyright">
-					<p>&copy; Alexa Burakoff 2014. All rights reserved.</p>
-				</footer> <!-- END .copyright -->
-			</div> <!-- END .row -->
-		</div> <!-- END .container -->
-	</div> <!-- END #footer -->
-
-<!-- SCRIPTS --> 
-	<script src="js/jquery-1.10.1.min.js"></script>
-	<script src="js/jquery.contactForm.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/toucheffects.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/preloader.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<script src="js/jquery.colio.min.js"></script>
-	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
-	<script src="js/jquery.localScroll.min.js"></script>
-	<script src="js/jquery.cycle.all.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.maximage.min.js"></script>
-	<script>
-		$(function(){
-		// Trigger maximage
-		$('#maximage').maximage({
-			cycleOptions: {
-				prev: '#arrow_left',
-				next: '#arrow_right'
-			},
-			fillElement: '#holder',
-			backgroundSize: 'contain'
-		});
-	});
-	</script>
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-</body>
+						<div class="col-md-4 col-sm-6 no-pad project branding image-holder">
+							<div class="background-image-holder">
+								<img class="background-image" alt="Background Image" src="pivot/img/project4.jpg">
+							</div>
+							<div class="hover-state">
+								<div class="align-vertical">
+									<h3 class="text-white"><strong>Aurora</strong> Icon Kit</h3>
+									<p class="text-white">
+										A fresh and circular take on Apple's<br>iconic home screen.
+									</p>
+									<a href="project-single.html" class="btn btn-primary btn-white">See Project</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-sm-6 no-pad project print image-holder">
+							<div class="background-image-holder">
+								<img class="background-image" alt="Background Image" src="pivot/img/project6.jpg">
+							</div>
+							<div class="hover-state">
+								<div class="align-vertical">
+									<h3 class="text-white"><strong>Sketchbook</strong> Logos</h3>
+									<p class="text-white">
+										Present your hand-drawn logos on this<br>realistic sketchbook mockup.
+									</p>
+									<a href="project-single.html" class="btn btn-primary btn-white">See Project</a>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					
+				</div>
+				
+			</section>
+		</div>
+		
+		<div class="footer-container">
+					
+			<footer class="social bg-secondary-1">
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1 class="text-white">Get In Touch</h1>
+							<a href="#" class="text-white"><strong>hello@mrare.co</strong></a><br>
+							<ul class="social-icons">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_dribbble"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_tumblr"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										<i class="icon social_pinterest"></i>
+									</a>
+								</li>
+							</ul><br>
+							<span class="sub">© Copright 2014 <a href="#">Medium Rare</a> - All Rights Reserved</span>
+						</div>
+					</div>
+				</div>
+			
+			</footer>
+		</div>
+				
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="pivot/js/jquery.min.js"></script>
+        <script src="pivot/js/jquery.plugin.min.js"></script>
+        <script src="pivot/js/bootstrap.min.js"></script>
+        <script src="pivot/js/jquery.flexslider-min.js"></script>
+        <script src="pivot/js/smooth-scroll.min.js"></script>
+        <script src="pivot/js/skrollr.min.js"></script>
+        <script src="pivot/js/spectragram.min.js"></script>
+        <script src="pivot/js/scrollReveal.min.js"></script>
+        <script src="pivot/js/isotope.min.js"></script>
+        <script src="pivot/js/twitterFetcher_v10_min.js"></script>
+        <script src="pivot/js/lightbox.min.js"></script>
+        <script src="pivot/js/jquery.countdown.min.js"></script>
+        <script src="pivot/js/scripts.js"></script>
+    </body>
 </html>
+				
