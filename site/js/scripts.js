@@ -1,623 +1,544 @@
-/*
- * Theme name: Dragonfly
- * Description: Additional scripts
- * Version: 1.5
- * Last update: September 6 2014
- * Author: Jiri Cermak
- * */
+$(document).ready(function(){
 
-$(document).ready(function() {
+	"use strict";
+	
+	// Nav Sticky
+	
+	$(window).scroll(function(){
+		if(window.scrollY > 500 && !$('.mobile-toggle').is(":visible")){
+			$('.top-bar').addClass('nav-sticky');
+		}else{
+			$('.top-bar').removeClass('nav-sticky');
+		}
+	});
+	
+	// Offscreen Nav
+	
+	$('.offscreen-toggle').click(function(){
+		$('.main-container').toggleClass('reveal-nav');
+		$('.offscreen-container').toggleClass('reveal-nav');
+		$('.offscreen-menu .container').toggleClass('reveal-nav');
+	});
+	
+	$('.main-container').click(function(){
+		if($(this).hasClass('reveal-nav')){
+			$('.main-container').toggleClass('reveal-nav');
+			$('.offscreen-container').toggleClass('reveal-nav');
+			$('.offscreen-menu .container').toggleClass('reveal-nav');
+		}
+	});
+	
+	// Detect logo dimensions and add correct class
+	
+	var logoImage = $('.top-bar .logo:first-of-type');
+	
+	var theImage = new Image();
+	theImage.src = logoImage.attr("src");
+	
+	var logoWidth = theImage.width;
+	var logoHeight = theImage.height;
+	var logoRatio = logoWidth / logoHeight;
+	
+	if(logoRatio > 2.8){
+		$('.top-bar .logo').addClass('logo-wide');
+	}
+	
+	if(logoRatio < 2){
+		$('.top-bar .logo').addClass('logo-square');
+	}
+	
+	// Smooth scroll
+	
+	$('.inner-link').smoothScroll({offset: -96, speed: 800});
+	
+	// Mobile Toggle
+	
+	$('.mobile-toggle').click(function(){
+		$('nav').toggleClass('open-nav');
+	});
+	
+	// Fullscreen nav toggle
+	
+	$('.fullscreen-nav-toggle').click(function(){
+		if(!$('.fullscreen-nav-container').hasClass('show-fullscreen-nav')){
+			$('.fullscreen-nav-container').addClass('show-fullscreen-nav');
+			setTimeout(function(){
+				$('.fullscreen-nav-container').addClass('fade-fullscreen-nav');
+			},100);
+			$(this).addClass('toggle-icon');
+		}else{
+			$(this).removeClass('toggle-icon');
+				$('.fullscreen-nav-container').removeClass('fade-fullscreen-nav');
+			setTimeout(function(){
+				
+				$('.fullscreen-nav-container').removeClass('show-fullscreen-nav');
+			},500);
+		}
+	});	
+	
+	$('.fullscreen-nav-container .menu li a').click(function(){
+		$('.fullscreen-nav-toggle').removeClass('toggle-icon');
+			$('.fullscreen-nav-container').removeClass('fade-fullscreen-nav');
+		setTimeout(function(){
+			$('.fullscreen-nav-container').removeClass('show-fullscreen-nav');
+		},500);
+	});
+	
+	// Margin first section for top bar
+	
+	if(!$('nav').hasClass('overlay-bar') && !$('nav').hasClass('contained-bar')){
+		$('.main-container').first().css('margin-top', $('nav').outerHeight());
+	}
+	
+	$(window).resize(function(){
+		if(!$('nav').hasClass('overlay-bar') && !$('nav').hasClass('contained-bar')){
+			$('.main-container').first().css('margin-top', $('nav').outerHeight());
+		}
+	});
+	
+	// Pad first section for overlay bar
+	
+	if($('nav').hasClass('overlay-bar') || $('nav').hasClass('contained-bar') ){
+		var currentPad = parseInt($('.main-container').find(':first-child').css('padding-top'));
+		var newPad = currentPad + $('nav').outerHeight() - 48;
+		if(currentPad > 0){
+			$('.main-container').children(':first').css('padding-top', newPad);
+		}else if($('.main-container').find(':first').hasClass('hero-slider')){
+			var height = parseInt($('.hero-slider .slides li:first-child').outerHeight());
+			var newHeight = height + $('nav').outerHeight();
+			$('.hero-slider .slides li').css('height', newHeight);
+		}
+	}
+	
+	
+	// Fullwidth Subnavs
+	
+	// Position Fullwidth Subnavs fullwidth correctly
 
-    /*
-     * ===================================
-     * Back To Top
-     * ===================================
-     * */
-
-    var offset = 220,
-        duration = 500;
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-            $('.back-to-top').fadeIn(duration);
-        } else {
-            $('.back-to-top').fadeOut(duration);
-        }
+    $('.subnav-fullwidth').each(function () {
+        $(this).css('width', $('.container').width());
+        var offset = $(this).closest('.has-dropdown').offset();
+        offset = offset.left;
+        var containerOffset = $(window).width() - $('.container').outerWidth();
+        containerOffset = containerOffset /2;
+        offset = offset - containerOffset - 15;
+        $(this).css('left', -offset);
     });
 
-    $('.back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, duration);
-        return false;
-    });
-
-
-    /*
-     * ===================================
-     * Smooth scroll - from href to id
-     * ===================================
-     * */
-
-    // Must add the class "scroll" to the link - <a href="#someID" class="scroll">
-    $('a.scroll').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-
-    /*
-     * ===================================
-     * Removing conflicts
-     * ===================================
-     * */
-
-    // example: when click on filter menu, it will be removed class of loading animation
-
-    $(".filter").on("click", function() {
-        $(".hover-content").removeClass("easeUp easePulse switchOnTv wow animated");
-    });
-
-
-
-    /*
-     * ===================================
-     * Sidebar
-     * ===================================
-     * */
-
-
-    /* close sidebar */
-    $("#sidebar-close").click(function() {
-        $(".sidebar-off").removeClass("sidebar-on");
-    });
-    $('html').click(function() {
-        $(".sidebar-off").removeClass("sidebar-on");
-    });
-
-    $(".sidebar-off").click(function(event) {
-        event.stopPropagation();
-    });
-
-    /* open sidebar */
-    $("#sidebar-btn").on("click", function(event) {
-        event.stopPropagation();
-        event.preventDefault();
-        $(".sidebar-off").toggleClass("sidebar-on");
-    });
-
-
-
-    /*
-     * ===================================
-     * Smooth scrolling
-     * ===================================
-     * */
-
-    //not active for Internet Explorer (version 9 and 10), only for version 11 and higher
-    var $noIE = $("html").hasClass("ie");
-    if ($noIE) {
-        $("#IEremove").remove();
-        $("html").css({
-            "overflow": "visible"
+    $(window).resize(function () {
+        $('.subnav-fullwidth').each(function () {
+            $(this).css('width', $('.container').width());
+			var offset = $(this).closest('.has-dropdown').offset();
+			offset = offset.left;
+			var containerOffset = $(window).width() - $('.container').outerWidth();
+			containerOffset = containerOffset /2;
+			offset = offset - containerOffset - 15;
+			$(this).css('left', -offset);
         });
-    } else {
+    });
 
-        //setting for smooth scrolling
-        $("html").niceScroll({
-            cursorcolor: "#999",
-            cursorwidth: "8px",
-            cursorborder: "none",
-            cursorborderradius: "0px",
-            scrollspeed: 60,
-            mousescrollstep: 15 * 3,
-            hwacceleration: true,
-            background: "#ddd",
-            preservenativescrolling: true,
-            bouncescroll: true,
-            spacebarenabled: true,
-            disableoutline: true,
-            smoothscroll: true,
-            sensitiverail: true,
-            hidecursordelay: 500,
-            cursordragspeed: 0.3,
-            zindex: 999999
-        });
+	
+	// Scroll Reveal
+	
+	if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+       window.scrollReveal = new scrollReveal();
+    }else{
+    	$('body').addClass('pointer');
     }
 
+	// Slider Initializations
+	
+	$('.hero-slider').flexslider({});
+	$('.image-slider').flexslider({ animation: "slide"});
+	$('.testimonials-slider').flexslider({ directionNav: false });
+	
+	// Slide Sizes
+	
+	$('.slider-fullscreen .slides li').each(function(){
+		$(this).css('height', $(window).height());
+	});
+	
+	$('.fullscreen-element').each(function(){
+		$(this).css('height', $(window).height());
+	});
 
 
-    /*
-     * ===================================
-     * Style Switcher
-     * ===================================
-     * */
+	// Feature Selector
+	
+	$('.selector-tabs li').click(function(){
+		$(this).parent('.selector-tabs').children('li').removeClass('active');
+		$(this).addClass('active');
+		
+		var activeTab = $(this).index() + 1;
+		
+		$(this).closest('.feature-selector').find('.selector-content').children('li').removeClass('active');
+		$(this).closest('.feature-selector').find('.selector-content').children('li:nth-child('+activeTab+')').addClass('active');
+	});
+	
+	// Append .background-image-holder <img>'s as CSS backgrounds
+	
+	$('.background-image-holder').each(function(){
+		var imgSrc= $(this).children('img').attr('src');
+		$(this).css('background', 'url("' + imgSrc + '")');
+    	$(this).children('img').hide();
+        $(this).css('background-position', '50% 0%');
+	});
+	
+	// Accordion
+	
+	$('.accordion li').click(function(){
+		$(this).parent('.accordion').children('li').removeClass('active');
+		$(this).addClass('active');
+	});
+	
+	/************** Parallax Scripts **************/
 
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    var isChrome = !!window.chrome;
+    var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+    var prefix;
 
-    //=== show/hide style-switcher by the class "active" ===//
-    $(".switcher-icon").on("click", function() {
-        $(".style-switcher").toggleClass("active");
-    });
+    if (isFirefox) {
+        prefix = '-moz-';
+    } else if (isIE) {
 
+    } else if (isChrome || isSafari) {
+        prefix = '-webkit-';
+    }
 
-    //=== navigation settings ===//
+    $('.main-container section:first-child').addClass('first-child');
 
-    //dark, light or transparent
-    var navbar = $("#navbarSettings"),
-        navbarSpace = $("#navbarSpaceBottom");
+    $('.parallax-background').each(function () {
 
-    $("#navDark").click(function() {
-        navbar.removeStyle("background-color");;
-        navbar.removeClass("navbar-default navbar-trn").addClass("navbar-inverse");
-        if (navbar.hasClass("navbar-fixed-top")) {
-            navbarSpace.css({
-                "height": "70px"
-            });
+        if ($(this).closest('section').hasClass('first-child') && !$(this).closest('section').hasClass('slider-fullscreen')) {
+            $(this).attr('data-top', prefix + 'transform: translate3d(0px,0px, 0px)');
+            $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,200px, 0px)');
+
         } else {
-            navbarSpace.removeStyle("height");
+
+            $(this).attr('data-bottom-top', prefix + 'transform: translate3d(0px,-100px, 0px)');
+            $(this).attr('data-center', prefix + 'transform: translate3d(0px,0px, 0px)');
+            $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,100px, 0px)');
+
         }
+
     });
-    $("#navLight").click(function() {
-        navbar.removeStyle("background-color");
-        navbar.removeClass("navbar-inverse navbar-trn").addClass("navbar-default");
-        if (navbar.hasClass("navbar-fixed-top")) {
-            navbarSpace.css({
-                "height": "70px"
+    
+    if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+        skrollr.init({
+            forceHeight: false
+        });
+        
+        // Multi Layer Parallax
+    
+		$('.hover-background').each(function(){
+			$(this).mousemove(function( event ) {
+				$(this).find('.background-image-holder').css('transform', 'translate(' + -event.pageX /18 + 'px,' + -event.pageY /18+ 'px)');
+				$(this).find('.layer-1').css('transform', 'translate(' + -event.pageX /9 + 'px,' + -event.pageY /10+ 'px)');
+				$(this).find('.layer-2').css('transform', 'translate(' + -event.pageX /5 + 'px,' + -event.pageY /10+ 'px)');
+			});
+		});
+    }
+    
+    // Map Holder Overlay
+	
+	$('.map-holder').click(function(){
+		$(this).addClass('on');
+	});
+	
+	$(window).scroll(function(){
+		if($('.map-holder').hasClass('on')){
+			$('.map-holder').removeClass('on');
+		}
+	});
+	
+	// Map Details Holder
+	
+	$('.details-holder').each(function(){
+		$(this).css('height', $(this).width());
+	});
+	
+	$('.details-holder').mouseenter(function(){
+		$(this).closest('.map-overlay').addClass('fade-overlay');
+	}).mouseleave(function(){$(this).closest('.map-overlay').removeClass('fade-overlay');});
+	
+	// Countdown
+	
+	$('.countdown').each(function(){
+		$(this).countdown({until: new Date($(this).attr('data-date'))});
+	});
+	
+	// Twitter Feed
+	
+	if($('#tweets').length){
+		twitterFetcher.fetch($('#tweets').attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+      
+    }
+    
+    // Contact form
+    $('form.email-form').submit(function (e) {
+		// return false so form submits through jQuery rather than reloading page.
+		if(e.preventDefault) e.preventDefault(); else e.returnValue = false;
+		
+		console.log('We have a submission...');
+		var thisForm 		= $(this).closest('.email-form'),
+			error 			= 0,
+			originalError 	= thisForm.attr('original-error');
+			
+			if (typeof originalError !== typeof undefined && originalError !== false) {
+				thisForm.find('.form-error').text(originalError); 
+			}
+		       
+		
+		$(thisForm).find('.validate-required').each(function(){
+			if($(this).val() === ''){
+				$(this).addClass('field-error');
+				error = 1;
+			}
+			else{
+				$(this).removeClass('field-error');
+			}
+		});
+		
+		$(thisForm).find('.validate-email').each(function(){
+			if(!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))){
+				$(this).addClass('field-error');
+				error = 1;
+			}
+			else{
+				$(this).removeClass('field-error');
+			}
+		});
+		
+
+        if (error === 1){
+            $(this).closest('.email-form').find('.form-error').fadeIn(200);
+        }
+		else{
+            jQuery.ajax({
+                type: "POST",
+                url: "mail/mail.php",
+                data: thisForm.serialize(),
+                success: function (response) {
+                	// Swiftmailer always sends back a number representing numner of emails sent.
+					// If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
+					if($.isNumeric(response)){
+						if(parseInt(response) > 0){
+							thisForm.find('.form-success').fadeIn(1000);
+							thisForm.find('.form-error').fadeOut(1000);
+							setTimeout(function(){ thisForm.find('.form-success').fadeOut(500); }, 5000);
+						}
+					}
+					// If error text was returned, put the text in the .form-error div and show it.
+					else{
+						// Keep the current error text in a data attribute on the form
+						thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
+						// Show the error with the returned error text.
+						thisForm.find('.form-error').text(response).fadeIn(1000);
+						thisForm.find('.form-success').fadeOut(1000);
+					}
+                }
             });
-        } else {
-            navbarSpace.removeStyle("height");
         }
+		return false;
     });
-    $("#navTrn").click(function() {
-        navbarSpace.removeStyle("height");
-        navbar.removeClass("navbar-inverse navbar-default").addClass("navbar-trn");
-    });
+	
+	
+	// Expanding Lists (updated in Pivot 1.4.0)
+	
+	$('.expanding-ul li').click(function(){
+		$('.expanding-ul li').removeClass('active');
+		$(this).addClass('active');
+	});
 
-
-    // Fixed or relative position of navbar
-    $("#navRelative").click(function() {
-        navbar.removeClass("navbar-fixed-top");
-        navbarSpace.removeStyle("height");
-    });
-    $("#navFixed").click(function() {
-        if (navbar.hasClass("navbar-trn")) {
-            navbarSpace.removeStyle("height");
-        } else {
-            navbarSpace.css({
-                "height": "70px"
-            });
-        }
-        navbar.addClass("navbar-fixed-top");
-    });
-
-
-
-    /*=== Colors Themes ===*/
-
-    var $knobs = $("#GreenKnobs, #YellowKnobs, #RedKnobs, #LightBlueKnobs, #BlueKnobs");
-    //gKnob = green knob - when you choose a color theme, this function will hide all other ID of the knobs
-
-    $(".light-blue").on("click", function() {
-        $("#colors").attr("href", "assets/css/themes/light-blue.css");
-        $knobs.hide();
-        $("#LightBlueKnobs").show();
-        return false;
-    });
-
-    $(".blue").on("click", function() {
-        $("#colors").attr("href", "assets/css/themes/blue.css");
-        $knobs.hide();
-        $("#BlueKnobs").show();
-        return false;
-    });
-    $(".red").on("click", function() {
-        $("#colors").attr("href", "assets/css/themes/red.css");
-        $knobs.hide();
-        $("#RedKnobs").show();
-        return false;
-    });
-    $(".yellow").on("click", function() {
-        $("#colors").attr("href", "assets/css/themes/yellow.css");
-        $knobs.hide();
-        $("#YellowKnobs").show();
-        return false;
-    });
-    $(".green").on("click", function() {
-        $("#colors").attr("href", "assets/css/themes/green.css");
-        $knobs.hide();
-        $("#GreenKnobs").show();
-        return false;
-    });
-
-    /*=== Transparent navigation ===*/
-
-    // add background color to transparent navbar after scrolling 90px
-    $(window).scroll(function() {
-        var $navbarTrn = $(".navbar-trn"),
-            $nav = $(".navbar");
-        if (navbar.hasClass("navbar-fixed-top")) {
-            if ($(window).scrollTop() > 150) {
-                $navbarTrn.css({
-                    "background-color": "rgba(0, 0, 0, 0.8)"
-                });
-            } else {
-                $navbarTrn.css({
-                    "background-color": "transparent"
-                });
-            }
-        } else {
-            $navbarTrn.css({
-                "background-color": "transparent"
-            });
-        }
-        // add box-shadow
-        if (navbar.hasClass("navbar-fixed-top")) {
-            if ($(window).scrollTop() > 150) {
-                $nav.css({
-                    "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.2)"
-                });
-            } else {
-                $nav.css({
-                    "box-shadow": "none"
-                });
-            }
-        } else {
-            $nav.css({
-                "box-shadow": "none"
-            });
-        }
-    });
-
-
-
-    /*
-     * ===================================
-     * Settings for plugins
-     * ===================================
-     * */
-
-
-    /*=== WOW - Loading animations ===*/
-    new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: false
-    }).init();
-
-
-    /*=== Mixitup - Filterable portfolio ===*/
-    $('#Grid').mixitup();
-
-
-    /*=== Slippry Slideshow in frame of Macbook Pro - using on Services III ===*/
-    var thumbs = $('#mb-slideshow').slippry({
-        // general elements & wrapper
-        slideWrapper: '<div class="frame sy-slides-wrap" />',
-        slippryWrapper: '<div class="slippry_box thumbnails" />',
-        // options
-        transition: 'horizontal',
-        pager: false,
-        auto: true,
-        onSlideBefore: function(el, index_old, index_new) {
-            $('.thumbs a img').removeClass('active');
-            $('img', $('.thumbs a')[index_new]).addClass('active');
-        }
-    });
-
-    $('.thumbs a').click(function() {
-        thumbs.goToSlide($(this).data('slide'));
-        return false;
-    });
-
-
-    /*=== Slippry Slideshow - using on the page About us I ===*/
-    $('#slider-aboutUs').slippry({
-        slideWrapper: '<div class="normal sy-slides-wrap" />',
-        transition: 'fade',
-        auto: true,
-        useCSS: true,
-        pause: 5000
-    });
-
-
-    /*=== Sticky - Make every elements sticky, just set a class or ID ===*/
-    $(".sticker").sticky({
-        topSpacing: 0
-    });
-
-
-    /*=== Knobs - our skills ===*/
-
-    // Light Blue Knob
-    $(".lbKnob").knob({
-        fgColor: "#1eb9c1",
-        min: 0,
-        max: 100,
-        step: 5,
-        angleOffset: 0,
-        angleArc: 360,
-        stopper: true,
-        readOnly: true,
-        cursor: false,
-        lineCap: 'none',
-        thickness: '0.03',
-        width: 150,
-        displayInput: true,
-        displayPrevious: true,
-        inputColor: '#999999',
-        font: 'Lato',
-        fontWeight: 'normal',
-        bgColor: '#EEEEEE',
-        draw: function() {
-            if (this.$.data('skin') == 'tron') {
-                var a = this.angle(this.cv), // Angle
-
-                    sa = this.startAngle, // Previous start angle
-
-                    sat = this.startAngle, // Start angle
-
-                    ea, // Previous end angle
-                    eat = sat + a, // End angle
-
-                    r = 1;
-                this.g.lineWidth = this.lineWidth;
-                this.o.cursor && (sat = eat - 0.3) && (eat = eat + 0.3);
-                if (this.o.displayPrevious) {
-                    ea = this.startAngle + this.angle(this.v);
-                    this.o.cursor && (sa = ea - 0.3) && (ea = ea + 0.3);
-                    this.g.beginPath();
-                    this.g.strokeStyle = this.pColor;
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                    this.g.stroke();
-                }
-                this.g.beginPath();
-                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                this.g.stroke();
-                this.g.lineWidth = 2;
-                this.g.beginPath();
-                this.g.strokeStyle = this.o.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                this.g.stroke();
-                return false;
-            }
-
-        }
-    });
-
-    //Blue Knob
-    $(".bKnob").knob({
-        fgColor: "#1a99aa",
-        min: 0,
-        max: 100,
-        step: 5,
-        angleOffset: 0,
-        angleArc: 360,
-        stopper: true,
-        readOnly: true,
-        cursor: false,
-        lineCap: 'none',
-        thickness: '0.03',
-        width: 150,
-        displayInput: true,
-        displayPrevious: true,
-        inputColor: '#999999',
-        font: 'Lato',
-        fontWeight: 'normal',
-        bgColor: '#EEEEEE',
-        draw: function() {
-            if (this.$.data('skin') == 'tron') {
-                var a = this.angle(this.cv), // Angle
-
-                    sa = this.startAngle, // Previous start angle
-
-                    sat = this.startAngle, // Start angle
-
-                    ea, // Previous end angle
-                    eat = sat + a, // End angle
-
-                    r = 1;
-                this.g.lineWidth = this.lineWidth;
-                this.o.cursor && (sat = eat - 0.3) && (eat = eat + 0.3);
-                if (this.o.displayPrevious) {
-                    ea = this.startAngle + this.angle(this.v);
-                    this.o.cursor && (sa = ea - 0.3) && (ea = ea + 0.3);
-                    this.g.beginPath();
-                    this.g.strokeStyle = this.pColor;
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                    this.g.stroke();
-                }
-                this.g.beginPath();
-                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                this.g.stroke();
-                this.g.lineWidth = 2;
-                this.g.beginPath();
-                this.g.strokeStyle = this.o.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                this.g.stroke();
-                return false;
-            }
-
-        }
-    });
-
-    // Green Knob
-    $(".gKnob").knob({
-        fgColor: "#3c948b",
-        min: 0,
-        max: 100,
-        step: 5,
-        angleOffset: 0,
-        angleArc: 360,
-        stopper: true,
-        readOnly: true,
-        cursor: false,
-        lineCap: 'none',
-        thickness: '0.03',
-        width: 150,
-        displayInput: true,
-        displayPrevious: true,
-        inputColor: '#999999',
-        font: 'Lato',
-        fontWeight: 'normal',
-        bgColor: '#EEEEEE',
-        draw: function() {
-            if (this.$.data('skin') == 'tron') {
-                var a = this.angle(this.cv), // Angle
-
-                    sa = this.startAngle, // Previous start angle
-
-                    sat = this.startAngle, // Start angle
-
-                    ea, // Previous end angle
-                    eat = sat + a, // End angle
-
-                    r = 1;
-                this.g.lineWidth = this.lineWidth;
-                this.o.cursor && (sat = eat - 0.3) && (eat = eat + 0.3);
-                if (this.o.displayPrevious) {
-                    ea = this.startAngle + this.angle(this.v);
-                    this.o.cursor && (sa = ea - 0.3) && (ea = ea + 0.3);
-                    this.g.beginPath();
-                    this.g.strokeStyle = this.pColor;
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                    this.g.stroke();
-                }
-                this.g.beginPath();
-                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                this.g.stroke();
-                this.g.lineWidth = 2;
-                this.g.beginPath();
-                this.g.strokeStyle = this.o.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                this.g.stroke();
-                return false;
-            }
-
-        }
-    });
-
-    // Red Knob
-    $(".rKnob").knob({
-        fgColor: "#df6c4f",
-        min: 0,
-        max: 100,
-        step: 5,
-        angleOffset: 0,
-        angleArc: 360,
-        stopper: true,
-        readOnly: true,
-        cursor: false,
-        lineCap: 'none',
-        thickness: '0.03',
-        width: 150,
-        displayInput: true,
-        displayPrevious: true,
-        inputColor: '#999999',
-        font: 'Lato',
-        fontWeight: 'normal',
-        bgColor: '#EEEEEE',
-        draw: function() {
-            if (this.$.data('skin') == 'tron') {
-                var a = this.angle(this.cv), // Angle
-
-                    sa = this.startAngle, // Previous start angle
-
-                    sat = this.startAngle, // Start angle
-
-                    ea, // Previous end angle
-                    eat = sat + a, // End angle
-
-                    r = 1;
-                this.g.lineWidth = this.lineWidth;
-                this.o.cursor && (sat = eat - 0.3) && (eat = eat + 0.3);
-                if (this.o.displayPrevious) {
-                    ea = this.startAngle + this.angle(this.v);
-                    this.o.cursor && (sa = ea - 0.3) && (ea = ea + 0.3);
-                    this.g.beginPath();
-                    this.g.strokeStyle = this.pColor;
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                    this.g.stroke();
-                }
-                this.g.beginPath();
-                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                this.g.stroke();
-                this.g.lineWidth = 2;
-                this.g.beginPath();
-                this.g.strokeStyle = this.o.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                this.g.stroke();
-                return false;
-            }
-
-        }
-    });
-
-    // Yellow Knob
-    $(".yKnob").knob({
-        fgColor: "#ecd06f",
-        min: 0,
-        max: 100,
-        step: 5,
-        angleOffset: 0,
-        angleArc: 360,
-        stopper: true,
-        readOnly: true,
-        cursor: false,
-        lineCap: 'none',
-        thickness: '0.03',
-        width: 150,
-        displayInput: true,
-        displayPrevious: true,
-        inputColor: '#999999',
-        font: 'Lato',
-        fontWeight: 'normal',
-        bgColor: '#EEEEEE',
-        draw: function() {
-            if (this.$.data('skin') == 'tron') {
-                var a = this.angle(this.cv), // Angle
-
-                    sa = this.startAngle, // Previous start angle
-
-                    sat = this.startAngle, // Start angle
-
-                    ea, // Previous end angle
-                    eat = sat + a, // End angle
-
-                    r = 1;
-                this.g.lineWidth = this.lineWidth;
-                this.o.cursor && (sat = eat - 0.3) && (eat = eat + 0.3);
-                if (this.o.displayPrevious) {
-                    ea = this.startAngle + this.angle(this.v);
-                    this.o.cursor && (sa = ea - 0.3) && (ea = ea + 0.3);
-                    this.g.beginPath();
-                    this.g.strokeStyle = this.pColor;
-                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                    this.g.stroke();
-                }
-                this.g.beginPath();
-                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                this.g.stroke();
-                this.g.lineWidth = 2;
-                this.g.beginPath();
-                this.g.strokeStyle = this.o.fgColor;
-                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                this.g.stroke();
-                return false;
-            }
-
-        }
-    });
 });
+
+$(window).load(function(){
+
+  "use strict";
+  	
+  
+	// Align Elements Vertically
+	
+	alignVertical();
+	alignBottom();
+	
+	$(window).resize(function(){
+		alignVertical();
+		alignBottom();
+	});
+	
+	// Isotope Projects
+	
+	$('.projects-container').isotope({
+	  itemSelector: '.project',
+	  layoutMode: 'fitRows'
+	});
+	
+	$('.filters li').click(function() {
+	  var current = $(this);
+	  
+	  current.siblings('li').removeClass('active');
+	  current.addClass('active');
+	  
+	  var filterValue = current.attr('data-filter');
+	  var container = current.closest('.projects-wrapper').find('.projects-container');
+	  container.isotope({ filter: filterValue });
+	});
+	
+	// Isotope contained feature boxes
+	
+	$('.contained-features-wrapper').isotope({
+	  itemSelector: '.no-pad',
+	  layoutMode: 'masonry',
+	  masonry: {
+		  gutter: 0
+		}
+	});
+	
+	// Instagram Feed
+	
+	if($('.instafeed').length){
+		jQuery.fn.spectragram.accessData = {
+			accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
+			clientID: 'fedaafacf224447e8aef74872d3820a1'
+		};
+
+		$('.instafeed').each(function () {
+			$(this).children('ul').spectragram('getUserFeed', {
+				query: $(this).attr('data-user-name')
+			});
+
+		});
+		
+	}
+	
+    if($('#tweets').length){
+    	$('#tweets').flexslider({ directionNav: false, controlNav: false });
+    }
+    
+    // Remove Loader
+    
+    $('.loader').css('opacity', 0);
+    setTimeout(function(){$('.loader').hide();}, 600);
+    
+	// Mailchimp/Campaign Monitor Mail List Form Scripts
+	$('form.mail-list-signup').on('submit', function(){
+		
+		var iFrame = $(this).closest('section, header').find('iframe.mail-list-form'),
+		thisForm 		= $(this).closest('.mail-list-signup'),
+		userEmail 		= $(this).find('.signup-email-field').val(),
+		userFullName 	= $(this).find('.signup-name-field').val(),
+		userFirstName 	= $(this).find('.signup-first-name-field').val(),
+		userLastName 	= $(this).find('.signup-last-name-field').val(),
+		error			= 0;
+		
+		$(thisForm).find('.validate-required').each(function(){
+			if($(this).val() === ''){
+				$(this).addClass('field-error');
+				error = 1;
+			}
+			else{
+				$(this).removeClass('field-error');
+			}
+		});
+		
+		$(thisForm).find('.validate-email').each(function(){
+			if(!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))){
+				$(this).addClass('field-error');
+				error = 1;
+			}
+			else{
+				$(this).removeClass('field-error');
+			}
+		});
+		
+		if(error === 0){
+			iFrame.contents().find('#mce-EMAIL, #fieldEmail').val(userEmail);
+			iFrame.contents().find('#mce-LNAME, #fieldLastName').val(userLastName);
+			iFrame.contents().find('#mce-FNAME, #fieldFirstName').val(userFirstName);
+			iFrame.contents().find('#mce-FNAME, #fieldName').val(userFullName);		
+			iFrame.contents().find('form').attr('target', '_blank').submit();
+		}
+		return false;
+	});
+	
+	// Blog Masonry
+	
+	$('.blog-masonry-container').isotope({
+	  itemSelector: '.blog-masonry-item',
+	  layoutMode: 'masonry'
+	});
+	
+	$('.blog-filters li').click(function() {
+	  var current = $(this);
+	  
+	  current.siblings('li').removeClass('active');
+	  current.addClass('active');
+	  
+	  var filterValue = current.attr('data-filter');
+	  var container = current.closest('.blog-masonry').find('.blog-masonry-container');
+	  container.isotope({ filter: filterValue });
+	});
+
+
+
+});
+
+function handleTweets(tweets){
+          var x = tweets.length;
+          var n = 0;
+          var element = document.getElementById('tweets');
+          var html = '<ul class="slides">';
+          while(n < x) {
+            html += '<li>' + tweets[n] + '</li>';
+            n++;
+          }
+          html += '</ul>';
+          element.innerHTML = html;
+    }
+
+function alignVertical(){
+
+		$('.align-vertical').each(function(){
+			var that = $(this);
+			var height = that.height();
+			var parentHeight = that.parent().height();
+			var padAmount = (parentHeight / 2) - (height/2);
+			that.css('padding-top', padAmount);
+		});
+	
+}
+
+function alignBottom(){
+	$('.align-bottom').each(function(){
+		var that = $(this);
+		var height = that.height();
+		var parentHeight = that.parent().height();
+		var padAmount = (parentHeight) - (height) - 32;
+		that.css('padding-top', padAmount);
+	});
+}
+
+// Youtube Background Handling
+
+function onYouTubeIframeAPIReady() {
+	$(window).load(function(){
+		$('.youtube-bg-iframe').each(function(index){
+			$(this).attr('id', 'yt-'+index);
+			var player = new YT.Player($(this).attr('id'), {
+				events: {
+				'onReady': function(){
+					player.mute();
+					player.playVideo();
+				},
+				'onStateChange': function(newState){
+					player.playVideo();
+				}
+			}
+			});
+		});
+	});
+	
+}
