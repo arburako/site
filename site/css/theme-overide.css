@@ -12,6 +12,10 @@ font: inherit;
 vertical-align: baseline;
 }
 
+body {
+	font-family: 'SofiaProLightRegular'
+}
+
 
 
 
@@ -270,7 +274,7 @@ vertical-align: baseline;
 		z-index:2;
 	}
 
-	.main-container {
+	.cd-container {
 	  -webkit-transition: all .3s ease;
 	  -moz-transition: all .3s ease;
 	  transition: all .3s ease;
@@ -292,7 +296,16 @@ vertical-align: baseline;
 		height: 600px;
 	}
 
-	.hero {
+	.page-header {
+  margin: 0px;
+  padding: 0px;
+  padding: 160px 0px;
+  border-bottom: none;
+
+}
+
+	.hero,
+	 {
 		padding-top: 80px;
 	}
 
