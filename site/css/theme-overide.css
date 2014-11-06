@@ -1,6 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic');
 @import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
-
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic');
 
 
 html {
@@ -16,7 +16,12 @@ body {
 	font-family: 'SofiaProLightRegular'
 }
 
-
+h1 {
+	font-family: 'Playfair Display';
+	font-size: 40px;
+	font-weight: 700;
+	font-style: italic;
+}
 
 
 /************************************/
