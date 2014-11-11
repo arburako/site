@@ -5,11 +5,11 @@
 
 html {
 	margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
@@ -314,8 +314,23 @@ body {
 	  -moz-transform: translate3d(0px, 0, 0);
 	  transform: translate3d(0px, 0, 0);
 	  overflow: hidden;
-	  
 	}
+	.level {
+		padding: 80px 0 80px;
+		margin: 0;
+	}
+	.top-60 {
+		margin-top: 60px;
+	}
+
+	.summary h3 {
+		padding-top: 30px;
+	}
+
+/************************************/
+/* =HERO                  */
+/************************************/
+	
 	.hero-bg {
 		position: absolute;
 		top: 0;
@@ -323,17 +338,13 @@ body {
 		z-index: -1;
 		background-position: center !important;
 		background-size: cover !important;
-		height: 600px;
+		height: 700px;
 		margin-top: -80px;
 	}
-
-
-	.hero
-	 {
-		padding-top: 80px;
+	.hero .inner{
+		padding-top: 2%;
 	}
 	.hero h1 {
-		margin-bottom:80px;
 		font-family: 'SofiaProRegular';
 		font-weight: 400;
 		font-size: 48px;
@@ -346,22 +357,23 @@ body {
 		line-height: 18px;
 		margin-top: 20px;
 	}
-	.intro-details {
-		background-color: #fff;
-	}
-
-	.level {
-		padding: 80px 0 80px;
-		margin: 0;
-	}
-
-	.hero.level {
+	.hero .level {
 		padding-top: 101px;
 		padding-bottom: 40px;
 	}
-	.top-60 {
-		margin-top: 60px;
+
+	p.subtitle {
+		font-family: 'SofiaProLightItalic';
+		font-size: 1em;
+		margin-top: -40px;
 	}
+
+	header.project-title {
+		margin-top: 120px;
+		margin-bottom: 80px;
+	}
+
+
 
 	@media (max-width: 820px) {
 		.hero img {
@@ -373,11 +385,18 @@ body {
 		.hero-bg {
 			height: 400px;
 		}
+		.hero h1 {
+			font-size: 36px;
+			line-height: 48px;
+		}
+		header.project-title {
+			margin: 40px auto 20px auto;
+		}
+
 		.hero img {
-			margin-top: -10%;
+			margin-top: -10%
 		}
 	}
-
 
 /************************************/
 /* =CAROUSEL                      */
@@ -393,18 +412,18 @@ body {
 	}
 	.carousel-control {
 	  position: absolute;
-	  top: 0;
+	  top: 10px;
 	  left: 0;
 	  bottom: 0;
-	  width: 5%;
+	  width: 80px;
+	  height: 80px;
 	  opacity: 1;
-	  font-size: 20px;
-	  color: #000;
+	  font-size: 40px;
+	  color: #333;
 	  text-align: center;
 	  text-shadow: none;
 	  font-family: FontAwesome;
-	  font-size: 40px;
-	  padding-top: 50%;
+	  margin-top: 48%;
 	}
 	/* Changes the position of the indicators */
 	.carousel-indicators {
@@ -425,6 +444,32 @@ body {
 		width: 100%;
 		height: auto;
 	}
+
+.carousel-control.right, .carousel-control.left{
+
+  background-image: none;
+  background-image: none;
+  background-repeat: none;
+}
+.carousel-control.right {
+	  left: auto;
+  right: 0;
+}
+.carousel-control:hover{
+  outline: none;
+  color: #22C0AF;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-control:focus {
+  outline: none;
+  color: none;
+  text-decoration: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 
 /************************************/
 /* =BACK-TO-TOP                     */
@@ -449,6 +494,7 @@ body {
 	  -moz-transition: opacity .3s 0s, visibility 0s .3s;
 	  transition: opacity .3s 0s, visibility 0s .3s;
 	  z-index:9999;
+	  border: none;
 	}
 	.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
 	  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
@@ -462,11 +508,12 @@ body {
 	}
 	.cd-top.cd-fade-out {
 	  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-	  opacity: .5;
+	  opacity: .2;
 	}
 	.no-touch .cd-top:hover {
 	  background-color: #e86256;
 	  opacity: 1;
+	  border:none;
 	}
 	@media only screen and (min-width: 768px) {
 	  .cd-top {
@@ -483,8 +530,9 @@ body {
 	  }
 	}
 
-
-/*------- loader and wait ----------*/
+/************************************/
+/* =LOADER                    */
+/************************************/
 
 	#wrap{
 		position:relative;
@@ -553,14 +601,204 @@ body {
 	  }
 	}
 
-	/************************************/
-/* =PARKPLEASE                      */
 /************************************/
-
-	.bg-pp {
-		background-color: #22C0AF;
+/* =NAVBAR                    */
+/************************************/
+	.navbar{
+		position:fixed;
+		background:#ddd;
+		top:0;
+		left:0;
+		right:0;
+		height:41px;
+		min-height: 41px;
+		font:700 10px/41px 'myriad-pro',"Myriad Pro","Open Sans","Helvetica Neue",sans-serif;
+		text-transform:uppercase;
+		color:#fff;
+		text-align:left;
+		overflow:hidden;
+		opacity:1;
+		z-index:999;
+		border-radius: 0;
+		-webkit-transform:translate3d(0,0,0);
+		-moz-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+		-webkit-transition:-webkit-transform .3s,height .2s linear;
+		-moz-transition:-moz-transform .3s,height .2s linear;
+		-o-transition:transform .3s,height .2s linear;
+		transition:transform .3s,height .2s linear
 	}
-
-	#parkplease #loader {
-		background:#29b3a4
+	.no-csstransforms3d .navbar{
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		-o-transform:translate(0,0);
+		transform:translate(0,0)
+	}
+	.navbar-over{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:#172835;
+		opacity:0;
+		z-index:0;
+		visibility:hidden
+	}
+	.navbar.asleep{
+		-webkit-transform:translate3d(0,-41px,0);
+		-moz-transform:translate3d(0,-41px,0);
+		transform:translate3d(0,-41px,0)
+	}
+	.no-csstransforms3d .navbar.asleep{
+		-webkit-transform:translate(0,-41px);
+		-moz-transform:translate(0,-41px);
+		-ms-transform:translate(0,-41px);
+		-o-transform:translate(0,-41px);
+		transform:translate(0,-41px)
+	}
+	a.brand{
+		float:left;
+		position:relative;
+		margin-right:0;
+		height:41px
+	}
+	a.brand span{
+		float:left;
+		width:170px;
+		border-left:6px solid #fff;
+		height:20px;
+		margin-top:11px;
+		background:url(../img/ht.svg) 13px 50% no-repeat;
+		text-indent:100%;
+		white-space:nowrap;
+		overflow:hidden;
+		background-size:148px 12px
+	}
+	.no-backgroundsize .brand span{
+		text-indent:0;
+		overflow:visible;
+		background:0;
+		font-size:14px;
+		border:0;
+		margin:0;
+		padding:0;
+		text-transform:none
+	}
+	.brand:before{
+		height:20px;
+		content:"";
+		float:left;
+		width:2px;
+		margin:11px 2px 0 0;
+		border:solid #fff;
+		border:solid rgba(255,255,255,0.5);
+		border-width:0 6px
+	}
+	.no-backgroundsize .brand:before{
+		display:none
+	}
+	.navbar .navbar-toggle{
+		display:none;
+		position:relative;
+		float:right;
+		margin:9px 10px;
+		padding:6px 10px;
+		font-weight:700;
+		border-radius:4px;
+		line-height:11px;
+		background:#fff;
+		color:#b8c4ce;
+		-webkit-transition:color .2s;
+		-moz-transition:color .2s;
+		-o-transition:color .2s;
+		transition:color .2s
+	}
+	.navbar.open .navbar-toggle{
+		color:#6d7982
+	}
+	.navbar ul{
+		position:relative;
+		margin:0;
+		padding:0;
+		float:right
+	}
+	.navbar li{
+		float:left
+	}
+	.navbar li:first-child{
+		display:none
+	}
+	.navbar-inner{
+		position:relative;
+		height:100%
+	}
+	.navbar a{
+		display:inline-block;
+		color:#fff;
+		margin:0 10px;
+		-webkit-transition:background .2s;
+		-moz-transition:background .2s;
+		-o-transition:background .2s;
+		transition:background .2s
+	}
+	.navbar a[href^="mailto"]{
+		margin-left:0
+	}
+	.navbar .case-studies{
+		padding:0 0 0 10px
+	}
+	.navbar .case-studies li{
+		position:relative;
+		width:53px;
+		margin:0;
+		padding:0;
+		overflow:hidden
+	}
+	.navbar li.prev{
+		display:block
+	}
+	.navbar .case-studies a{
+		display:block;
+		width:100%;
+		height:100%;
+		text-indent:100%;
+		overflow:hidden;
+		white-space:nowrap;
+		background:rgba(9,9,9,0.1);
+		position:relative;
+		margin:0
+	}
+	.navbar .case-studies a:hover{
+		background:rgba(9,9,9,0.22)
+	}
+	.navbar .prev a:before,.navbar .next a:before,.navbar .next a:after{
+		position:absolute;
+		top:15px;
+		left:21px;
+		content:"";
+		width:0;
+		height:0;
+		line-height:0;
+		display:inline-block;
+		border-style:solid;
+		border-width:5.5px 6px 5.5px 0;
+		border-color:transparent #fff transparent transparent;
+	}
+	.navbar .next a:after{
+		display:none
+	}
+	.navbar .next a:before{left:25px;border-width:5.5px 0 5.5px 6px;border-color:transparent transparent transparent #fff}
+	.navbar a.icon{
+		vertical-align:top;
+		display:block;
+		margin:0;
+		-webkit-transition:background-color .2s;
+		-moz-transition:background-color .2s;
+		-o-transition:background-color .2s;
+		transition:background-color .2s;
+		text-indent:100%;
+		white-space:nowrap;
+		overflow:hidden
 	}

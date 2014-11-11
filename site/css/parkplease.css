@@ -1,21 +1,24 @@
-.navbar {
-    background: none repeat scroll 0 0 #b8c4ce;
-}
-
-body {
-    color: #8c8c8c;
-}
-
-
-
-	/************************************/
-/* =PARKPLEASE                      */
-/************************************/
-
+	.navbar {
+	    background: none repeat scroll 0 0 #b8c4ce;
+	}
 	.bg-pp {
 		background-color: #22C0AF;
+		x-background-color: #29b3a4;
 	}
 
 	#parkplease #loader {
+		background:#22C0AF
+	}
+
+	.navbar{
 		background:#29b3a4
+	}
+
+	.cd-top {
+	  background: #22C0AF url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	}
+
+	.no-touch .cd-top:hover {
+	  background-color: #22C0AF;
+	  opacity: 1;
 	}

@@ -25,6 +25,7 @@
 
     <!-- site specific styles -->
     <link href="css/sofia-pro.css" rel="stylesheet">
+
     <link href="css/theme-overide.css" rel="stylesheet">
     <link href="css/parkplease.css" rel="stylesheet">
 
@@ -40,27 +41,31 @@
 
 <body id="parkplease">
 
-
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
 
 
   <div id="everything" class="detail-page">
 
-    <div class="navbar">
-      <div class="navbar-inner container">
-        <a href="index.html" class="brand"></a>
-        <a href="index.html" class="navbar-toggle">menu</a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="twitter"><a href="#" target="_blank">Contact</a></li>
-          <li class="case-studies">
-            <ul>
-              <li class="prev"><a href="ldc-od.html">On Demand</a></li>
-              <li class="next"><a href="dinamundo.html">Dinamundo</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <div id="bt-menu" class="bt-menu">
+      <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
+        <li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
+        <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
+        <li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
+      </ul>
     </div>
   
     
@@ -71,26 +76,30 @@
 
         
         <div class="bg-pp hero-bg"></div>
-        <div class="hero">
+        <div class="hero level">
           <div class="inner text-centered">
-            <header class="project-title">
-              <h1 class="text-white"> ParkPlease </h1>
-              <p class="subtitle text-white"> making parking stress free </p>
-            </header>
-            <img src="img/parkplease/parkplease-main.PNG" >
+            <h1 class="text-white jumbo-h1"> 
+            ParkPlease 
+              <em> making parking stress free </em>
+            </h1>
+          <img src="img/parkplease/parkplease-main.PNG" >
           </div>
         </div> 
 
-        <div class="level summary">
+        <div class="level">
           <div class="container">
             <div class="row">
               <div class="col-md-8">
-                <h3> About the Project </h3>
-                <p>ParkPlease launched it’s service in May 2012 for San Francisco’s Outside Lands Music Festival, held every year at Golden Gate Park.  Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking. Since then, ParkPlease has connected thousands of parking space owners to drivers looking for spaces and has successfully facilitated parking for numerous events including America’s Cup, Fleet Week, SF Giants Games and the Hardly Strictly Blue Grass Music Festival. As a co-founder, I worked with a core team of 3 team to create, launch, and manage the ParkPlease business and product from June of 2012 through August of 2013.</p>
+                <div class="feature">
+                  <h3> About the Project </h3>
+                  <p class="pad-right-40">ParkPlease launched it’s service in May 2012 for San Francisco’s Outside Lands Music Festival, held every year at Golden Gate Park.  Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking. Since then, ParkPlease has connected thousands of parking space owners to drivers looking for spaces and has successfully facilitated parking for numerous events including America’s Cup, Fleet Week, SF Giants Games and the Hardly Strictly Blue Grass Music Festival. As a co-founder, I worked with a core team of 3 team to create, launch, and manage the ParkPlease business and product from June of 2012 through August of 2013.</p>
+                </div>
               </div>
               <div class="col-md-4">
-                <h3> My Role </h3>
-                <p> I managed the product roadmap, led the design process, oversaw the development and did my best to keep everyone running in the same direction. I also created the website flows, interactions and layouts from the ground up, and became responsible for the visual design and user operations after launch. </p>
+                <div class="feature">
+                  <h3> My Role </h3>
+                  <p> I managed the product roadmap, led the design process, oversaw the development and did my best to keep everyone running in the same direction. I also created the website flows, interactions and layouts from the ground up, and became responsible for the visual design and user operations after launch. </p>
+                </div>
               </div>
             </div>
           </div>
@@ -151,7 +160,6 @@
                     <li data-target="#parkplease-carousel-1" data-slide-to="3"></li>
                     <li data-target="#parkplease-carousel-1" data-slide-to="4"></li>
                     <li data-target="#parkplease-carousel-1" data-slide-to="5"></li>
-                    <li data-target="#parkplease-carousel-1" data-slide-to="6"></li>
                   </ol>
 
                   <div class="carousel-inner">
@@ -282,87 +290,6 @@
         </div> <!-- end level -->
       </section>
 
-      <!-- make it fun -->
-      <section>
-        <div class="level">
-          <div class="container">
-            <h1 class="text-center"> Make it Fun </h1>
-            <div class="row inner space-bottom-large">
-              <div class="col-md-6 col-sm-12">
-                <div class="text-col"> 
-                  <p>I have always believed that the way to have happy customers is to have happy suppliers. Because of this belief, I have envisioned a very interactive seller dashboard with hints of game mechanics, to excite and motivate sellers to continue to post spots and confirm their reservations. Sellers can see all the activity that has occurred on their spots in their dashboard to help them understand why their spot may or may not be booking and also to give them the tools to reach out to people who seem interested in their spots. The ultimate goal is that the seller activity feed -   </p>                 
-                </div>
-              </div> <!-- end column -->
-              <div class="col-md-6 col-sm-12">
-                <div class="text-col"> 
-                  <p>and other eventual features - will turn the sellers into our own product evangelists, inspiring them to chase after the sale, bringing in the mutual benefit of income and additional users. The large “upcoming payments” number reflects the total amount pending for confirmed reservations (sellers do not get paid until after the reservation is complete). Each time a seller confirms a reservation, the number will go up. The positive reinforcement will motivate sellers to confirm reservations and the pot of gold at the end of the line will encourage sellers to carry out the agreement with integrity.</p>                
-                </div>
-              </div> <!-- end column -->
-            </div> <!-- end row -->
-          </div> <!-- end container -->
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <div id="parkplease-carousel-3" class="carousel slide image-slider">
-
-                  <ol class="carousel-indicators flex-control-nav">
-                    <li data-target="#parkplease-carousel-3" data-slide-to="1" class="active"></li>
-                    <li data-target="#parkplease-carousel-3" data-slide-to="2"></li>
-                    <li data-target="#parkplease-carousel-3" data-slide-to="3"></li>
-                    <li data-target="#parkplease-carousel-3" data-slide-to="4"></li>
-                    <li data-target="#parkplease-carousel-3" data-slide-to="5"></li>
-                  </ol>
-
-
-
-                  <div class="carousel-inner">
-                   
-                    <div class=" item active">
-                      <img src="img/old-content/parkplease/3-a.png" class="img-responsive" />
-                      <div class="carousel-caption">
-                        <p>Site Activity Feed</p>
-                      </div>
-                    </div>
-                   
-                    <div class="row item">
-                      <img src="img/old-content/parkplease/3-b.png" class="img-responsive" />
-                      <div class="carousel-caption">
-                        <p>Spot Detail from Activity Feed</p>
-                      </div>
-                    </div>
-                   
-                    <div class="item">
-                      <img src="img/old-content/parkplease/3-c.png" class="img-responsive" />
-                      <div class="carousel-caption">
-                        <p>User Profile</p>
-                      </div>
-                    </div>
-                   
-                    <div class="item">
-                      <img src="img/old-content/parkplease/3-d.png" class="img-responsive"/>
-                      <div class="carousel-caption">
-                        <p>Upcoming Reservation Detail</p>
-                      </div>
-                    </div>   
-
-                    <div class="item">
-                      <img src="img/old-content/parkplease/3-e.png" class="img-responsive"/>
-                      <div class="carousel-caption">
-                        <p>Upcoming Reservation Detail</p>
-                      </div>
-                    </div>               
-                  </div> <!-- end carousel-inner -->
-                  
-                  <a class="carousel-control left" href="#parkplease-carousel-3" data-slide="prev">&#xf053;</a>
-                  <a class="carousel-control right" href="#parkplease-carousel-3" data-slide="next">&#xf054;</a>             
-                </div> <!-- end parkplease-carousel-1 -->
-              </div> <!-- end column -->
-            </div> <!-- end row -->
-          </div> <!-- end container -->
-        </div> <!-- end level -->
-      </section>
-
 
       <section>
         <div class="container">
@@ -473,6 +400,38 @@
     <script src="js/main2.js"></script> <!-- Gem jQuery -->
 
   
+  <!-- border menu animation -->
+    <script src="js/classie.js"></script>
+    <script src="js/borderMenu.js"></script>
+  
+
+<!-- for the fade out nav -->
+           <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function(){
+          var scrollTop = $(window).scrollTop();
+          if(scrollTop != 0)
+            $('#bt-menu').stop().animate({'opacity':'0.2'},400);
+          else  
+            $('#bt-menu').stop().animate({'opacity':'1'},400);
+        });
+        
+        $('#bt-menu').hover(
+          function (e) {
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop != 0){
+              $('#bt-menu').stop().animate({'opacity':'1'},400);
+            }
+          },
+          function (e) {
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop != 0){
+              $('#bt-menu').stop().animate({'opacity':'0.2'},400);
+            }
+          }
+        );
+            });
+        </script>
 
   <script src="ht/js/a202.js"></script>
 
