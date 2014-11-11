@@ -13,15 +13,14 @@ vertical-align: baseline;
 }
 
 body {
-	font-family: 'SofiaProLightRegular'
+	font-family: 'SofiaProLightRegular';
+	color: #53545B;
+	font-size: 18px;
+	line-height: 1.6em;
 }
 
-h1 {
-	font-family: 'Playfair Display';
-	font-size: 40px;
-	font-weight: 700;
-	font-style: italic;
-}
+
+
 
 
 /************************************/
@@ -266,6 +265,35 @@ h1 {
 		text-align: center;
 	}
 
+	.level p {
+	  font-size: 16px;
+	  line-height: 30px;
+	  color: rgba(83,84,91);
+	  font-weight: 400;
+	}
+
+	p.pad-right-40 {
+		padding-right: 40px;
+	}
+
+	h1, h3 {
+		color: #36373E;
+		text-transform: uppercase;
+	}
+	h3 { 
+		font-family: 'SofiaProBlack';	
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	h1 { 
+		font-family: 'SofiaProBold';	
+	}
+
+
+	p {
+	  font-size: inherit;
+	  line-height: inherit;
+	}
 
 /************************************/
 /* =LAYOUT STYLES                   */
@@ -278,7 +306,6 @@ h1 {
 		font-weight: 300;
 		z-index:2;
 	}
-
 	.cd-container {
 	  -webkit-transition: all .3s ease;
 	  -moz-transition: all .3s ease;
@@ -287,10 +314,8 @@ h1 {
 	  -moz-transform: translate3d(0px, 0, 0);
 	  transform: translate3d(0px, 0, 0);
 	  overflow: hidden;
-	  margin-top: -80px;
+	  
 	}
-	
-
 	.hero-bg {
 		position: absolute;
 		top: 0;
@@ -299,28 +324,21 @@ h1 {
 		background-position: center !important;
 		background-size: cover !important;
 		height: 600px;
+		margin-top: -80px;
 	}
 
-	.page-header {
-  margin: 0px;
-  padding: 0px;
-  padding: 160px 0px;
-  border-bottom: none;
 
-}
-
-	.hero,
+	.hero
 	 {
 		padding-top: 80px;
 	}
-
 	.hero h1 {
 		margin-bottom:80px;
-		font-weight: 600;
+		font-family: 'SofiaProRegular';
+		font-weight: 400;
 		font-size: 48px;
 		line-height: 54px;
 	}
-
 	.hero h1 em {
 		display: block;
 		font-weight: 400;
@@ -328,59 +346,9 @@ h1 {
 		line-height: 18px;
 		margin-top: 20px;
 	}
-
-	.inner {
-		font-size: 1em;
-		padding: 1em;
+	.intro-details {
+		background-color: #fff;
 	}
-			.inner img{
-				max-width: 50%;
-			}
-
-
-.intro-details {
-	background-color: #fff;
-}
-
-
-.article-single {
-  background: #f4f4f4 !important;
-}
-.article-body p.lead {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
-  margin-bottom: 24px;
-  color: #333333;
-}
-.article-body p:last-child {
-  margin-bottom: 0px;
-}
-.article-body p {
-  font-size: 16px;
-  line-height: 32px;
-  margin-bottom: 24px;
-}
-.article-body figure {
-  margin: 16px 0px;
-}
-.article-body figcaption {
-  font-style: italic;
-  font-size: 14px;
-  color: #aaa;
-  margin-top: 16px;
-}
-.article-body h2 {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 24px;
-}
-.article-body {
-  padding-bottom: 64px;
-border: none;
-}
-
-
 
 	.level {
 		padding: 80px 0 80px;
@@ -391,72 +359,72 @@ border: none;
 		padding-top: 101px;
 		padding-bottom: 40px;
 	}
-
-
-
-	#everything {
-		margin-right: auto;
-		margin-left: auto;
-		padding: 80px 0;
-		
-	}
-
 	.top-60 {
-	margin-top: 60px;
+		margin-top: 60px;
 	}
-	
+
+	@media (max-width: 820px) {
+		.hero img {
+			margin-top: 4%;
+			max-width: 80%;
+		}
+	}
+	@media (min-width: 320px) and (max-width: 767px) {
+		.hero-bg {
+			height: 400px;
+		}
+		.hero img {
+			margin-top: -10%;
+		}
+	}
+
+
 /************************************/
-/* =PARKPLEASE                      */
+/* =CAROUSEL                      */
 /************************************/
+	.carousel-caption {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #333333;
+		background: rgba(0, 0, 0, 0.7);
+		height: 60px;
+	}
+	.carousel-control {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  width: 5%;
+	  opacity: 1;
+	  font-size: 20px;
+	  color: #000;
+	  text-align: center;
+	  text-shadow: none;
+	  font-family: FontAwesome;
+	  font-size: 40px;
+	  padding-top: 50%;
+	}
+	/* Changes the position of the indicators */
+	.carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: 0px;
+		margin-right: -19px;
+	}
+	/* Changes the colour of the indicators */
+	.carousel-indicators li {
+		background: #c0c0c0;
+	}
+	.carousel-indicators .active {
+	background: #333333;
+	}
 
-.bg-pp {
-	background-color: #22C0AF;
-
-}
-
-
-.carousel-caption {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
-background: #333333;
-background: rgba(0, 0, 0, 0.7);
-height: 60px;
-}
-
-
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 5%;
-  opacity: 1;
-  font-size: 20px;
-  color: #000;
-  text-align: center;
-  text-shadow: none;
-  font-family: FontAwesome;
-  font-size: 40px;
-  padding-top: 50%;
-}
-
-/* Changes the position of the indicators */
-.carousel-indicators {
-	right: 50%;
-	top: auto;
-	bottom: 0px;
-	margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.carousel-indicators li {
-	background: #c0c0c0;
-}
-.carousel-indicators .active {
-background: #333333;
-}
-
+	.image-slider .item img {
+		width: 100%;
+		height: auto;
+	}
 
 /************************************/
 /* =BACK-TO-TOP                     */
@@ -513,4 +481,86 @@ background: #333333;
 	    right: 30px;
 	    bottom: 30px;
 	  }
+	}
+
+
+/*------- loader and wait ----------*/
+
+	#wrap{
+		position:relative;
+		width:100%;
+		min-width:1021px;
+		overflow:hidden;
+		z-index:2;
+		visibility:hidden
+	}
+	.loaded #wrap{
+		visibility:visible
+	}
+	#loader{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		height:100%;
+		z-index:1000;
+		background:#191919
+	}
+	.spinner {
+	  width: 40px;
+	  height: 40px;
+	  position: relative;
+	  top: 50%;
+	  left: 50%;
+	  margin-left: -20px;
+	  margin-top: -20px;
+	}
+	.double-bounce1,
+	.double-bounce2 {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 50%;
+	  background-color: #fff;
+	  opacity: 0.6;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  -webkit-animation: bounce 2s infinite ease-in-out;
+	  animation: bounce 2s infinite ease-in-out;
+	}
+	.double-bounce2 {
+	  -webkit-animation-delay: -1s;
+	  animation-delay: -1s;
+	}
+	@-webkit-keyframes bounce {
+	  0%,
+	  100% {
+	    -webkit-transform: scale(0);
+	  }
+	  50% {
+	    -webkit-transform: scale(1);
+	  }
+	}
+	@keyframes bounce {
+	  0%,
+	  100% {
+	    transform: scale(0);
+	    -webkit-transform: scale(0);
+	  }
+	  50% {
+	    transform: scale(1);
+	    -webkit-transform: scale(1);
+	  }
+	}
+
+	/************************************/
+/* =PARKPLEASE                      */
+/************************************/
+
+	.bg-pp {
+		background-color: #22C0AF;
+	}
+
+	#parkplease #loader {
+		background:#29b3a4
 	}

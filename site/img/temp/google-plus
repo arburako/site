@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="no-js ie ie7"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html style="" class="js no-touch history rgba multiplebgs backgroundsize cssanimations csstransforms csstransforms3d csstransitions svg wf-myriadpro-n3-active wf-myriadpro-n4-active wf-myriadpro-n7-active wf-myriadprocondensed-n3-active wf-active" lang="en-GB"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Google +  - Haraldur Thorleifsson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Google+ is the social layer of the Google universe. I designed the site for Upperquad, working closely with the Google+ marketing team and the Google webmaster team. I came up with concepts, user flows and (seemingly endless) layouts.">
+<script src="google-plus_files/ga.js" async="" type="text/javascript"></script><script async="" type="text/javascript" src="google-plus_files/szv6aqd.js"></script><script src="google-plus_files/modernizr.js"></script>
+<link rel="stylesheet" href="google-plus_files/88a4.css">
+<link rel="stylesheet" href="google-plus_files/googleplus.css">
+<link rel="stylesheet" href="google-plus_files/css.css">
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie.css"><![endif]-->
+<script>(function(){var b={kitId:"szv6aqd",scriptTimeout:3000},f=document.getElementsByTagName("html")[0];f.className+=" wf-loading";var c=setTimeout(function(){f.className=f.className.replace(/(\s|^)wf-loading(\s|$)/g," ");f.className+=" wf-inactive"},3000);var a=document.createElement("script"),g=false;a.src="//use.typekit.net/"+b.kitId+".js";a.type="text/javascript";a.async="true";a.onload=a.onreadystatechange=function(){var h=this.readyState;if(g||h&&h!="complete"&&h!="loaded"){return}g=true;clearTimeout(c);try{Typekit.load(b)}catch(d){}};var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)})();var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-24286470-1"]);_gaq.push(["_trackPageview"]);(function(){var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();</script><style type="text/css">.tk-myriad-pro{font-family:"myriad-pro",sans-serif;}.tk-myriad-pro-condensed{font-family:"myriad-pro-condensed",sans-serif;}</style><link href="google-plus_files/d.css" rel="stylesheet">
+</head><body class="case-googleplus loaded">
+
+
+<div id="everything" class="c">
+
+<div class="navbar">
+
+<div class="navbar-inner container">
+<a class="brand" href="http://haraldurthorleifsson.com/"><span>Haraldur Thorleifsson</span></a>
+<a class="navbar-toggle" href="http://haraldurthorleifsson.com/">menu</a>
+<ul>
+<li><a href="http://haraldurthorleifsson.com/">Home</a></li>
+<li><a href="mailto:h@ueno.co">Contact</a></li>
+<li class="twitter"><a target="_blank" href="http://twitter.com/hthorleifsson">Twitter</a></li>
+<li class="dribbble"><a target="_blank" href="http://dribbble.com/haraldurthorleifsson">Dribbble</a></li>
+<li class="case-studies">
+<ul>
+<li class="prev"><a href="http://haraldurthorleifsson.com/googlesxsw/">Google SXSW</a>
+</li><li class="next"><a href="http://haraldurthorleifsson.com/santatracker/">Santa Tracker</a>
+</li></ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="wrap">
+<div class="navbar-over"></div>
+<div class="hero level">
+
+<div class="upperquad">
+<a target="_blank" href="http://upperquad.com/">Made with the amazing people of Upperquad</a>
+</div>
+
+<h1>Share and discover<br>with Google+</h1>
+
+<img class="top-60" src="google-plus_files/hero.png" alt="" height="281" width="856">
+
+<div class="detail text-left container c top-120">
+
+<div class="box size-18 about">
+<div class="inner">
+<h2>About the project</h2>
+<p>Google+ is the social layer of the Google universe. With over 500 
+million registered users and 235 million active monthly users, it is the
+ fastest growing online service in history. We created a central place 
+filled to the brim with information about the service so unregistered 
+users (there are still a few) and registered users looking for more 
+information about how they can fully utilize the  possibilites of 
+Google+ can drop by and find what they need.</p>
+</div>
+</div>
+
+<div class="box role">
+<div class="inner">
+<h2 class="size-18">My Role</h2>
+<p>I designed the site for Upperquad, working closely with the Google+ 
+marketing team and the Google webmaster team. I came up with concepts, 
+user flows and (seemingly endless) layouts.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="level">
+
+<div class="container">
+
+<i class="plus-icon devices top-15"></i>
+
+<h1 class="top-45"><span>Responsively awesome</span></h1>
+<p class="top-15">All pages were designed to work across all devices and screen sizes.</p>
+
+<div class="join top-60 left-60">
+<img src="google-plus_files/1_002.jpg" alt="" height="2159" width="963">
+<img src="google-plus_files/2_002.jpg" alt="" height="1306" width="963">
+</div>
+
+</div>
+</div>
+
+<div class="level">
+
+<div class="container">
+
+<h1><span>Parlez-vous فارسی ?</span></h1>
+<p class="top-20 left-220 right-220">Since Google+ is a global product, 
+with users in every country in the world, the site needed to be 
+translated into dozens of languages. </p>
+<img class="top-60" src="google-plus_files/2.jpg" alt="" height="653" width="1021">
+
+<div class="text-left line-24 size-14 top-60 left-160 right-120">
+<p>Designing a site that works in multiple languages brings a unique set
+ of challenges. If you are reading this, you probably know that English 
+is written from left to right, as are all Germanic languages and in fact
+ most languages. However some of the languages the site was translated 
+to, like Farsi, are written and read from right to left. This means that
+ all layouts needed to work mirrored, this includes all background 
+images used for text and all UI elements.</p>
+
+<p>Translating also means that you need to factor in different lengths 
+of sentences depending on the language, making precise layouts and word 
+placements next to impossible. German is for instance notoriously long: 
+hovercraft (a word that was for some reason never used on the Google+ 
+site) in german is Luftkissenfahrzeug. When large chunks of copy are 
+translated, the compounded effect of this can wreak havoc on any layout.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="level">
+
+<div class="container">
+
+<i class="plus-icon"></i>
+<h1 class="top-40"><span>Overview pages</span></h1>
+<p class="top-15 left-220 right-220">The site had four main overview pages. Three of which use jump menus to guide users further down the long pages. </p>
+
+<div class="join top-55">
+<img src="google-plus_files/1_004.jpg" alt="" height="1685" width="1021">
+<img src="google-plus_files/2_005.jpg" alt="" height="1818" width="1021">
+</div>
+
+</div>
+
+</div>
+
+<div class="level">
+
+<div class="container">
+
+<i class="plus-icon image top-minus-15"></i>
+<h1 class="top-30"><span>Business as unusual</span></h1>
+<p class="top-15 left-120 right-120">Business and enterprise sites are 
+traditionally content heavy and (let’s be honest) dull. With the Google+
+ for business site, we however decided to build a playful and colourful 
+site that was unique from the consumer site but still felt like part of a
+ whole.</p>
+
+<div class="top-60 c join">
+<div class="pull-left">
+<img src="google-plus_files/1_003.jpg" alt="" height="2329" width="510">
+</div>
+<div class="pull-left">
+<img src="google-plus_files/2_003.jpg" alt="" height="2329" width="511">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="level">
+
+<div class="container">
+
+<h1><span>If you’re in the mood for more</span></h1>
+<p class="top-15">Below you’ll find some of the additional pages I designed for the project. </p>
+
+<div class="top-50 c join">
+<div class="pull-left">
+<img src="google-plus_files/1.jpg" alt="" height="1874" width="510">
+</div>
+<div class="pull-left">
+<img src="google-plus_files/2_004.jpg" alt="" height="1873" width="511">
+</div>
+<img class="clear" src="google-plus_files/3.jpg" alt="" height="837" width="1021">
+<img src="google-plus_files/4.jpg" alt="" height="1633" width="1021">
+<img src="google-plus_files/5.jpg" alt="" height="796" width="1021">
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="footer">
+
+<div class="greeting">
+<h1>Wow! Time really does fly when you’re having fun.</h1>
+<p class="top-20">I’m afraid this case study is just about over. But I've prepared a few more for you so there’s no need to panic (yet).</p>
+</div>
+<div class="od47-carousel">
+<div style="max-width: 1222px;" class="bx-wrapper"><div style="width: 100%; overflow: hidden; position: relative; height: 653px;" class="bx-viewport"><div style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(-1222px, 0px, 0px);" class="od47 c bxslider"><div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item sxsw bx-clone">
+<div class="item-inner">
+<div class="detail">
+<img src="google-plus_files/texas.png" alt="" height="238" width="239">
+<h1 class="top-30">SXSW 2012 <em class="g"></em></h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/googlesxsw/">Go to the Google at SXSW case study</a></p>
+</div>
+</div>
+</div>
+
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item santatracker start">
+<div class="item-inner">
+<img src="google-plus_files/santa.svg" alt="" height="702" width="557">
+<div class="detail">
+<h1><em class="g">Google</em> Santa Tracker</h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/santatracker/">Go to the Santa Tracker case study</a></p>
+</div>
+</div>
+</div>
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item morethanamap">
+<div class="item-inner">
+<div class="detail">
+<h1><em class="g">Google</em> More Than A Map</h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/morethanamap/">Go to the More than a Map case study</a></p>
+</div>
+</div>
+</div>
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item googledrive">
+<div class="item-inner">
+<div class="detail">
+<h1><em class="g">Google</em> Drive</h1>
+<img class="top-15" src="google-plus_files/drive-x2.png" alt="" height="122" width="156">
+<p><a class="btn" href="http://haraldurthorleifsson.com/googledrive/">Go to the Google Drive case study</a></p>
+</div>
+</div>
+</div>
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item shopilly">
+<div class="item-inner">
+<img src="google-plus_files/ipad.png" alt="" height="709" width="879">
+<div class="detail">
+<h1>Your shopping gets a makeover</h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/shopilly/">Go to the Shopilly case study</a></p>
+</div>
+</div>
+</div>
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item sxsw">
+<div class="item-inner">
+<div class="detail">
+<img src="google-plus_files/texas.png" alt="" height="238" width="239">
+<h1 class="top-30">SXSW 2012 <em class="g"></em></h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/googlesxsw/">Go to the Google at SXSW case study</a></p>
+</div>
+</div>
+</div>
+
+<div style="float: left; list-style: outside none none; position: relative; width: 1222px;" class="item santatracker start bx-clone">
+<div class="item-inner">
+<img src="google-plus_files/santa.svg" alt="" height="702" width="557">
+<div class="detail">
+<h1><em class="g">Google</em> Santa Tracker</h1>
+<p><a class="btn" href="http://haraldurthorleifsson.com/santatracker/">Go to the Santa Tracker case study</a></p>
+</div>
+</div>
+</div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+</div>
+<p class="end">Let’s chat! <a href="mailto:h@ueno.co">Contact me.</a></p>
+</div>
+
+<script src="google-plus_files/jquery.js"></script>
+<script>window.jQuery||document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
+<script src="google-plus_files/a202.js"></script></body></html>

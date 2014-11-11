@@ -25,11 +25,13 @@
 
     <!-- site specific styles -->
     <link href="css/sofia-pro.css" rel="stylesheet">
+
     <link href="css/theme-overide.css" rel="stylesheet">
+    <link href="css/parkplease.css" rel="stylesheet">
 
   
 
-  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ <script src="ht/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
   
 
@@ -37,12 +39,19 @@
 
 
 
-<body>
+<body id="parkplease">
+
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
 
 
   <div id="everything" class="detail-page">
 
-    <nav id="bt-menu" class="bt-menu">
+    <div id="bt-menu" class="bt-menu">
       <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -57,7 +66,7 @@
         <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
         <li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
       </ul>
-    </nav>
+    </div>
   
     
      
@@ -80,33 +89,207 @@
         <div class="level">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-8">
                 <div class="feature">
-                  <h5> About </h5>
-                  <p>The Dinamundo iPhone app is based on a simple yet powerful principle - to use smartphones to enable and enhance our personal connections. Our phones are intimate parts of lives, like it or not.  </p>
+                  <h3> About the Project </h3>
+                  <p class="pad-right-40">ParkPlease launched it’s service in May 2012 for San Francisco’s Outside Lands Music Festival, held every year at Golden Gate Park.  Our launch made city and regional headlines and helped over 180,000 concert goers find stress free parking. Since then, ParkPlease has connected thousands of parking space owners to drivers looking for spaces and has successfully facilitated parking for numerous events including America’s Cup, Fleet Week, SF Giants Games and the Hardly Strictly Blue Grass Music Festival. As a co-founder, I worked with a core team of 3 team to create, launch, and manage the ParkPlease business and product from June of 2012 through August of 2013.</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="feature">
-                  <h5> My Role </h5>
-                  <p>I led all facets of the product development lifecycle - strategy, interaction + visual design, execution process, etc - from concept ideation through product launch. </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="feature">
-                  <h5> My Role </h5>
-                  <p>I led all facets of the product development lifecycle - strategy, interaction + visual design, execution process, etc - from concept ideation through product launch. </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="feature">
-                  <h5> My Role </h5>
-                  <p>I led all facets of the product development lifecycle - strategy, interaction + visual design, execution process, etc - from concept ideation through product launch. </p>
+                  <h3> My Role </h3>
+                  <p> I managed the product roadmap, led the design process, oversaw the development and did my best to keep everyone running in the same direction. I also created the website flows, interactions and layouts from the ground up, and became responsible for the visual design and user operations after launch. </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+      <!-- stress free parking -->
+      <section>
+        <div class="level">
+          <div class="container">
+            <h1 class="text-center"> Stress Free Parking </h1>
+            <div class="row inner space-bottom-large">
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col">                   
+                  <p> Having a car is a privilege. Yes, a responsibility too, but a privilege first and foremost. Too many times you hear people complaining about what a burden it is to own a car. There are many stressful elements to owning a car including insurance and registration and, of course parking and (ugh) the dreaded parking ticket. At the same time, there too many empty driveways, unused parking spaces and vacant lots out there. Shouldn’t someone help spread the love? </p>
+                  <p>Enter ParkPlease, a peer-to-peer marketplace that alleviates the stress surrounding parking. People with empty parking spaces can use the service to post their spots and people who need parking can rent those spots. You’d be surprised that there are actually very few services who have had success in this arena. So when an old co-worker approached me in June 2012 and asked me to help out the </p>
+                </div>
+              </div> <!-- end column -->
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col">
+                  <p> team with the product, I was more than happy to get involved. I’ve been working with the ParkPlease team for the past couple months to create the product spec and get the website off the ground for a Beta launch for the Outside Lands Music Festival in August 2012</p>
+                  <p>The overall goal of ParkPlease is simply to de-stress parking. The challenges with the service are that parking is inherently stressful given that one’s automobile is likely her most expensive a valued possession. What else is up there on the list of expensive and valued possessions? One’s property. Therein lies the challenge of the experience surrounding the ParkPlease product: to create a worry-free, fun experience even when dealing with the things people tend to worry about most. So how can you accomplish this goal with interaction design? <b>Make it accessible. Make it social. Make it fun.</b></p>
+                </div>
+              </div> <!-- end column -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div> <!-- end level -->
+      </section>
+
+      <!-- make it accessible -->
+      <section>
+        <div class="level">        
+          <div class="container">
+            <h1 class="text-center"> Make it Accessible </h1>
+            <div class="row inner space-bottom-large">
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col"> 
+                  <p>In order to make the ParkPlease design accessible, I wanted to (1) deliver all relevant information as quickly as possible to the user and (2) be completely transparent about how the processes in the site work. </p>
+                  <p>The design of the homepage reflects goal of bringing all pertinent information and actions to the forefront and giving the user the tools to easily find exactly what they need. The navigation was designed so that the most important actions - park and post - are easily accessible and always available. As a buyer, the most relevant pieces of information to renting a parking spot are location and price. For this reason, the map takes up the most real estate on the page, and  </P>
+                </div>
+              </div> <!-- end column -->
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col"> 
+                  <P> the pins are marked with the daily price of the spot. Just one click away, is the spot detail modal if the user wants more information about the spot. The filters help narrow the spots further and the spots turn grey after they have been viewed so the user knows what they have already clicked on. The flows for posting a spot and for booking a spot were designed with the goal of being completely transparent to the user about what to expect. The pages for posting a spot show exactly the steps that the user will go through as they post their spot front and center, so the user knows where he is in the process at each step of the way. The flow for booking a spot explains to the user how the requests work at the header of each screen. </p>
+                </div>
+              </div> <!-- end column -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 col-sm-12">
+                <div id="parkplease-carousel-1" class="carousel slide image-slider">
+
+                  <ol class="carousel-indicators flex-control-nav">
+                    <li data-target="#parkplease-carousel-1" data-slide-to="1" class="active"></li>
+                    <li data-target="#parkplease-carousel-1" data-slide-to="2"></li>
+                    <li data-target="#parkplease-carousel-1" data-slide-to="3"></li>
+                    <li data-target="#parkplease-carousel-1" data-slide-to="4"></li>
+                    <li data-target="#parkplease-carousel-1" data-slide-to="5"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                   
+                    <div class="item active">
+                      <img src="img/old-content/parkplease/1-a.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>ParkPlease Home</p>
+                      </div>
+                    </div>
+                   
+                    <div class="row item">
+                      <img src="img/old-content/parkplease/1-b.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Booking Form</p>
+                      </div>
+                    </div>
+                   
+                    <div class="item">
+                      <img src="img/old-content/parkplease/1-c.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Booking Success</p>
+                      </div>
+                    </div>
+                
+                    <div class="item">
+                      <img src="img/old-content/parkplease/1-d.png" class="img-responsive"/>
+                      <div class="carousel-caption">
+                        <p>Post Spot Step 1</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="img/old-content/parkplease/1-e.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Post Spot Step 2</p>
+                      </div>
+                    </div>
+                 
+                    <div class="item">
+                      <img src="img/old-content/parkplease/1-f.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Post Spot Step 3</p>
+                      </div>
+                    </div>
+                  </div> <!-- end carousel-inner -->
+                  
+                  <a class="left carousel-control" href="#mparkplease-carousel-1" data-slide="prev">&#xf053;</a>
+                  <a class="right carousel-control" href="#parkplease-carousel-1" data-slide="next">&#xf054;</a>
+                
+                </div> <!-- end parkplease-carousel-1 -->
+              </div> <!-- end column -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div> <!-- end level -->
+      </section>
+
+      <!-- make it social -->
+      <section>
+        <div class="level">
+          <div class="container">
+            <h1 class="text-center"> Make it Social </h1>
+            <div class="row inner space-bottom-large">
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col"> 
+                  <p>How do you put people at ease with where they will be parking their most valued possession? How do you make people feel comfortable with allowing a stranger on to their property? Introduce them. Seeing a name, a picture, a Facebook profile, and activity associated with each user gives a sense of who that person might be and works towards the larger goal of de-stressing parking. That is why the ParkPlease product spec is permeated with social  </p>                 
+                </div>
+              </div> <!-- end column -->
+              <div class="col-md-6 col-sm-12">
+                <div class="text-col"> 
+                  <p>features. Each spot posting and each reservation request has a picture associated with it so that ParkPlease users remember its real people they’re dealing with to hopefully maintain a high quality standard throughout the service. Each user has a profile with their activity on the site. There is concept of following other users to plant the seeds of a social network community. </p>                
+                </div>
+              </div> <!-- end column -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div id="parkplease-carousel-2" class="carousel slide image-slider">
+
+                  <ol class="carousel-indicators flex-control-nav">
+                    <li data-target="#parkplease-carousel-2" data-slide-to="1" class="active"></li>
+                    <li data-target="#parkplease-carousel-2" data-slide-to="2"></li>
+                    <li data-target="#parkplease-carousel-2" data-slide-to="3"></li>
+                    <li data-target="#parkplease-carousel-2" data-slide-to="4"></li>
+                    <li data-target="#parkplease-carousel-2" data-slide-to="5"></li>
+                  </ol>
+
+
+
+                  <div class="carousel-inner">
+                   
+                    <div class=" item active">
+                      <img src="img/old-content/parkplease/2-a.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Site Activity Feed</p>
+                      </div>
+                    </div>
+                   
+                    <div class="row item">
+                      <img src="img/old-content/parkplease/2-b.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>Spot Detail from Activity Feed</p>
+                      </div>
+                    </div>
+                   
+                    <div class="item">
+                      <img src="img/old-content/parkplease/2-c.png" class="img-responsive" />
+                      <div class="carousel-caption">
+                        <p>User Profile</p>
+                      </div>
+                    </div>
+                   
+                    <div class="item">
+                      <img src="img/old-content/parkplease/2-d.png" class="img-responsive"/>
+                      <div class="carousel-caption">
+                        <p>Upcoming Reservation Detail</p>
+                      </div>
+                    </div>                
+                  </div> <!-- end carousel-inner -->
+                  
+                  <a class="carousel-control left" href="#parkplease-carousel-2" data-slide="prev">&#xf053;</a>
+                  <a class="carousel-control right" href="#parkplease-carousel-2" data-slide="next">&#xf054;</a>             
+                </div> <!-- end parkplease-carousel-1 -->
+              </div> <!-- end column -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div> <!-- end level -->
+      </section>
+
 
       <section>
         <div class="container">
@@ -171,191 +354,11 @@
                     </div>
                   </a>
                 </div>
-              </div>
-              
-              
-            
+              </div>          
             </div>
-            
-            
           </div><!--end of row-->
-        
-          
         </div><!--end of container-->
       </section>
-
-        <section>
-          <div class="level">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                  <div class="article-body">
-                    <h1> Stress Free Parking </h1>
-                    <p> Having a car is a privilege. Yes, a responsibility too, but a privilege first and foremost. Too many times you hear people complaining about what a burden it is to own a car. There are many stressful elements to owning a car including insurance and registration and, of course parking and (ugh) the dreaded parking ticket. At the same time, there too many empty driveways, unused parking spaces and vacant lots out there. Shouldn’t someone help spread the love? </p>
-                    <p>Enter ParkPlease, a peer-to-peer marketplace that alleviates the stress surrounding parking. People with empty parking spaces can use the service to post their spots and people who need parking can rent those spots. You’d be surprised that there are actually very few services who have had success in this arena. So when an old co-worker approached me in June 2012 and asked me to help out the team with the product, I was more than happy to get involved. I’ve been working with the ParkPlease team for the past couple months to create the product spec and get the website off the ground for a Beta launch for the Outside Lands Music Festival in August 2012</p>
-                    <p>The overall goal of ParkPlease is simply to de-stress parking. The challenges with the service are that parking is inherently stressful given that one’s automobile is likely her most expensive a valued possession. What else is up there on the list of expensive and valued possessions? One’s property. Therein lies the challenge of the experience surrounding the ParkPlease product: to create a worry-free, fun experience even when dealing with the things people tend to worry about most. So how can you accomplish this goal with interaction design? <b>Make it accessible. Make it social. Make it fun.</b></p>
-                  </div>
-                </div> <!-- end column -->
-              </div> <!-- end row -->
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <div id="parkplease-carousel-1" class="carousel slide image-slider">
-
-                    <ol class="carousel-indicators flex-control-nav">
-                      <li data-target="#parkplease-carousel-1" data-slide-to="1" class="active"></li>
-                      <li data-target="#parkplease-carousel-1" data-slide-to="2"></li>
-                      <li data-target="#parkplease-carousel-1" data-slide-to="3"></li>
-                      <li data-target="#parkplease-carousel-1" data-slide-to="4"></li>
-                      <li data-target="#parkplease-carousel-1" data-slide-to="5"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                     
-                      <div class=" item active">
-                        <img src="img/old-content/parkplease/1-a.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>ParkPlease Home</p>
-                        </div>
-                      </div>
-                     
-                      <div class="row item">
-                        <img src="img/old-content/parkplease/1-b.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Booking Form</p>
-                        </div>
-                      </div>
-                     
-                      <div class="item">
-                        <img src="img/old-content/parkplease/1-c.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Booking Success</p>
-                        </div>
-                      </div>
-                  
-                      <div class="item">
-                        <img src="img/old-content/parkplease/1-d.png" class="img-responsive"/>
-                        <div class="carousel-caption">
-                          <p>Post Spot Step 1</p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="img/old-content/parkplease/1-e.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Post Spot Step 2</p>
-                        </div>
-                      </div>
-                   
-                      <div class="item">
-                        <img src="img/old-content/parkplease/1-f.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Post Spot Step 3</p>
-                        </div>
-                      </div>
-                    </div> <!-- end carousel-inner -->
-                    
-                    <a class="left carousel-control" href="#mparkplease-carousel-1" data-slide="prev">&#xf053;</a>
-                    <a class="right carousel-control" href="#parkplease-carousel-1" data-slide="next">&#xf054;</a>
-                  
-                  </div> <!-- end parkplease-carousel-1 -->
-                </div> <!-- end column -->
-              </div> <!-- end row -->
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="level">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                  <div class="article-body">
-                    <h1> Make it accessible </h1>
-                    <p>In order to make the ParkPlease design accessible, I wanted to (1) deliver all relevant information as quickly as possible to the user and (2) be completely transparent about how the processes in the site work. </p>
-                    <br>
-                    <p>The design of the homepage reflects goal of bringing all pertinent information and actions to the forefront and giving the user the tools to easily find exactly what they need. The navigation was designed so that the most important actions - park and post - are easily accessible and always available. As a buyer, the most relevant pieces of information to renting a parking spot are location and price. For this reason, the map takes up the most real estate on the page, and the pins are marked with the daily price of the spot. Just one click away, is the spot detail modal if the user wants more information about the spot. The filters help narrow the spots further and the spots turn grey after they have been viewed so the user knows what they have already clicked on. </p> 
-                    <br>
-                    <p>The flows for posting a spot and for booking a spot were designed with the goal of being completely transparent to the user about what to expect. The pages for posting a spot show exactly the steps that the user will go through as they post their spot front and center, so the user knows where he is in the process at each step of the way. The flow for booking a spot explains to the user how the requests work at the header of each screen. </p>
-                  </div>
-                </div> <!-- end column -->
-              </div> <!-- end row -->
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <div id="parkplease-carousel-2" class="carousel slide image-slider">
-
-                    <ol class="carousel-indicators flex-control-nav">
-                      <li data-target="#parkplease-carousel-2" data-slide-to="1" class="active"></li>
-                      <li data-target="#parkplease-carousel-2" data-slide-to="2"></li>
-                      <li data-target="#parkplease-carousel-2" data-slide-to="3"></li>
-                      <li data-target="#parkplease-carousel-2" data-slide-to="4"></li>
-                      <li data-target="#parkplease-carousel-2" data-slide-to="5"></li>
-                    </ol>
-
-
-
-                    <div class="carousel-inner">
-                     
-                      <div class=" item active">
-                        <img src="img/old-content/parkplease/2-a.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Site Activity Feed</p>
-                        </div>
-                      </div>
-                     
-                      <div class="row item">
-                        <img src="img/old-content/parkplease/2-b.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>Spot Detail from Activity Feed</p>
-                        </div>
-                      </div>
-                     
-                      <div class="item">
-                        <img src="img/old-content/parkplease/2-c.png" class="img-responsive" />
-                        <div class="carousel-caption">
-                          <p>User Profile</p>
-                        </div>
-                      </div>
-                     
-                      <div class="item">
-                        <img src="img/old-content/parkplease/2-d.png" class="img-responsive"/>
-                        <div class="carousel-caption">
-                          <p>Upcoming Reservation Detail</p>
-                        </div>
-                      </div>
-                    
-                    </div> <!-- end carousel-inner -->
-                    
-                    <a class="carousel-control left" href="#parkplease-carousel-2" data-slide="prev">&#xf053;</a>
-                    <a class="carousel-control right" href="#parkplease-carousel-2" data-slide="next">&#xf054;</a>
-                 
-                  </div> <!-- end parkplease-carousel-1 -->
-                </div> <!-- end column -->
-              </div> <!-- end row -->
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="level">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                  <div class="article-body">
-                    <h1> Make it social </h1>
-                    <p>How do you put people at ease with where they will be parking their most valued possession? How do you make people feel comfortable with allowing a stranger on to their property? Introduce them. Seeing a name, a picture, a Facebook profile, and activity associated with each user gives a sense of who that person might be and works towards the larger goal of de-stressing parking. That is why the ParkPlease product spec is permeated with social features. </p>
-                    <br>
-                    <p>Each spot posting and each reservation request has a picture associated with it so that ParkPlease users remember its real people they’re dealing with to hopefully maintain a high quality standard throughout the service. Each user has a profile with their activity on the site. There is concept of following other users to plant the seeds of a social network community. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
     </main> <!-- End wrapper -->
   </div>
@@ -430,7 +433,7 @@
             });
         </script>
 
-
+  <script src="ht/js/a202.js"></script>
 
   </body>
   </html>
