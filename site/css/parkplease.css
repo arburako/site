@@ -22,3 +22,7 @@
 	  background-color: #22C0AF;
 	  opacity: 1;
 	}
+
+	.carousel-indicators .active {
+	background: #22C0AF;
+}
