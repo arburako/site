@@ -1,0 +1,76 @@
+
+body{
+	color:#7e7e7e;
+	font:300 28px/38px 'sofiaprolightregular',MyriadPro,'Myriad Pro','Open Sans','Helvetica Neue',Helvetica,sans-serif
+}
+#loader{
+	background:#eff2f5
+}
+
+
+.navbar{
+	background:#rgba(0,0,0,.5)
+}
+.navbar .brand{
+	margin-left:0
+}
+
+
+
+#loader {
+		background:#f1f1f1
+}
+
+	.double-bounce1,
+	.double-bounce2 {
+		background-color:rgba(0,0,0,.5)
+	}
+
+header#header {
+  text-align: center;
+  background: none repeat scroll 0% 0% #F2F2F2;
+  padding: 89px 0px 55px;
+}
+
+header#header h1 {
+    color: #555;
+    letter-spacing: 9px;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 45px;
+		font-weight: 900;
+}
+
+header#header h2 {
+    font-size: 15px;
+    color: #9F9F9F;
+    margin: 10px 0px 0px;
+    font-weight: normal;
+}
+
+section#intro {
+    padding: 85px 0;
+    background-color: #fff;
+}
+
+
+section#intro p {
+    color: #999;
+    font-size: 18px;
+    line-height: 2;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'SofiaProUltraLight'
+}
+
+.navbar {
+	margin-bottom: 50px;
+}
+
+/* end charlie */
+
+.lead{
+	font-size:36px;
+	line-height:48px
+}

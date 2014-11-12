@@ -245,7 +245,7 @@
 		background-color: #22C0AF
 	}
 
-	.case-study-summaries  section.parkplease img {
+	.case-study-summaries  section img {
 		width: 100%;
 		height: auto;
 		margin: 40px auto;
@@ -260,9 +260,11 @@
 		background-color: #F9766B
 	}
 
-	.case-study-summaries  section.ldc-od {
+	section.ondemand {
 		background-color: #506179
 	}
+
+
 
 	.morethanamap .item-inner{background:#a4bede url(../img/morethanamap/hero.jpg) 59% 52% no-repeat}
 	.morethanamap .detail{top:166px;width:496px;height:353px;margin-left:-248px}
@@ -299,53 +301,7 @@
 	.no-js .od47{height:auto;margin-bottom:90px}
 	.no-js .od47 .item{clear:both}
 
-		@media(min-width:1222px){
-			.od47-carousel .bx-viewport{overflow:visible!important}
-			.footer .od47 .item{width:1222px}
-		}
-		@media(max-width:768px){
-			.googledrive img{margin-left:48px}
-		}
 
-		@media(min-width:569px) and (max-width:767px){
-			.od47 .detail{left:0;right:0;margin-left:auto;margin-right:auto}
-			.santatracker h1{max-width:60%;margin:auto;line-height:84px}
-			.santatracker img{width:340px;height:429px}
-			.shopilly img{top:-25%}
-		}
-		@media(max-width :568px){
-			.od47-carousel .bx-controls-direction a{position:static;display:none}
-			.shot b+span{margin-left:15px}
-			.shot b,.shot b+span{opacity:1}
-			.od47-carousel{margin-bottom:30px}
-			.footer .od47,.footer .od47-carousel{height:auto;margin-bottom:0}
-			.od47-carousel .bx-viewport{height:auto!important;overflow:visible!important}
-			.od47,.od47-carousel,.od47 .item,.bx-viewport{width:100%!important}
-			.od47 .item{float:none!important;height:240px}
-			.bx-clone,.bx-pager{display:none}
-			.od47-carousel .od47 .detail{position:static;margin:0 auto}
-			.od47 .btn{margin-bottom:20px;font-size:13px;padding:5px 10px}
-			.od47 .g{background-size:100%;width:48px;height:16.5px;margin:20px auto 0}
-			
-			.googleplus img{width:100px;height:100px;margin:30px 0 0 10px}
-			
-			.santatracker img{width:186px;height:234px;left:-100px;z-index:0}
-			.santatracker h1{font-size:50px;line-height:40px;display:inline-block;max-width:3em}
-			.santatracker .btn{background:#00aeef}
-			
-			.morethanamap .item-inner{background-size:700px 293px;background-position:center}
-			.morethanamap h1{font-size:26px;line-height:32px;max-width:165px;margin:40px auto}
-			
-			.googledrive h1{font-size:46px;line-height:46px}
-			.googledrive img{width:100px;height:78px;margin-left:20px}
-			
-			.shopilly h1{font-size:22px;line-height:22px}
-			.shopilly img{width:144px;height:115px;position:static;margin-top:20px}
-			
-			.sxsw h1{font-size:32px;line-height:32px}
-			.sxsw img{width:90px;height:90px;margin-top:10px}
-			.sxsw .g{margin:5px auto}
-		}
 
 
 /* bx wrapper - slider */

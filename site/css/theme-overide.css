@@ -381,7 +381,7 @@ a, a:hover, a:focus {
 
 	p.subtitle {
 		font-family: 'SofiaProLightItalic';
-		font-size: 1em;
+		font-size: 16px;
 		margin-top: -40px;
 	}
 
@@ -975,48 +975,68 @@ a, a:hover, a:focus {
 			position:relative;
 			z-index:100
 		}
+	}
+
+
+
+	@media only screen and (max-width:280px){
+		.navbar,.navbar ul{
+			height:auto;
+			max-height:none;
+			overflow:visible;
+			display:block;
+			position:static
+		}
+		.navbar .navbar-toggle{
+			display:none
+		}
+		.navbar ul{
+			clear:both;
+			padding:5px;
+			background:#fff;
+			text-align:center
+		}
+		.navbar li{
+			display:block;
+			width:100%!important;
+			padding:0;
+			line-height:14px;
+			border:none!important
+		}
+	}
+
+/************************************/
+/* =case study summaries                    */
+/************************************/
+
+
+
+section.case-study-summary {
+    padding: 100px 15px;
+    text-align: center;
+}
+
+section.case-study-summary .hero {
+    margin-bottom: 70px;
+}
+
+section.case-study-summary h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: 'SofiaProRegular';
 }
 
 
 
-@media only screen and (max-width:280px){
-	.navbar,.navbar ul{
-		height:auto;
-		max-height:none;
-		overflow:visible;
-		display:block;
-		position:static
-	}
-	.navbar .navbar-toggle{
-		display:none
-	}
-	.navbar ul{
-		clear:both;
-		padding:5px;
-		background:#fff;
-		text-align:center
-	}
-	.navbar li{
-		display:block;
-		width:100%!important;
-		padding:0;
-		line-height:14px;
-		border:none!important
-	}
+section.case-study-summary p.subtitle {
+    margin-bottom: 30px;
+    color: rgba(255,255,255,.7);
+    font-family: 'SofiaProUltraLight'
 }
 
-	.case-study-summaries section {
-		margin: 0;
-		padding: 10%;
-		width: 100%;
-		height: auto;
-	}
-
-	.case-study-summaries .detail *{
-		color:#fff;
-		text-align:center;
-		display:block;
-	}
 
 	.case-study-summary .btn{
 		display:inline-block;
@@ -1035,12 +1055,10 @@ a, a:hover, a:focus {
 	}
 	.case-study-summary .btn:hover{
 		border-color:#fff;
-		background-color: none;
+		background-color: transparent;
 	}
 
-	.case-study-summaries  section.parkplease {
-		background-color: #22C0AF
-	}
+
 
 	.case-study-summaries  section.parkplease img {
 		width: 100%;
@@ -1048,25 +1066,23 @@ a, a:hover, a:focus {
 		margin: 40px auto;
 	}
 
-	section.dinamundo {
-		background-color: #1D9FD3
-	}
+section#parkplease {
+    background: none repeat scroll 0% 0% #22C0AF;   
+}
+section#dinamundo {
+    background: none repeat scroll 0% 0% #1D9FD3;   
+}
+section#fours {
+    background: none repeat scroll 0% 0% #F9766B; 
+}
+section#ondemand {
+    background: none repeat scroll 0% 0% #506179; 
+}
 
 
-	.case-study-summaries  section.fours {
-		background-color: #F9766B
-	}
-
-	.case-study-summaries  section.ldc-od {
-		background-color: #506179
-	}
 	
 .lightbox-link-mrv .background-image-holder {
 	border: 1px solid rgba(0,0,0,.7);
 	border-radius: 2px;
 }
 
-section.making-of {
-	background-color: #31383C;
-	color: #AAA;
-}

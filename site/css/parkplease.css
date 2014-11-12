@@ -26,3 +26,8 @@
 	.carousel-indicators .active {
 	background: #22C0AF;
 }
+
+section.making-of {
+	background-color: #31383C;
+	color: #AAA;
+}

@@ -1,0 +1,37 @@
+	.navbar {
+	    background: none repeat scroll 0 0 #b8c4ce;
+	}
+	.bg-pp {
+		background-color: #1D9FD3;
+	}
+
+	#loader {
+		background:#1D9FD3
+	}
+
+	.navbar{
+		background:#198CB9
+	}
+
+	.cd-top {
+	  background: #198CB9 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	}
+
+	.no-touch .cd-top:hover {
+	  background-color: #198CB9;
+	  opacity: 1;
+	}
+
+	.carousel-indicators .active {
+	background: #1D9FD3;
+}
+
+section.making-of {
+	background-color: #1D9FD3;
+	color: #AAA;
+}
+
+.hero-main {
+	width: 30%;
+	margin: -80px 35% 80px 35%;
+}
