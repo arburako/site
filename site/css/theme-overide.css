@@ -25,6 +25,9 @@ a, a:hover, a:focus {
 
 
 
+.container {
+	max-width: 1021px;
+}
 
 
 /************************************/
