@@ -2,6 +2,10 @@
 @import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
 
 
+#loader {
+	x-display:none!important;
+}
+
 html {
 	margin: 0;
 	padding: 0;
