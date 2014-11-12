@@ -34,12 +34,13 @@ header#header {
 
 header#header h1 {
     color: #555;
-    letter-spacing: 9px;
+    letter-spacing: 5px;
     margin: 0px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 45px;
 		font-weight: 900;
+		line-height: 65px;
 }
 
 header#header h2 {
@@ -56,12 +57,34 @@ section#intro {
 
 
 section#intro p {
-    color: #999;
+    color: #9F9F9F;
     font-size: 18px;
     line-height: 2;
     padding-bottom: 25px;
     text-align: center;
-    font-family: 'SofiaProUltraLight'
+    font-family: 'sofiaprolightregular';
+    padding-top: 20px;
+    width: 78%;
+    margin: auto 11%;
+}
+
+section#intro h2 {
+    margin-bottom: 20px;
+    font-family: 'sofiaproultralight';
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	section#intro p {
+    max-width: 88%;
+    margin: auto 6%;
+	}
+
+	.case-study-summary img.hero {
+		max-width: 80%;
+		margin: 40px 10%;
+	}
+
 }
 
 .navbar {
@@ -73,4 +96,10 @@ section#intro p {
 .lead{
 	font-size:36px;
 	line-height:48px
+}
+
+strong {
+	color: #999;
+	font-weight: normal;
+	font-style: normal;
 }

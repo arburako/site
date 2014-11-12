@@ -35,8 +35,8 @@
 </head>
 </head>
 
-<body class="case-home">
-    <div id="loader">
+<body id="home">
+  <div id="loader" style="display: none;">
     <div class="spinner">
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
@@ -65,17 +65,25 @@
 
         <header id="header">
           <h1> ALEXA BURAKOFF </h1>
-          <h2> Web, UI/UX and Product Designer </h2>
+          <h2> Product Designer </h2>
         </header>
 
-        <section id="intro">
-          <div class="row column">
-            <div class="col-md-6 col-md-offset-3">
-              <p>I am a Web, UI and Branding designer from Newport Beach, CA passing the time in Birmingham, Al. Currently working with the amazing crew at Focus Lab as Interactive Director. Some times I dribbble stuff, I tend to tweet very useless and sometimes funny things as well as take the occasional photo.</p>
+        <section id="intro" class="expanding-list">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="span4 collapse-group">
+                  <p>Hi, I’m <strong>Alexa</strong>. I design engaging user experiences and go-to-market strategies for start ups with <strong>big ideas</strong>.</p>
+                  <p class="collapse"> The word <strong>design</strong> means a lot to me - it infiltrates everything from the <strong>product</strong> specifications to the implementation <strong>strategy</strong> and the <strong>process</strong> that surrounds it. I am <strong>passionate</strong> about the experience of the <strong>users</strong> and helping the <strong>team</strong> achieve their best work. This belief has led me to <strong>excel</strong> in all facets of product development including <strong>experience</strong> design, <strong>visual</strong> design, iteration <strong>planning</strong>, project <strong>management</strong>, maintaining a high level <strong>roadmap</strong> and I've recently picked up <strong>html</strong> and <strong>css</strong>.
+                  <br></br> I am currently <strong>available</strong> for part time or full time hire in <strong>San Francisco, CA</strong>. My portfolio includes samples of work from my <strong>6+ years of experience</strong> in all facets of product design - the user experience, the visual design and the strategy behind it. <strong>Please enjoy. </strong> </p>
+                  <p><a class="btn-toggle btn btn-primary" href="#">more info</a></p>
+                </div>   
+              </div> 
             </div>
           </div>
         </section>
 
+  
 
         <div class="case-study-summaries">
           
@@ -86,7 +94,7 @@
                   <div class="col-md-6 col-md-offset-3">
                     <h1> ParkPlease </h1>
                     <p class="subtitle"> Product Design, Web Design, Product Strategy </p>
-                    <img alt="ParkPlease" src="ht/img/case-study-summaries/pp-OSL.png" class="hero img-responsive">
+                    <img alt="ParkPlease" src="img/parkplease/parkplease-main.PNG" class="hero img-responsive">
                     <p><a href="parkplease.html" class="btn">view case study</a></p>
                   </div>
                 </div>
@@ -100,7 +108,7 @@
                 <div class="row">
                   <div class="col-md-4 col-md-offset-4">
                     <h1> Dinamundo </h1>
-                    <img alt="dinamundo" src="ht/img/case-study-summaries/dm-icon.png" class="hero img-responsive">
+                    <img alt="dinamundo" src="img/dinamundo/dinamundo-main.png" class="hero img-responsive">
                     <p><a href="dinamundo.html" class="btn">view case study</a></p>
                   </div>
                 </div>
@@ -112,9 +120,9 @@
             <div class="container">            
               <div class="detail">
                 <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
+                  <div class="col-md-6 col-md-offset-3">
                     <h1> 16Fours </h1>
-                    <img alt="16fours" src="img/16fours/16fours-main.png" class="hero img-responsive">
+                    <img alt="16fours" src="img/16fours/16fours-main-3.png" class="hero img-responsive">
                     <p><a href="16fours.html" class="btn">view case study</a></p>
                   </div>
                 </div>
@@ -126,7 +134,7 @@
             <div class="container">            
               <div class="detail">
                 <div class="row">
-                  <div class="col-md-4 col-md-offset-4">
+                  <div class="col-md-6 col-md-offset-3">
                     <h1> On Demand  </h1>
                     <img alt="On Demand" src="img/ondemand/hero-bg.PNG" class="hero img-responsive">
                     <p><a href="ondemand.html" class="btn">view case study</a></p>
@@ -152,6 +160,8 @@
       </div>
     </main>
 
+
+
   <!-- script references -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.plugin.min.js"></script>
@@ -167,19 +177,21 @@
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
 
-  <!-- back to top -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/main2.js"></script> <!-- Gem jQuery -->
+    <!-- script references -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="ht/js/a202.js"></script>
 
-  
-  <!-- border menu animation -->
-    <script src="js/classie.js"></script>
-    <script src="js/borderMenu.js"></script>
-<!-- script references -->
-	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- script references -->
 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-	
-	<script src="ht/js/a202.js"></script>
+  <script>
+ $('.btn-toggle').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $collapse = $this.closest('.collapse-group').find('.collapse');
+    $collapse.collapse('toggle');
+});
+</script>
 
 </body></html>

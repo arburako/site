@@ -307,9 +307,14 @@ a, a:hover, a:focus {
 
 	.handwritten {
 		font-family: "Shadows Into Light Two",cursive;
-
     margin-bottom: 0;
     letter-spacing: 1px;
+	}
+
+	.subtitle {
+		font-family: 'SofiaProUltraLight';
+		font-size: 16px;
+		margin-top: -40px;
 	}
 
 /************************************/
@@ -366,23 +371,11 @@ a, a:hover, a:focus {
 		font-weight: 400;
 		font-size: 48px;
 		line-height: 54px;
-	}
-	.hero h1 em {
-		display: block;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 18px;
-		margin-top: 20px;
+		letter-spacing: 1px;
 	}
 	.hero .level {
 		padding-top: 101px;
 		padding-bottom: 40px;
-	}
-
-	p.subtitle {
-		font-family: 'SofiaProLightItalic';
-		font-size: 16px;
-		margin-top: -40px;
 	}
 
 	header.project-title {
@@ -403,11 +396,17 @@ a, a:hover, a:focus {
 			height: 400px;
 		}
 		.hero h1 {
-			font-size: 36px;
-			line-height: 48px;
+			font-size: 24px;
+			line-height: 36px;
+			max-width: 90%;
+			margin: auto 5%;
 		}
 		header.project-title {
-			margin: 40px auto 20px auto;
+			margin: 20px auto 20px auto;
+		}
+		.hero header.project-title p.subtitle {
+			margin-top: 0;
+			font-size: 13px;
 		}
 
 		.hero img {
@@ -1011,31 +1010,29 @@ a, a:hover, a:focus {
 
 
 
-section.case-study-summary {
-    padding: 100px 15px;
-    text-align: center;
-}
+	section.case-study-summary {
+	    padding: 100px 15px;
+	    text-align: center;
+	}
 
-section.case-study-summary .hero {
-    margin-bottom: 70px;
-}
+	section.case-study-summary .hero {
+	    margin-bottom: 70px;
+	}
 
-section.case-study-summary h1 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #fff;
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-family: 'SofiaProRegular';
-}
-
-
-
-section.case-study-summary p.subtitle {
-    margin-bottom: 30px;
-    color: rgba(255,255,255,.7);
-    font-family: 'SofiaProUltraLight'
-}
+	section.case-study-summary h1 {
+	    font-size: 30px;
+	    margin-bottom: 30px;
+	    color: #fff;
+	    letter-spacing: 3px;
+	    font-weight: 400;
+	    font-family: 'SofiaProRegular';
+	}
+	section.case-study-summary p.subtitle {
+	    margin-bottom: 30px;
+	    margin-top: -20px;
+	    color: rgba(255,255,255,.7);
+	    font-family: 'SofiaProUltraLight'
+	}
 
 
 	.case-study-summary .btn{
@@ -1066,23 +1063,37 @@ section.case-study-summary p.subtitle {
 		margin: 40px auto;
 	}
 
-section#parkplease {
-    background: none repeat scroll 0% 0% #22C0AF;   
-}
-section#dinamundo {
-    background: none repeat scroll 0% 0% #1D9FD3;   
-}
-section#fours {
-    background: none repeat scroll 0% 0% #F9766B; 
-}
-section#ondemand {
-    background: none repeat scroll 0% 0% #506179; 
-}
+	section#parkplease {
+	    background: none repeat scroll 0% 0% #22C0AF;   
+	}
+	section#dinamundo {
+	    background: none repeat scroll 0% 0% #1D9FD3;   
+	}
+	section#fours {
+	    background: none repeat scroll 0% 0% #F9766B; 
+	}
+	section#ondemand {
+	    background: none repeat scroll 0% 0% #506179; 
+	}
 
 
-	
-.lightbox-link-mrv .background-image-holder {
-	border: 1px solid rgba(0,0,0,.7);
-	border-radius: 2px;
-}
+		
+	.lightbox-link-mrv .background-image-holder {
+		border: 1px solid rgba(0,0,0,.7);
+		border-radius: 2px;
+	}
 
+.btn-primary:focus, .btn-primary{
+	  border: 2px solid #22C0AF;
+    border-radius: 25px;
+    color: #22C0AF;
+    display: inline-block;
+    font-family: 'SofiaProLightRegular';
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 14px 28px 13px;
+    text-transform: uppercase;
+    background: transparent;
+	}
