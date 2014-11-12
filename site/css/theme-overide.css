@@ -19,12 +19,16 @@ body {
 	line-height: 1.6em;
 }
 
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+
 
 
 
 
 /************************************/
-/* =NAV-MENU                       */
+/* =HIDDEN NAV-MENU                       */
 /***********************************/
 
 
@@ -813,7 +817,11 @@ body {
 	.navbar .next a:after{
 		display:none
 	}
-	.navbar .next a:before{left:25px;border-width:5.5px 0 5.5px 6px;border-color:transparent transparent transparent #fff}
+	.navbar .next a:before{
+		left:25px;
+		border-width:5.5px 0 5.5px 6px;
+		border-color:transparent transparent transparent #fff
+	}
 	.navbar a.icon{
 		vertical-align:top;
 		display:block;
@@ -825,4 +833,216 @@ body {
 		text-indent:100%;
 		white-space:nowrap;
 		overflow:hidden
+	}
+		@media(max-width:1020px){
+		.navbar .container{
+			padding:0
+		}
+		.navbar a.brand{
+			margin-left:10px
+		}
+	}
+	@media(max-width:568px){
+		.navbar{
+			overflow:hidden;
+			max-height:41px;
+			border: none;
+		}
+		.navbar ul,.navbar li{
+			float:none
+		}
+		.navbar.open{
+			height:216px;
+			max-height:216px
+		}
+		.navbar-over.open{
+			visibility:visible;
+			opacity:.6;
+			z-index:998
+		}
+		.navbar ul{
+			display:none
+		}
+		.navbar.open ul{
+			display:block;
+			clear:both;
+			background:#fff;
+			height:107px;
+			padding:35px 0 39px;
+			text-align:center;
+			width:100%;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box
+		}
+		.navbar li{
+			width:75px;
+			display:inline-block!important;
+			line-height:10px;
+			padding:15px 0 12px
+		}
+		.navbar ul a{
+			color:#555;
+			vertical-align:top;
+			margin:0
+		}
+		.navbar li.case-studies{
+			margin:0!important;
+			padding:0;
+			border:0;
+			width:0
+		}
+		.navbar .case-studies ul{
+			position:absolute;
+			top:100%;
+			left:0;
+			right:0;
+			height:auto;
+			border-top:1px solid #ccc;
+			padding:29px 0
+		}
+		.navbar .case-studies li,.navbar .case-studies a{
+			margin:0
+		}
+		.navbar .case-studies li{
+			display:inline-block;
+			width:40%;
+			padding:0;
+			margin:0;
+			text-align:left
+		}
+		.navbar .case-studies a{
+			text-indent:0;
+			margin:0;
+			width:auto;
+			padding:0;
+			background:0
+		}
+		.navbar .case-studies a:hover{
+			background:0
+		}
+		.navbar .case-studies .prev{
+			text-align:right;
+			margin:0
+		}
+		.navbar .prev a:before,.navbar .next a:after{
+			position:static;
+			display:inline-block;
+			margin:0 10px
+		}
+		.navbar .prev a:before{
+			border-width:4.5px 5px 4.5px 0;
+			border-color:transparent #656565 transparent transparent
+		}
+		.navbar .next a:before{
+			display:none
+		}
+		.navbar .next a:after{
+			border-width:4.5px 0 4.5px 5px;
+			border-color:transparent transparent transparent #656565
+		}
+		.navbar .prev a{
+			padding:0 20px 0 7px
+		}
+		.navbar .next a{
+			padding:0 7px 0 20px
+		}
+		.navbar a.icon{
+			background:0;
+			text-indent:0;
+			padding:0;
+			width:auto;
+			display:inline
+		}
+		.navbar a.icon:hover{
+			background:none!important
+		}
+		.navbar .navbar-toggle{
+			display:block;
+			position:relative;
+			z-index:100
+		}
+}
+
+
+
+@media only screen and (max-width:280px){
+	.navbar,.navbar ul{
+		height:auto;
+		max-height:none;
+		overflow:visible;
+		display:block;
+		position:static
+	}
+	.navbar .navbar-toggle{
+		display:none
+	}
+	.navbar ul{
+		clear:both;
+		padding:5px;
+		background:#fff;
+		text-align:center
+	}
+	.navbar li{
+		display:block;
+		width:100%!important;
+		padding:0;
+		line-height:14px;
+		border:none!important
+	}
+}
+
+	.case-study-summaries section {
+		margin: 0;
+		padding: 10%;
+		width: 100%;
+		height: auto;
+	}
+
+	.case-study-summaries .detail *{
+		color:#fff;
+		text-align:center;
+		display:block;
+	}
+
+	.case-study-summaries .btn{
+		display:inline-block;
+		color:#fff;
+		font-size:16px;
+		line-height:16px;
+		font-weight:400;
+		padding:15px 22px;
+		border-radius:5px;
+		border:1px solid #fff;
+		border:1px solid rgba(255,255,255,0.4);
+		-webkit-transition:border-color .2s ease-in;
+		-moz-transition:border-color .2s ease-in;
+		-o-transition:border-color .2s ease-in;
+		transition:border-color .2s ease-in
+	}
+	.case-study-summaries .btn:hover{
+		border-color:#fff
+	}
+
+	.case-study-summaries  section.parkplease {
+		background-color: #22C0AF
+	}
+
+	.case-study-summaries  section.parkplease img {
+		width: 100%;
+		height: auto;
+		margin: 40px auto;
+	}
+
+	.case-study-summaries  section.dinamundo {
+		background-color: #D2D3CD
+	}
+
+
+	.case-study-summaries  section.fours {
+		background-color: #F9766B
+	}
+
+	.case-study-summaries  section.ldc-od {
+		background-color: #506179
 	}

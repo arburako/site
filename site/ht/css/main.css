@@ -1177,92 +1177,224 @@
 	.carousel-indicators li.active{margin:0 3px;width:10px;height:10px}
 }
 @media(max-width:568px){
-	body,.size-14,.size-15,.size-16,.size-18{font-size:13px;line-height:22px}
-
-#everything{margin-bottom:0}[class*="line-"]{
-	line-height:22px
+	body,
+	.size-14,
+	.size-15,
+	.size-16,
+	.size-18{
+		font-size:13px;
+		line-height:22px
+	}
+	#everything{margin-bottom:0}[class*="line-"]{
+		line-height:22px
+	}
+	h1{
+		font-size:26px;
+		line-height:30px
+	}
+	h1 span{
+		padding:0;
+		background:transparent
+	}
+	h2{
+		font-size:16px
+	}
+	.hero.level{
+		padding-top:90px
+	}
+	.level:last-child{
+		padding-bottom:40px
+	}
+	.text-left,.text-right{
+		text-align:center
+	}
+	.navbar{
+		overflow:hidden;
+		max-height:41px
+	}
+	.navbar ul,.navbar li{
+		float:none
+	}
+	.navbar.open{
+		height:216px;
+		max-height:216px
+	}
+	.navbar-over.open{
+		visibility:visible;
+		opacity:.6;
+		z-index:998
+	}
+	.navbar ul{
+		display:none
+	}
+	.navbar.open ul{
+		display:block;
+		clear:both;
+		background:#fff;
+		height:107px;
+		padding:35px 0 39px;
+		text-align:center;
+		width:100%;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box
+	}
+	.navbar li{
+		width:75px;
+		display:inline-block!important;
+		line-height:10px;
+		padding:15px 0 12px
+	}
+	.navbar li.twitter{
+		border-left:1px solid #cecece
+	}
+	.navbar ul a{
+		color:#555;
+		vertical-align:top;
+		margin:0
+	}
+	.navbar li.case-studies{
+		margin:0!important;
+		padding:0;
+		border:0;
+		width:0
+	}
+	.navbar .case-studies ul{
+		position:absolute;
+		top:100%;
+		left:0;
+		right:0;
+		height:auto;
+		border-top:1px solid #6d7982;
+		padding:29px 0
+	}
+	.navbar .case-studies li,.navbar .case-studies a{
+		margin:0
+	}
+	.navbar .case-studies li{
+		display:inline-block;
+		width:50%;
+		padding:0;
+		margin:0;
+		text-align:left
+	}
+	.navbar .case-studies a{
+		text-indent:0;
+		margin:0;
+		width:auto;
+		padding:0;
+		background:0
+	}
+	.navbar .case-studies a:hover{
+		background:0
+	}
+	.navbar .case-studies .prev{
+		text-align:left;
+		margin:0
+	}
+	.navbar .prev a:before,.navbar .next a:after{
+		position:static;
+		display:inline-block;
+		margin:0 10px
+	}
+	.navbar .prev a:before{
+		border-width:4.5px 5px 4.5px 0;
+		border-color:transparent #656565 transparent transparent
+	}
+	.navbar .next a:before{
+		display:none
+	}
+	.navbar .next a:after{
+		border-width:4.5px 0 4.5px 5px;
+		border-color:transparent transparent transparent #656565
+	}
+	.navbar .prev a{
+		padding:0 20px 0 7px
+	}
+	.navbar .next a{
+		padding:0 7px 0 20px
+	}
+	.navbar a.icon{
+		background:0;
+		text-indent:0;
+		padding:0;
+		width:auto;
+		display:inline
+	}
+	.navbar a.icon:hover{
+		background:none!important
+	}
+	.navbar .navbar-toggle{
+		display:block;
+		position:relative;
+		z-index:100
+	}
+	.container{
+		position:relative
+	}
+	.footer{
+		margin-top:0!important;
+		font-size:20px;
+		line-height:24px;
+		height:auto!important
+	}
+	.greeting{
+		padding:40px 20px
+	}
+	.greeting h1{
+		font-size:26px;
+		line-height:32px
+	}
+	.greeting p{
+		font-size:14px;
+		line-height:20px
+	}
+	.end{
+		padding:20px 0
+	}
+	hr{
+		margin:10px 0
+	}
+	.detail{
+		padding-top:10px
+	}
+	.detail .box,.split{
+		float:none;
+		width:100%!important;
+		padding:0
+	}
+	.split+.split{
+		margin-top:20px
+	}
+	.detail .box .inner{
+		padding:10px!important
+	}
 }
-h1{
-	font-size:26px;
-	line-height:30px
-}
-h1 span{
-	padding:0;
-	background:transparent
-}
-h2{
-	font-size:16px
-}
-.hero.level{
-	padding-top:90px
-}
-.level:last-child{
-	padding-bottom:40px
-}
-.text-left,.text-right{
-	text-align:center
-}
-.navbar{
-	overflow:hidden;
-	max-height:41px
-}
-.navbar ul,.navbar li{float:none}
-.navbar.open{height:216px;max-height:216px}
-.navbar-over.open{visibility:visible;opacity:.6;z-index:998}
-.navbar ul{display:none}
-.navbar.open ul{
-	display:block;
-	clear:both;
-	background:#fff;
-	height:107px;
-	padding:35px 0 39px;
-	text-align:center;
-	width:100%;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
-}
-.navbar li{width:75px;display:inline-block!important;line-height:10px;padding:15px 0 12px}
-.navbar li.twitter{border-left:1px solid #cecece}
-.navbar ul a{color:#555;vertical-align:top;margin:0}
-.navbar li.case-studies{margin:0!important;padding:0;border:0;width:0}
-.navbar .case-studies ul{position:absolute;top:100%;left:0;right:0;height:auto;border-top:1px solid #6d7982;padding:29px 0}
-.navbar .case-studies li,.navbar .case-studies a{margin:0}
-.navbar .case-studies li{display:inline-block;width:50%;padding:0;margin:0;text-align:left}
-.navbar .case-studies a{text-indent:0;margin:0;width:auto;padding:0;background:0}
-.navbar .case-studies a:hover{background:0}
-.navbar .case-studies .prev{text-align:right;margin:0}
-
-
-.navbar .prev a:before,.navbar .next a:after{position:static;display:inline-block;margin:0 10px}
-.navbar .prev a:before{border-width:4.5px 5px 4.5px 0;border-color:transparent #656565 transparent transparent}
-.navbar .next a:before{display:none}
-.navbar .next a:after{border-width:4.5px 0 4.5px 5px;border-color:transparent transparent transparent #656565}
-.navbar .prev a{padding:0 20px 0 7px}
-.navbar .next a{padding:0 7px 0 20px}
-.navbar a.icon{background:0;text-indent:0;padding:0;width:auto;display:inline}
-.navbar a.icon:hover{background:none!important}
-.navbar .navbar-toggle{display:block;position:relative;z-index:100}
-
-.container{position:relative}
-.footer{margin-top:0!important;font-size:20px;line-height:24px;height:auto!important}
-.greeting{padding:40px 20px}
-.greeting h1{font-size:26px;line-height:32px}
-.greeting p{font-size:14px;line-height:20px}
-.end{padding:20px 0}hr{margin:10px 0}
-
-
-
-.detail{padding-top:10px}
-.detail .box,.split{float:none;width:100%!important;padding:0}
-.split+.split{margin-top:20px}
-.detail .box .inner{padding:10px!important}}
 
 @media only screen and (max-width:280px){
-	.navbar,.navbar ul{height:auto;max-height:none;overflow:visible;display:block;position:static}
-	.navbar .navbar-toggle{display:none}
-	.navbar ul{clear:both;padding:5px;background:#fff;text-align:center}
-	.navbar li{display:block;width:100%!important;padding:0;line-height:14px;border:none!important}
+	.navbar,.navbar ul{
+		height:auto;
+		max-height:none;
+		overflow:visible;
+		display:block;
+		position:static
+	}
+	.navbar .navbar-toggle{
+		display:none
+	}
+	.navbar ul{
+		clear:both;
+		padding:5px;
+		background:#fff;
+		text-align:center
+	}
+	.navbar li{
+		display:block;
+		width:100%!important;
+		padding:0;
+		line-height:14px;
+		border:none!important
+	}
 }
 
 
