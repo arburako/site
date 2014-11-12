@@ -59,13 +59,18 @@ section#intro {
 section#intro p {
     color: #9F9F9F;
     font-size: 18px;
-    line-height: 2;
+    line-height: 30px;
     padding-bottom: 25px;
     text-align: center;
     font-family: 'sofiaprolightregular';
     padding-top: 20px;
-    width: 78%;
-    margin: auto 11%;
+}
+
+section#intro p.magnify {
+    font-size: .9em;
+    line-height: 36px;
+    color: #555;
+
 }
 
 section#intro h2 {
@@ -75,10 +80,6 @@ section#intro h2 {
 
 @media (min-width: 320px) and (max-width: 767px) {
 
-	section#intro p {
-    max-width: 88%;
-    margin: auto 6%;
-	}
 
 	.case-study-summary img.hero {
 		max-width: 80%;
