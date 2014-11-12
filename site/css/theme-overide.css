@@ -1,6 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic');
-@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic');
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
 
 
 html {
@@ -272,6 +271,10 @@ a, a:hover, a:focus {
 		text-align: center;
 	}
 
+	.text-light {
+    color: #a6a6a6;
+	}
+
 	.level p {
 	  font-size: 16px;
 	  line-height: 30px;
@@ -290,7 +293,7 @@ a, a:hover, a:focus {
 	h3 { 
 		font-family: 'SofiaProBlack';	
 		margin-bottom: 10px;
-		font-size: 1em;
+		font-size: .9em;
 	}
 	h1 { 
 		font-family: 'SofiaProBold';	
@@ -300,6 +303,13 @@ a, a:hover, a:focus {
 	p {
 	  font-size: inherit;
 	  line-height: inherit;
+	}
+
+	.handwritten {
+		font-family: "Shadows Into Light Two",cursive;
+
+    margin-bottom: 0;
+    letter-spacing: 1px;
 	}
 
 /************************************/
@@ -1037,8 +1047,8 @@ a, a:hover, a:focus {
 		margin: 40px auto;
 	}
 
-	.case-study-summaries  section.dinamundo {
-		background-color: #D2D3CD
+	section.dinamundo {
+		background-color: #FCB614
 	}
 
 
@@ -1049,3 +1059,13 @@ a, a:hover, a:focus {
 	.case-study-summaries  section.ldc-od {
 		background-color: #506179
 	}
+	
+.lightbox-link-mrv .background-image-holder {
+	border: 1px solid rgba(0,0,0,.7);
+	border-radius: 2px;
+}
+
+section.making-of {
+	background-color: #31383C;
+	color: #AAA;
+}
