@@ -1018,7 +1018,7 @@ a, a:hover, a:focus {
 		display:block;
 	}
 
-	.case-study-summaries .btn{
+	.case-study-summary .btn{
 		display:inline-block;
 		color:#fff;
 		font-size:16px;
@@ -1033,8 +1033,9 @@ a, a:hover, a:focus {
 		-o-transition:border-color .2s ease-in;
 		transition:border-color .2s ease-in
 	}
-	.case-study-summaries .btn:hover{
-		border-color:#fff
+	.case-study-summary .btn:hover{
+		border-color:#fff;
+		background-color: none;
 	}
 
 	.case-study-summaries  section.parkplease {
@@ -1048,7 +1049,7 @@ a, a:hover, a:focus {
 	}
 
 	section.dinamundo {
-		background-color: #FCB614
+		background-color: #1D9FD3
 	}
 
 
