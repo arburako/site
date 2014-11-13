@@ -104,3 +104,11 @@ strong {
 	font-weight: normal;
 	font-style: normal;
 }
+
+  section:nth-of-type(odd) {
+    background: inherit;
+    border: none;
+  }
+  section:nth-of-type(even) {
+    background: inherit;
+  }
