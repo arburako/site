@@ -1,32 +1,31 @@
-	.navbar {
-	    background: none repeat scroll 0 0 #b8c4ce;
-	}
-	.bg-pp {
-		background-color: #496884;
-		x-background-color: #29b3a4;
-	}
-
-	#loader {
-		background:#496884
-	}
-
-	.navbar{
-		background:#3f5c78
-	}
-
-	.cd-top {
-	  background: #496884 url(../img/cd-top-arrow.svg) no-repeat center 50%;
-	}
-
-	.no-touch .cd-top:hover {
-	  background-color: #496884;
-	  opacity: 1;
-	}
-
-	.carousel-indicators .active {
-	background: #a1c240;
+.navbar {
+  background: none repeat scroll 0 0 #b8c4ce;
+}
+.bg-pp {
+	background-color: #496884;
+	x-background-color: #29b3a4;
 }
 
+#loader {
+	background:#496884
+}
+
+.navbar{
+	background:#3f5c78
+}
+
+.cd-top {
+  background: #496884 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #496884;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+	background: #a1c240;
+}
 
 
 #ondemand-carousel-2 .item img {
@@ -40,21 +39,21 @@ section.making-of {
 	color: rgba(255,255,255,.6);
 }
 
-	.carousel-caption {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: #333333;
-		background: rgba(40, 51, 63, 0.75);
-		height: 60px;
-		border: 1px solid rgba(40, 51, 63, 0.3);
+.carousel-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #333333;
+	background: rgba(40, 51, 63, 0.75);
+	height: 60px;
+	border: 1px solid rgba(40, 51, 63, 0.3);
 	border-radius: 6px;
-	}
+}
 
 	h1, h3 {
 		x-color: #28333F;
-	}
+}
 
 	h1.line {
     background: url('../img/f1f1f1.gif') repeat-x scroll 0px 50% transparent;
