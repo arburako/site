@@ -1,18 +1,22 @@
 
+/************************************/
+/* =home                  */
+/***********************************/
+
 body{
-	color:#7e7e7e;
-	font:300 28px/38px 'sofiaprolightregular',MyriadPro,'Myriad Pro','Open Sans','Helvetica Neue',Helvetica,sans-serif
+  color:#7e7e7e;
+  font:300 28px/38px 'sofiaprolightregular',MyriadPro,'Myriad Pro','Open Sans','Helvetica Neue',Helvetica,sans-serif
 }
 #loader{
-	background:#eff2f5
+  background:#eff2f5
 }
 
 
 .navbar{
-	background:#rgba(0,0,0,.5)
+  background:#rgba(0,0,0,.5)
 }
 .navbar .brand{
-	margin-left:0
+  margin-left:0
 }
 
 h1 {
@@ -20,13 +24,13 @@ h1 {
 }
 
 #loader {
-		background:#f1f1f1
+    background:#f1f1f1
 }
 
-	.double-bounce1,
-	.double-bounce2 {
-		background-color:rgba(0,0,0,.5)
-	}
+.double-bounce1,
+.double-bounce2 {
+    background-color:rgba(0,0,0,.5)
+  }
 
 header#header {
   text-align: center;
@@ -41,8 +45,8 @@ header#header h1 {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 45px;
-		font-weight: 900;
-		line-height: 65px;
+    font-weight: 900;
+    line-height: 65px;
 }
 
 header#header h2 {
@@ -83,34 +87,34 @@ section#intro h2 {
 @media (min-width: 320px) and (max-width: 767px) {
 
 
-	.case-study-summary img.hero {
-		max-width: 80%;
-		margin: 40px 10%;
-	}
+  .case-study-summary img.hero {
+    max-width: 80%;
+    margin: 40px 10%;
+  }
 
 }
 
 .navbar {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* end charlie */
 
 .lead{
-	font-size:36px;
-	line-height:48px
+  font-size:36px;
+  line-height:48px
 }
 
 strong {
-	color: #999;
-	font-weight: normal;
-	font-style: normal;
+  color: #999;
+  font-weight: normal;
+  font-style: normal;
 }
 
-  section:nth-of-type(odd) {
+section:nth-of-type(odd) {
     background: inherit;
     border: none;
   }
-  section:nth-of-type(even) {
+section:nth-of-type(even) {
     background: inherit;
   }

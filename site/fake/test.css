@@ -1,0 +1,64 @@
+#test .navbar {
+background: none repeat scroll 0 0 #D64F75;
+}
+.bg-test, 
+
+
+#test #loader {
+	background: #E85581;
+}
+
+
+.cd-top {
+	background: #E85581 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+.no-touch .cd-top:hover {
+	background-color: #E85581;
+	opacity: 1;
+}
+
+.carousel-indicators .active {
+	background: #E85581;
+}
+
+
+.test-img-2 {
+	background-image: url(skillpages.png);
+	background-size: cover; 
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+img.test-img-1 {
+	width: 100%;
+	height: auto;
+	float: right;
+	margin: 0;
+}
+
+.tiny-blurb {
+	height: 30%;
+	margin: 15% auto;
+}
+
+.hero img {
+	margin-top: 0;
+}
+
+.hero .inner img {
+	margin-top: -3%;
+	width: 70%;
+}
+
+
+.tiny-blurb p {
+	font-size: .8em;
+	line-height: 1.6em;
+}
+
+.tiny-blurb h3 {
+	color: 848484;
+}

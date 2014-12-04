@@ -1,1 +1,0 @@
-	$("a").not('a[href*="'+n+'"]').not('a[href^="/"]').not('a[href^="mailto:"]').attr({target:"_blank"});
