@@ -356,6 +356,10 @@
 		margin-bottom: 0px !important;
 	}
 
+	.img-right {
+		float: right;
+	}
+
 
 /************************************/
 /* =IMAGES                   */
@@ -378,6 +382,16 @@
 
 	.image-slider .flex-control-nav {
     bottom: -48px;
+	}
+
+	.standing-screenshot {
+		padding: 0;
+		margin: 0;
+	}
+
+	.standing-screenshot img {
+		margin: 0;
+		padding: 0;
 	}
 
 
