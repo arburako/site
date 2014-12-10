@@ -55,8 +55,8 @@
 	p {
 	    font-size: 1em;
 	    font-weight: 300;
-	    line-height: 2em;
-	    margin: 2em 0;
+	    line-height: 1.9em;
+	    margin: 1.5em 0;
 	}
 	ul, ol {
 	    list-style: outside none none;
@@ -109,7 +109,7 @@
 		    font-size: 3em;
 		    font-weight: 300;
 		    line-height: 1.3334em;
-		    margin: 0.6667em 0;
+		    margin: 0.6667em 0 0.3333em 0;
 		}
 		h2, .h2-like {
 		    font-size: 2.5em;
