@@ -40,8 +40,8 @@
 		border: 0;
 	}
 	body {
-		font-size: 2em;
-    line-height: 1.6;
+		font-size: 1.8em;
+    line-height: 2;
     font-family: 'open sans';
 		color: #454545;
 		height:100%;
@@ -95,9 +95,8 @@
 			margin: 0 0 26px;
 		}
 		.jumbo-h1 {
-		  font-size: 40px;
-		  line-height: 56px;
-		  font-weight: 600;
+		  font-size: 4em;
+		  line-height: 1;
 		  margin-bottom: 64px;
 		}
 		.standard-h1 {
@@ -113,7 +112,7 @@
 			font-family: "Playfair Display", serif;
 			font-size: 1.8em;
 			line-height: 1.6;
-			font-weight: normal;
+			font-weight: 700;
 			padding: 12px 0 0;
 		}
 
@@ -140,7 +139,7 @@
 		p {
 	    font-size: 1em;
 	    font-weight: 300;
-	    line-height: 1.9em;
+	    line-height: 1.7;
 	    margin: 1.5em 0;
 		}
 		
@@ -155,6 +154,10 @@
 			font-size: 14px;
 			line-height: 20px;
 			margin: 0 0 18px;
+		}
+		.summary p, 
+		p.text-13 {
+			margin: 0 0;
 		}
 
 
@@ -280,12 +283,12 @@
 		background: #ffffff;
 	}
 
-	.feature-group .text-center p{
+	.feature-group p{
 		width: 86%;
 		margin: auto 7%;
 	}
 
-	.feature-group .text-center img {
+	.feature-group img {
 		max-width: 30%;
 		margin: 40px 35%;
 	}
