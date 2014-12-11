@@ -16,8 +16,10 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- site specific styles -->
-  <link type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="css/slippry/slippry.css">
   <link href="css/style.css" rel="stylesheet">
+
+  
 
   <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -50,8 +52,8 @@
             <li class="twitter"><a href="#" target="_blank">Contact</a></li>
             <li class="case-studies">
                <ul>
-                  <li class="prev"><a href="16fours.html">On Demand </a></li>
-                  <li class="next"><a href="disputes.html">Disputes</a></li>
+                  <li class="prev-case"><a href="16fours.html">On Demand </a></li>
+                  <li class="next-case"><a href="disputes.html">Disputes</a></li>
                </ul>
             </li>
          </ul>
@@ -138,33 +140,38 @@
                      <div class="col-md-10 col-md-offset-1 col-sm-12 text-col">
                         <p>The “scheduled” use case was the core service and the product flows were thought to be pretty nailed at this point. They had previously done a lot of optimizing in this area and even had an iOS app to show for it. The “On Demand” use cases, on the other hand -  “real time” and “near term” - were completely new territory with considerable complexity. Furthermore, there was a palpable urgency to figure out our  On Demand service.  Services like Uber and TaxiMagic were growing fast and we wanted to get in the game. </p>
                         <p>So, our initial strategy was to leave the “scheduled” side of the app as untouched as possible both to avoid re-work and afford maximum focus on creating the new functionality from the ground up.  Once we had more clarity about our On Demand system, we would turn our focus to seamlessly integrating the new On Demand service into the existing iOS app and scheduling reservations. </p>
-                        <p>In practical terms, this meant we would solve for the “real time” and “near term” use cases in isolation from the “scheduled” and just prior to launch, would skin the Scheduled app look and feel to be consistent with any cosmetic changes from the new app.</p>
-                        <div class="row top-40 space-bottom-medium">
-                           <div class="col-md-offset-1 col-md-10 quote-highlight">
-                              <h2 class="text-center"> Though it wouldn’t be perfect, it would be live. We could learn and iterate from there. </h2>
-                           </div>
-                        </div>
-                        <p>Based on this strategy, the initial designs featured equal entry to On Demand and Scheduled Reservations with a landing screen that asked the user to choose when they wanted to ride. From there, the user was funneled down either the new On Demand flow or the existing reservations flow. </p>
-                     </div> 
-                  </div> <!-- end row -->
+                        <p>In practical terms, this meant we would solve for the “real time” and “near term” use cases in isolation from the “scheduled” and just prior to launch, would skin the Scheduled app look and feel to be consistent with any cosmetic changes from the new app. Though it wouldn’t be perfect, it would be live. We could learn and iterate from there.</p>
+                     </div>
+                  </div>
 
-
+                  
                   <div class="row top-100">
-                     <div class="col-md-offset-1 col-md-5 text-center">
-                        <a href="img/old-content/ondemand/OD1-A.png" class="img-responsive border-img-large" data-fluidbox>
-                           <img src="img/old-content/ondemand/OD1-A.png" alt="time and location 1" class="img-responsive">
-                        </a>
+                     <h2 class="text-center">Initial Designs</h2>
+                     <div class="col-md-offset-2 col-md-8 col-sm-12">
+                        <ul class="slippry-slider">
+                           <li>
+                              <a href="#slide1">
+                                 <img src="img/ondemand/initial-designs/od-1.png" class="img-responsive">
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#slide2">
+                                 <img src="img/ondemand/initial-designs/od-2.png"   class="img-responsive">
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#slide3">
+                                 <img src="img/ondemand/initial-designs/od-3.png" alt="Just do this to enter a caption incase you need this later, but remove if you don't duh." class="img-responsive">
+                              </a>
+                           </li>
+                        </ul>
                      </div>
-                     <div class="col-md-5 text-center">
-                        <a href="img/old-content/ondemand/OD1-A.png" class="img-responsive border-img-large" data-fluidbox>
-                        <img src="img/old-content/ondemand/OD1-A.png" alt="time and location 1" class="img-responsive">
-                        </a>
-                     </div>
-                  </div> <!-- end row -->
+                  </div> <!-- end row --> 
+
 
                   <div class="row top-100">
                      <div class="col-md-10 col-md-offset-1 col-sm-12 text-col">
-                        <P>Using a splash screen to bifurcate the On Demand flow from the Scheduled flow had the following benefits: </p>
+                        <P> Based on this strategy, the initial designs featured equal entry to On Demand and Scheduled Reservations with a landing screen that asked the user to choose when they wanted to ride. From there, the user was funneled down either the new On Demand flow or the existing reservations flow. Using a splash screen to bifurcate the On Demand flow from the Scheduled flow had the following benefits: </p>
                         <ul class="bullet">
                            <li>
                               <p>It allowed us to isolate out the “near term” and “real time” use cases - the On Demand use cases - from the “scheduled” use cases, seemingly simplifying the overall body of work to address as well as freeing the On Demand design and development from the existing constraints and limitations of the “scheduled” use case. </p>
@@ -194,58 +201,28 @@
                      </div> 
                   </div> <!-- end row -->
 
-                  <div class="row top-100">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12">
+                  <div class="row top-200">
+                     <div class="col-md-4">
                         <h3> Finding Rides </h3>
-                        <p> The primary use case that On Demand would cater to was the “pick me up right here, right now” scenario. In order to best serve that user, we wanted the app to display the first available pick up time and nearby drivers based on the user’s current location upon screen load. This would mean displaying cars on the map and the first available ride time at screen load, prior to any user inputs - a flow for which there was no prior system precedence.</p>
-                        <p class="top-40"> A secondary use cases came from one of our main product differentiators with our On Demand app. There were already a few services that providing rides for the “right-here-right-now” or “real-time” customer. But we believed that users would greatly benefit from being able to select 15, 20, 30 minutes - the “near-term” customer. Instead of being immediately paired with the nearest driver, the user could, for instance, request a car for when they arrive home in 30 minutes. We believed this was a powerful product differentiator but it also further complicated the already complex interaction of the first screen. For the “near term” user, the available drivers displayed on screen load (based on current time and location) was at best irrelevant and at worst, a bait and switch. </p>
+                        <p class="size-13">  Once we began tackling the brand new user experience problems that were unique to the On Demand experience, there were many intricate details to work through. For example, we wanted to only present the user with ride times that were available for their location to avoid a "bait and switch". How would we know what drivers were available around the customer? We decided when the customer opened the app, we would check for available drive times of the closest driver, assuming current location was the pick up and set expectations accordingly. Whenever the customer moved the map, the time options for the new location would change and the customer would be notified via an slotmachine- like animation on the time and location form fields. </p>
                      </div>
-                  </div> <!-- end row -->
-
-                  <div class="row top-100">
-                     <div class="col-md-6 text-center">
+                     <div class="col-md-8">
                         <a href="img/old-content/ondemand/OD1-B.png" class="img-responsive border-img-large" data-fluidbox>
                            <img src="img/old-content/ondemand/OD1-B.png" alt="time and location 1" class="img-responsive">
                         </a>
                      </div>
-                     <div class="col-md-6 text-center">
-                        <a href="img/old-content/ondemand/OD1-B.png" class="img-responsive border-img-large" data-fluidbox>
-                        <img src="img/old-content/ondemand/OD1-B.png" alt="time and location 1" class="img-responsive">
-                        </a>
-                     </div>
                   </div> <!-- end row -->
 
-                  <div class="row top-60">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-col">
-                        <p class="top-40"> We decided that whenever the customer moved the map, the time options for the new location would change and the customer would be notified via an slot-machine-like animation on the time and location form fields. This animation would serve as subtle indication to the user that the search results had been updated and an intuitive reminder that changing the location will change available times.</p>
-                     </div>
-                  </div> <!-- end row -->
-
-                  <div class="row top-100">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-col">
-                        <h3> Rethinking Rates </h3>
-                        <p> Another differentiator of the On Demand app was our pricing system. Most services at the time had a formula based rate system, much like taxis. However, we wanted our provide our users with the comfort of 0 variability in pricing - meaning that going from point A to point B would be the same rate every time regardless of situational influences on time and distance. This means the user can sit back and relax during the ride, without having to worry about what route the driver is taking or how much traffic there is at the time. </p>
-                        <p> We wanted to communicate this benefit to the user in an elegant way and also set expectations up front for how much a ride would cost. In order to calculate any given rate, however, the system needed a pickup and drop off location. But given given that the primary design principle for the On Demand users was fewest possible clicks, we wanted to avoid asking the user to enter a destination.  So how could we communicate pricing up front without needlessly encumbering the ordering process? </p>
-                     </div>
-                  </div> <!-- end row -->
-
-                  <div class="row top-100">
-                     <div class="col-md-6 text-center">
+                  <div class="row top-200">
+                     <div class="col-md-8">
                         <a href="img/old-content/ondemand/OD1-C.png" class="img-responsive border-img-large" data-fluidbox>
-                           <img src="img/old-content/ondemand/OD1-C.png" alt="Rate Card 1" class="img-responsive">
+                           <img src="img/old-content/ondemand/OD1-C.png" alt="time and location 1" class="img-responsive">
                         </a>
                      </div>
-                     <div class="col-md-6 text-center">
-                        <a href="img/old-content/ondemand/OD1-D.png" class="img-responsive border-img-large" data-fluidbox>
-                        <img src="img/old-content/ondemand/OD1-D.png" alt="Rate Card 2" class="img-responsive">
-                        </a>
-                     </div>
-                  </div> <!-- end row -->
-
-                  <div class="row top-60">
-                     <div class="col-md-10 col-md-offset-1 col-sm-12 text-col">
-                        <p class="top-40"> To solve this problem, we created “the rate card”, that featured the flat rates to nearby airports (the most common type of ride) and an interactive, fun way for the user to get a feel for the pricing structure that re-used the development logic from end ride pricing.</p>
-                     </div>
+                     <div class="col-md-4">
+                        <h3> Rethinking Rates </h3>
+                        <p class="size-13"> Another novel user experience problem that came with the new On Demand service was how to convey pricing to the customer. In the scheduled reservations product, we had always used the pick up and drop off location as inputs to determine the pricing. But in the On Demand offering, we did not want to have to ask the user for a destination and encumber the ordering process. To solve this problem, we created "the rate card", that featured the flat rates to nearby airports (the most common type of ride) and an interactive, fun way for the user to get a feel for the pricing structure that re-used the development logic from end ride pricing.  </p>
+                     </div>                
                   </div> <!-- end row -->
                </div> <!-- end container -->
             </div> <!-- end level -->
@@ -264,44 +241,26 @@
                   </div> <!-- end row -->
 
                   <div class="row top-100">
-                     <div class="col-md-12">
-                        <div id="ondemand-carousel-1" class="carousel slide image-slider">
-                           <ol class="carousel-indicators flex-control-nav">
-                              <li data-target="#ondemand-carousel-1" data-slide-to="0" class="active"></li>
-                              <li data-target="#ondemand-carousel-1" data-slide-to="1"></li>
-                              <li data-target="#ondemand-carousel-1" data-slide-to="2"></li>
-                              <li data-target="#ondemand-carousel-1" data-slide-to="3"></li>
-                           </ol>
-                           <div class="carousel-inner">
-                              <div class="item active">
-                                 <img src="img/old-content/ondemand/OD2-A.png" class="img-responsive" />
-                                 <div class="carousel-caption">
-                                    <p>Analysis of current flow</p>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <img src="img/old-content/ondemand/OD2-B.png" class="img-responsive" />
-                                 <div class="carousel-caption">
-                                    <p>VERSION 1: least departure from existing flow, kept flow mostly the same, OD address input replaces current address input, update to controls on detail screen, search results re-design to be more user center, removed multiple reservation confirmation screens</p>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <img src="img/old-content/ondemand/OD2-C.png" class="img-responsive" />
-                                 <div class="carousel-caption">
-                                    <p>VERSION 2: somewhat of a departure from existing flow, removed back and forth from input screen, user is just funneled forward; update to controls; search results re-design to be more user centric; removed multiple reservation confirmation screens</p>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <img src="img/old-content/ondemand/OD2-D.png" class="img-responsive"/>
-                                 <div class="carousel-caption">
-                                    <p>VERSION 3: largest departure from existing flow; removed 4 tile screen, ride type can be inferred, not selected; update to controls; srp redesign; removed multiple conf screens.</p>
-                                 </div>
-                              </div>              
-                           </div> <!-- end carousel-inner -->
-                           <a class="carousel-control left" href="#ondemand-carousel-1" data-slide="prev">&#xf053;</a>
-                           <a class="carousel-control right" href="#ondemand-carousel-1" data-slide="next">&#xf054;</a>             
-                        </div> <!-- end ondemand-carousel-1 -->
-                     </div> 
+                     <div class="col-md-3 text-center no-pad">
+                        <a href="img/old-content/ondemand/OD2-A.png" class="img-responsive border-img-large" data-fluidbox>
+                           <img src="img/old-content/ondemand/OD2-A.png" alt="Rate Card 1" class="img-responsive">
+                        </a>
+                     </div>
+                     <div class="col-md-3 text-center no-pad">
+                        <a href="img/old-content/ondemand/OD2-B.png" class="img-responsive border-img-large" data-fluidbox>
+                        <img src="img/old-content/ondemand/OD2-B.png" alt="Rate Card 2" class="img-responsive">
+                        </a>
+                     </div>
+                     <div class="col-md-3 text-center no-pad">
+                        <a href="img/old-content/ondemand/OD2-C.png" class="img-responsive border-img-large" data-fluidbox>
+                           <img src="img/old-content/ondemand/OD2-C.png" alt="Rate Card 1" class="img-responsive">
+                        </a>
+                     </div>
+                     <div class="col-md-3 text-center no-pad">
+                        <a href="img/old-content/ondemand/OD2-D.png" class="img-responsive border-img-large" data-fluidbox>
+                        <img src="img/old-content/ondemand/OD2-D.png" alt="Rate Card 2" class="img-responsive">
+                        </a>
+                     </div>
                   </div> <!-- end row -->
                </div> <!-- end container -->
             </div> <!-- end level -->
@@ -444,6 +403,9 @@
 
   <script type="text/javascript" src="js/fluidBox/jquery.fluidbox.min.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+
+  <script src="js/slippry/slippry.min.js"></script>
+  <script src="js/slippry/slippry2.js"></script>
 
     <script src="js/main2.js"></script>
   <script src="js/a202.js"></script>

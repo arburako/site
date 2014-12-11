@@ -620,7 +620,8 @@
 	}
 
 	#ondemand-carousel-1 .carousel-inner img,
-	#ondemand-carousel-2 .carousel-inner img  {
+	#ondemand-carousel-2 .carousel-inner img,
+	#ondemand .slippry-slider img  {
 		border: 1px solid #CCC;
 	}
 
@@ -879,7 +880,7 @@
 		overflow:hidden
 	}
 	
-	.navbar li.prev{
+	.navbar li.prev-case{
 		display:block
 	}
 	
@@ -898,9 +899,9 @@
 	.navbar .case-studies a:hover{
 		background:rgba(9,9,9,0.22)
 	}
-	.navbar .prev a:before,
-	.navbar .next a:before,
-	.navbar .next a:after {
+	.navbar .prev-case a:before,
+	.navbar .next-case a:before,
+	.navbar .next-case a:after {
 		position:absolute;
 		top:15px;
 		left:21px;
@@ -914,11 +915,11 @@
 		border-color:transparent #fff transparent transparent;
 	}
 
-	.navbar .next a:after{
+	.navbar .next-case a:after{
 		display:none
 	}
 
-	.navbar .next a:before{
+	.navbar .next-case a:before{
 		left:25px;
 		border-width:5.5px 0 5.5px 6px;
 		border-color:transparent transparent transparent #fff
@@ -1054,37 +1055,37 @@
 			background:0
 		}
 	
-		.navbar .case-studies .prev {
+		.navbar .case-studies .prev-case {
 			text-align:right;
 			margin:0
 		}
 	
-		.navbar .prev a:before,
-		.navbar .next a:after {
+		.navbar .prev-case a:before,
+		.navbar .next-case a:after {
 			position:static;
 			display:inline-block;
 			margin:0 10px
 		}
 		
-		.navbar .prev a:before {
+		.navbar .prev-case a:before {
 			border-width:4.5px 5px 4.5px 0;
 			border-color:transparent #fff transparent transparent
 		}
 		
-		.navbar .next a:before{
+		.navbar .next-case a:before{
 			display:none
 		}
 		
-		.navbar .next a:after{
+		.navbar .next-case a:after{
 			border-width:4.5px 0 4.5px 5px;
 			border-color:transparent transparent transparent #fff
 		}
 
-		.navbar .prev a{
+		.navbar .prev-case a{
 			padding:0 20px 0 7px
 		}
 	
-		.navbar .next a{
+		.navbar .next-case a{
 			padding:0 7px 0 20px
 		}
 	
@@ -1302,7 +1303,7 @@
 	  overflow: hidden;
 	  text-indent: 100%;
 	  white-space: nowrap;
-	  background: rgba(32, 195, 196, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	  background: rgba(32, 195, 196, 0.8) url(../img/assets/cd-top-arrow.svg) no-repeat center 50%;
 	  visibility: hidden;
 	  opacity: 0;
 	  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -1338,7 +1339,7 @@
 	}
 
 	.cd-top {
-		background: #EEE url(../img/cd-top-arrow.svg) no-repeat center 50%;
+		background: #EEE url(../img/assets/cd-top-arrow.svg) no-repeat center 50%;
 	}
 
 	.no-touch .cd-top:hover {
@@ -1427,10 +1428,11 @@
 
 		.bg-ondemand, 
 		#ondemand #loader,
-		#ondemand .carousel-indicators .active ,
+		#ondemand .sy-pager li.sy-active a,
 		#ondemand .navbar.open ul,
 		section#ondemand.case-study-summary,
-		#ondemand section.making-of {
+		#ondemand section.making-of, 
+		#ondemand .sy-controls li a:after {
 			background-color: #496884;
 		}
 
