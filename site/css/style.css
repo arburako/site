@@ -5,7 +5,7 @@
 
 	
 #loader {
-	x-display:none!important;
+	X-display:none!important;
 }
 
 
@@ -131,6 +131,7 @@
 			font-size: 16px;
 			line-height: 28px;
 			text-transform: capitalize;
+			margin-bottom: 0;
 		}
 
 	/* ------------ P ------------ */
@@ -230,7 +231,6 @@
 
 	p.pad-right-40 {padding-right: 40px;}
 	
-
 /************************************/
 /* =LAYOUT STYLES                   */
 /************************************/
@@ -402,46 +402,209 @@
 		display: inline;
 	}
 
-	.fluidbox {
-  outline: none; }
+	/*  --------------------------------- FLUIDBOX --------------------------------- */
 
-	.fluidbox-overlay {
-	  background-color: rgba(0,0,0, 0.2);
-	  cursor: pointer;
-	  cursor: -webkit-zoom-out;
-	  cursor: -moz-zoom-out;
-	  opacity: 0;
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  bottom: 0;
-	  right: 0;
-	  /* Transition time for overlay is halved to ensure that flickering doesn't happen */
-	  transition: all 0.125s ease-in-out 0.125s; }
+		.fluidbox {
+	  outline: none; }
 
-	.fluidbox-wrap {
-	  background-position: center center;
-	  background-size: cover;
-	  margin: 0 auto;
-	  position: relative;
-	  transition: all 0.25s ease-in-out;
-	  /* To prevent flickering, we delay the showing of the image */ }
-	  .fluidbox-closed .fluidbox-wrap img {
-	    transition: opacity 0 ease-in-out 0.25s; }
+		.fluidbox-overlay {
+		  background-color: rgba(0,0,0, 0.2);
+		  cursor: pointer;
+		  cursor: -webkit-zoom-out;
+		  cursor: -moz-zoom-out;
+		  opacity: 0;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  /* Transition time for overlay is halved to ensure that flickering doesn't happen */
+		  transition: all 0.125s ease-in-out 0.125s; }
 
-	.fluidbox-ghost {
-	  background-size: 100% 100%;
-	  background-position: center center;
-	  position: absolute;
-	  -webkit-transition-property: opacity, -webkit-transform;
-	  -moz-transition-property: opacity, -moz-transform;
-	  -o-transition-property: opacity, -o-transform;
-	  transition-property: opacity, transform;
-	  transition-duration: 0, 0.25s;
-	  transition-delay: 0.25s, 0; }
-	 
-	 .fluidbox-opened .fluidbox-ghost {
-	    transition-delay: 0, 0; }
+		.fluidbox-wrap {
+		  background-position: center center;
+		  background-size: cover;
+		  margin: 0 auto;
+		  position: relative;
+		  transition: all 0.25s ease-in-out;
+		  /* To prevent flickering, we delay the showing of the image */ }
+		  .fluidbox-closed .fluidbox-wrap img {
+		    transition: opacity 0 ease-in-out 0.25s; }
+
+		.fluidbox-ghost {
+		  background-size: 100% 100%;
+		  background-position: center center;
+		  position: absolute;
+		  -webkit-transition-property: opacity, -webkit-transform;
+		  -moz-transition-property: opacity, -moz-transform;
+		  -o-transition-property: opacity, -o-transform;
+		  transition-property: opacity, transform;
+		  transition-duration: 0, 0.25s;
+		  transition-delay: 0.25s, 0; }
+		 
+		 .fluidbox-opened .fluidbox-ghost {
+		    transition-delay: 0, 0; }
+
+  /*  --------------------------------- OWL CAROUSEL --------------------------------- */
+
+
+	  /*************************** owl.carousel.css ***************************/
+
+
+		  /* clearfix */
+			.owl-carousel .owl-wrapper:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			/* display none until init */
+			.owl-carousel{
+				display: none;
+				position: relative;
+				width: 100%;
+				-ms-touch-action: pan-y;
+			}
+			.owl-carousel .owl-wrapper{
+				display: none;
+				position: relative;
+				-webkit-transform: translate3d(0px, 0px, 0px);
+			}
+			.owl-carousel .owl-wrapper-outer{
+				overflow: hidden;
+				position: relative;
+				width: 100%;
+			}
+			.owl-carousel .owl-wrapper-outer.autoHeight{
+				-webkit-transition: height 500ms ease-in-out;
+				-moz-transition: height 500ms ease-in-out;
+				-ms-transition: height 500ms ease-in-out;
+				-o-transition: height 500ms ease-in-out;
+				transition: height 500ms ease-in-out;
+			}
+				
+			.owl-carousel .owl-item{
+				float: left;
+			}
+			.owl-controls .owl-page,
+			.owl-controls .owl-buttons div{
+				cursor: pointer;
+			}
+			.owl-controls {
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+
+			/* mouse grab icon */
+			.grabbing { 
+			    cursor:url(grabbing.png) 8 8, move;
+			}
+
+			/* fix */
+			.owl-carousel  .owl-wrapper,
+			.owl-carousel  .owl-item{
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility:    hidden;
+				-ms-backface-visibility:     hidden;
+			  -webkit-transform: translate3d(0,0,0);
+			  -moz-transform: translate3d(0,0,0);
+			  -ms-transform: translate3d(0,0,0);
+			}
+
+
+		/*************************** owl.theme.css ***************************/
+
+			.owl-theme .owl-controls{
+				margin-top: 10px;
+				text-align: center;
+			}
+
+			/* Styling Next and Prev buttons */
+
+			.owl-theme .owl-controls .owl-buttons div{
+				color: #FFF;
+				display: inline-block;
+				zoom: 1;
+				*display: inline;/*IE7 life-saver */
+				margin: 5px;
+				padding: 3px 10px;
+				font-size: 12px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				background: #869791;
+				filter: Alpha(Opacity=50);/*IE7 fix*/
+				opacity: 0.5;
+			}
+			/* Clickable class fix problem with hover on touch devices */
+			/* Use it for non-touch hover action */
+			.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+				filter: Alpha(Opacity=100);/*IE7 fix*/
+				opacity: 1;
+				text-decoration: none;
+			}
+
+			/* Styling Pagination*/
+
+			.owl-theme .owl-controls .owl-page{
+				display: inline-block;
+				zoom: 1;
+				*display: inline;/*IE7 life-saver */
+			}
+			.owl-theme .owl-controls .owl-page span{
+				display: block;
+				width: 12px;
+				height: 12px;
+				margin: 5px 7px;
+				filter: Alpha(Opacity=30);/*IE7 fix*/
+				opacity: 0.3;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+				background: #869791;
+			}
+
+			.owl-theme .owl-controls .owl-page.active span,
+			.owl-theme .owl-controls.clickable .owl-page:hover span{
+				filter: Alpha(Opacity=100);/*IE7 fix*/
+				opacity: 1;
+			}
+
+			/* If PaginationNumbers is true */
+
+			.owl-theme .owl-controls .owl-page span.owl-numbers{
+				height: auto;
+				width: auto;
+				color: #FFF;
+				padding: 2px 10px;
+				font-size: 12px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+			}
+
+			/* preloading images */
+			.owl-item.loading{
+				min-height: 150px;
+				background: url(AjaxLoader.gif) no-repeat center center
+			}
+
+
+
+
+
+
+
+
+
+
+
 
 /************************************/
 /* =HERO                  */
@@ -1397,7 +1560,8 @@
 		#dinamundo .no-touch .cd-top:hover,
 		#dinamundo .carousel-indicators .active,
 		#dinamundo .navbar.open ul,
-		section#dinamundo.case-study-summary  {
+		section#dinamundo.case-study-summary, 
+		#dinamundo .owl-theme .owl-controls .owl-page span {
 			background-color: #1D9FD3;
 		}
 
