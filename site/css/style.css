@@ -5,7 +5,7 @@
 
 	
 #loader {
-	x-display:none!important;
+	display:none!important;
 }
 
 
@@ -133,6 +133,7 @@
 			text-transform: uppercase;
 			margin-bottom: 8px;
 		}
+
 
 	/* ------------ P ------------ */
 
@@ -287,9 +288,14 @@
 		background: #ffffff;
 	}
 
-	.feature-group p{
+	.feature-group p {
 		width: 86%;
 		margin: auto 7%;
+	}
+
+	.feaure-group h3 {
+		width: 50%;
+		margin: auto 15%;
 	}
 
 	.feature-group img {
