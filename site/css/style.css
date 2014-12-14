@@ -130,8 +130,8 @@
 		.tiny-blurb h3 {
 			font-size: 16px;
 			line-height: 28px;
-			text-transform: capitalize;
-			margin-bottom: 0;
+			text-transform: uppercase;
+			margin-bottom: 8px;
 		}
 
 	/* ------------ P ------------ */
@@ -188,7 +188,7 @@
 	}
 	.handwritten {
 		font-family: "Shadows Into Light Two",cursive;
-	  margin-bottom: 0;
+	  margin-bottom: 10px;
 	  letter-spacing: 1px;
 	}
 	.post-info {
@@ -217,7 +217,7 @@
 
 	.text-centered {text-align: center;}
 
-	.text-light {color: #a6a6a6;}
+	.text-light {color: #D6D6D6;}
 
 	.text-white {color: #fff;}
 
@@ -235,7 +235,9 @@
 /* =LAYOUT STYLES                   */
 /************************************/
 
-
+.container {
+	width: 1021px;
+}
 	.cd-container {
 		-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease;
@@ -274,9 +276,9 @@
 	}
 
 	section:nth-of-type(odd) {
-		background: #f7f7f7;
-		border-top: 1px solid #f1f1f1;
-		border-bottom: 1px solid #f1f1f1;
+		background: #f4f4f4;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
 	}
 
 	section:nth-of-type(even) {
