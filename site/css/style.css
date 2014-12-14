@@ -5,7 +5,7 @@
 
 	
 #loader {
-	X-display:none!important;
+	x-display:none!important;
 }
 
 
@@ -364,7 +364,6 @@
 	img.border-img {
 		border: 1px solid #ccc;
 		border-radius: 6px;
-		padding: 20px;
 	}
 
 	img.border-img-large, 
@@ -594,17 +593,6 @@
 				min-height: 150px;
 				background: url(AjaxLoader.gif) no-repeat center center
 			}
-
-
-
-
-
-
-
-
-
-
-
 
 /************************************/
 /* =HERO                  */
@@ -1567,6 +1555,10 @@
 
 		#dinamundo .navbar {
 			background: none repeat scroll 0 0 #198CB9;
+		}
+
+		#dinamundo .fluidbox-overlay {
+		  background-color: rgba(68, 68, 68,.5);
 		}
 
 
