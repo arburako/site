@@ -1,120 +1,15 @@
 
-/************************************/
-/* =home                  */
-/***********************************/
-
-body{
-  color:#7e7e7e;
-  font:300 28px/38px 'sofiaprolightregular',MyriadPro,'Myriad Pro','Open Sans','Helvetica Neue',Helvetica,sans-serif
-}
-#loader{
-  background:#eff2f5
-}
 
 
-.navbar{
-  background:#rgba(0,0,0,.5)
-}
-.navbar .brand{
-  margin-left:0
-}
-
-h1 {
-  text-transform: uppercase;
-}
-
-#loader {
-    background:#f1f1f1
-}
-
-.double-bounce1,
-.double-bounce2 {
-    background-color:rgba(0,0,0,.5)
-  }
-
-header#header {
-  text-align: center;
-  background: none repeat scroll 0% 0% #F2F2F2;
-  padding: 89px 0px 55px;
-}
-
-header#header h1 {
-    color: #555;
-    letter-spacing: 5px;
-    margin: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 45px;
-    font-weight: 900;
-    line-height: 65px;
-}
-
-header#header h2 {
-    font-size: 15px;
-    color: #9F9F9F;
-    margin: 10px 0px 0px;
-    font-weight: normal;
-}
-
-section#intro {
-    padding: 85px 0;
-    background-color: #fff;
-}
 
 
-section#intro p {
-    color: #9F9F9F;
-    font-size: 18px;
-    line-height: 30px;
-    padding-bottom: 25px;
-    text-align: center;
-    font-family: 'sofiaprolightregular';
-    padding-top: 20px;
-}
-
-section#intro p.magnify {
-    font-size: .9em;
-    line-height: 36px;
-    color: #555;
-
-}
-
-section#intro h2 {
-    margin-bottom: 20px;
-    font-family: 'sofiaproultralight';
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
 
 
-  .case-study-summary img.hero {
-    max-width: 80%;
-    margin: 40px 10%;
-  }
 
-}
 
-.navbar {
-  margin-bottom: 50px;
-}
 
-/* end charlie */
 
-.lead{
-  font-size:36px;
-  line-height:48px
-}
 
-strong {
-  color: #999;
-  font-weight: normal;
-  font-style: normal;
-}
 
-section:nth-of-type(odd) {
-    background: inherit;
-    border: none;
-  }
-section:nth-of-type(even) {
-    background: inherit;
-  }
+
+

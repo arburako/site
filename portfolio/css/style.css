@@ -5,7 +5,7 @@
 
 	
 #loader {
-	display:none!important;
+	x-display:none!important;
 }
 
 
@@ -43,7 +43,7 @@
 		font-size: 1.8em;
 	    line-height: 2;
 	    font-family: 'open sans';
-		color: #454545;
+		color: #7B8A97;
 		height:100%;
 		background:#fff;
 		font-weight: 300;
@@ -52,9 +52,9 @@
 	    list-style: outside none none;
 	    padding: 0;
 	}
-	blockquote, h1, h2, h3, h4, h5, h6, {
+	blockquote, h1, h2, h3, h4, h5, h6 {
 	    font-family: "Playfair Display",serif;
-	    color: #373737;
+	    color: #6a7884;
 	}
 	iframe{
 		border:0;
@@ -200,7 +200,11 @@
 		.uppercase {text-transform: uppercase;}
 
 
-
+	strong {
+		color: #65D3E3;
+		font-weight: normal;
+		font-style: normal;
+	}
 	.caption-ab {
 		font-style: italic;
 		font-size: 14px;
@@ -260,7 +264,6 @@
 		font-weight: 400;
 	}
 
-	
 /************************************/
 /* =LAYOUT STYLES                   */
 /************************************/
@@ -299,11 +302,11 @@
 	}
 	section:nth-of-type(odd) {
 		background: #fff;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
+		border-top: 1px solid #DEE2E5;
+		border-bottom: 1px solid #DEE2E5;
 	}
 	section:nth-of-type(even) {
-		background: #f7f7f7;
+		background: #f6f8f9;
 	}
 	section.no-bord {
 		border: none;
@@ -374,6 +377,37 @@
 	.autofix_sb.fixed.bottom {
 	  bottom: 0;
 	  position: absolute !important;
+	}
+	section#intro {
+	    padding: 85px 0;
+	    background-color: #fff;
+	}
+	section#intro p {
+	    color: #7b8a97;
+	    font-size: 16px;
+	    line-height: 30px;
+	    padding-bottom: 25px;
+	    text-align: center;
+	    font-family: 'Open Sans';
+	    padding-top: 20px;
+	    width: 86%;
+	    margin: auto 7%;
+	}
+
+	section#intro p.collapse {
+		
+	}
+	section#intro p.magnify {
+	    font-size: 1.75em;
+	    line-height: 1.8em;
+	    color: #7B8A97;
+	    font-family: 'Playfair Display';
+	    width: 100%;
+	    margin: 0;
+	}
+	section#intro h2 {
+	    margin-bottom: 20px;
+	    font-family: 'Open Sans';
 	}
 
 /************************************/
@@ -901,7 +935,7 @@
 		right:0;
 		height:41px;
 		min-height: 41px;
-		font:700 10px/41px 'myriad-pro',"Myriad Pro","Open Sans","Helvetica Neue",sans-serif;
+		font:400 10px/41px 'myriad-pro',"Myriad Pro","Open Sans","Helvetica Neue",sans-serif;
 		text-transform:uppercase;
 		color:#fff;
 		text-align:left;
@@ -1045,6 +1079,7 @@
 		display:inline-block;
 		color:#fff;
 		margin:0 10px;
+		letter-spacing: 1px;
 		-webkit-transition:background .2s;
 		-moz-transition:background .2s;
 		-o-transition:background .2s;
@@ -1124,7 +1159,9 @@
 		white-space:nowrap;
 		overflow:hidden
 	}
-
+	.navbar {
+	  margin-bottom: 50px;
+	}
 
 	@media(max-width:1020px){
 	
@@ -1333,39 +1370,39 @@
 
 
 	section.case-study-summary {
-	  padding: 100px 15px;
-	  text-align: center;
+		padding: 100px 15px;
+		text-align: center;
 	}
 
 	section.case-study-summary img.hero {
-    margin-bottom: 70px;
-    display: inline-block;
+	    margin-bottom: 70px;
+	    display: inline-block;
 	}
 	
 	section.case-study-summary h1 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #fff;
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-family: 'SofiaProRegular';
+	    font-size: 30px;
+	    margin-bottom: 30px;
+	    color: #fff;
+	    letter-spacing: 1px;
 	}
 	
 	section.case-study-summary p.subtitle {
-    margin-bottom: 30px;
-    margin-top: -20px;
-    color: rgba(255,255,255,.7);
-    font-family: 'SofiaProUltraLight'
+	    margin-bottom: 30px;
+	    margin-top: -20px;
+	    color: rgba(255,255,255,.7);
+	    font-family: 'Open Sans'
 	}
 	
 	.case-study-summary .btn{
 		display:inline-block;
-		color:#fff;
-		font-size:16px;
+		color:rgba(255,255,255,.7);
+		text-transform: uppercase;
+		font-size:11px;
 		line-height:16px;
 		font-weight:400;
-		padding:15px 22px;
-		border-radius:5px;
+		letter-spacing: 1px;
+		padding:15px 42px;
+		border-radius:4px;
 		border:1px solid #fff;
 		border:1px solid rgba(255,255,255,0.4);
 		-webkit-transition:border-color .2s ease-in;
@@ -1376,13 +1413,22 @@
 	
 	.case-study-summary .btn:hover{
 		border-color:#fff;
-		background-color: transparent;
+		background-color: rgba(255,255,255,.08);
+		color: rgba(255,255,255,.85);
 	}
 
-	.case-study-summaries  section.parkplease img {
+	.case-study-summaries img {
 		width: 100%;
+		max-width: 450px;
 		height: auto;
 		margin: 40px auto;
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+	  .case-study-summary img.hero {
+	    max-width: 80%;
+	    margin: 40px 10%;
+	  }
 	}
 
 
@@ -1404,11 +1450,11 @@
 
 	.btn-primary:focus, 
 	.btn-primary {
-		  border: 2px solid #22C0AF;
+		border: 2px solid #65d3e3;
 	    border-radius: 25px;
-	    color: #22C0AF;
+	    color: #65d3e3;
 	    display: inline-block;
-	    font-family: 'SofiaProLightRegular';
+	    font-family: 'Open Sans';
 	    font-size: 11px;
 	    font-weight: bold;
 	    letter-spacing: 1px;
@@ -1417,6 +1463,42 @@
 	    text-transform: uppercase;
 	    background: transparent;
 		}
+
+	.button.arrow:after {
+	    background: url("../img/assets/arrow-down.PNG") no-repeat scroll center center rgba(0, 0, 0, 0) ;
+	    content: "";
+	    height: 10px;
+		width: 10px;
+		position: absolute;
+		right: 16px;
+		top: 15px;
+	}
+
+	.button.arrow {
+	    padding-right: 40px;
+	}
+	.button.green {
+	    border: 2px solid #65D3E3;
+	    color: #65D3E3;
+	}
+	.button {
+		border: 2px solid #65d3e3;
+	    color: #65d3e3;
+	    display: inline-block;
+	    font-family: 'Open Sans';
+	    font-size: 11px;
+	    font-weight: bold;
+	    letter-spacing: 1px;
+	    line-height: 1;
+	    padding: 14px 28px 13px;
+	    text-transform: uppercase;
+	    background: none repeat scroll 0 0 #fff;
+	    border-radius: 60px;
+	    cursor: pointer;
+	    display: inline-block;
+	    position: relative;
+	    transition: all 0.2s linear 0s;
+	}
 
 /************************************/
 /* =SPACERS  */
@@ -1557,95 +1639,122 @@
 /************************************/
 
 
-
-	/* ---- 16Fours ---- */
-
-		.bg-fours, 
-		#fours #loader,
-		#fours .cd-top, 
-		#fours .no-touch .cd-top:hover,
-		#fours .carousel-indicators .active,
-		#fours .navbar.open ul,
-		section#fours.case-study-summary  {
-			background-color: #F9766B;
-			x-background-color: #29b3a4;
+	/* ---- (0) HOME ---- */
+		
+		#home .navbar a {
+			color:#6a7884;
+		}
+		#home #loader {
+			background:#DEE2E5
 		}
 
-		#fours .navbar {
-			background: none repeat scroll 0 0 #DF6A60;
+		#home .double-bounce1,
+		#home .double-bounce2 {
+			x-background-color:rgba(0,0,0,.5);
+			background-color: #7B8A97;
+		}
+		#home .navbar{
+			x-background:#rgba(0,0,0,.5);
+			background:none repeat scroll 0 0  #ebeef0;
+		}
+		#home header#header {
+		  text-align: center;
+		  background: none repeat scroll 0% 0% #f6f8f9;
+		  padding: 89px 0px 55px;
+		}
+		#home header#header h1 {
+		    color: #6a7884;
+		    letter-spacing: 5px;
+		    margin: 0px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    font-size: 45px;
+		    font-weight: 900;
+		    line-height: 65px;
+		}
+		#home header#header h2 {
+		    font-size: 15px;
+		    color: #7B8A97;
+		    margin: 10px 0px 0px;
+		    font-weight: normal;
+		}
+		#home section:nth-of-type(odd) {
+			background: inherit;
+			border: none;
+		}
+		#home section:nth-of-type(even) {
+			background: inherit;
 		}
 
 
-	/* ---- Dinamundo ---- */
 
-		.bg-dinamundo, 
-		#dinamundo #loader,
-		#dinamundo .cd-top, 
-		#dinamundo .no-touch .cd-top:hover,
-		#dinamundo .carousel-indicators .active,
-		#dinamundo .navbar.open ul,
-		section#dinamundo.case-study-summary, 
-		#dinamundo .owl-theme .owl-controls .owl-page span {
-			background-color: #1D9FD3;
-		}
 
-		#dinamundo .navbar {
-			background: none repeat scroll 0 0 #198CB9;
-		}
 
-		#dinamundo .fluidbox-overlay {
-		  background-color: rgba(68, 68, 68,.5);
-		}
 	
 
-	/* ---- Dinamundo Prototype ---- */
-
-		.bg-dinamundo-prototype, 
-		#dinamundo-prototype #loader,
-		#dinamundo-prototype .cd-top, 
-		#dinamundo-prototype .no-touch .cd-top:hover,
-		#dinamundo-prototype .carousel-indicators .active,
-		#dinamundo .navbar.open ul,
-		section#dinamundo-prototype.case-study-summary, 
-		#dinamundo-prototype .owl-theme .owl-controls .owl-page span {
-			background-color: #FFB100;
-		}
-
-		#dinamundo-prototype .navbar {
-			background: none repeat scroll 0 0 #DF6A60;
-		}
-
-		#dinamundo-prototype .fluidbox-overlay {
-		  background-color: rgba(68, 68, 68,.5);
-		}
 
 
-	/* ---- ParkPlease ---- */
+
+
+
+	
+
+
+	/* ---- (1) PARKPLEASE ---- */
 
 		.bg-pp, 
 		#parkplease #loader,
-		#parkplease .cd-top, 
-		#parkplease .no-touch .cd-top:hover,
+		#parkplease .sy-pager li.sy-active a,
 		#parkplease .carousel-indicators .active,
-		#parkplease .navbar.open ul, 
-		section#parkplease.case-study-summary  {
+		#parkplease .navbar.open ul,
+		section#parkplease.case-study-summary,
+		#parkplease section.making-of, 
+		#dparkplease .sy-controls li a:after,
+		#parkplease .owl-theme .owl-controls .owl-page span   {
 			background-color: #22C0AF;
 		}
 
-		#parkplease .navbar {
+		#parkplease .navbar, 
+		#parkplease .cd-top, 
+		#parkplease.navbar  {
 			background: none repeat scroll 0 0 #29b3a4;
 		}
 
 
-	/* ---- On Demand ---- */
+	/* ---- (2) DINAMUNDO ---- */
+
+		.bg-dinamundo, 
+		#dinamundo #loader,
+		#dinamundo .sy-pager li.sy-active a,
+		#dinamundo .carousel-indicators .active,
+		#dinamundo .navbar.open ul,
+		section#dinamundo.case-study-summary,
+		#dinamundo section.making-of, 
+		#dinamundo .sy-controls li a:after,
+		#dinamundo .owl-theme .owl-controls .owl-page span  {
+			background-color: #58A2EC;
+		}
+		#dinamundo .navbar, 
+		#dinamundo .cd-top, 
+		#dinamundo .navbar {
+			background: none repeat scroll 0 0 #5193D6;
+		}
+		#dinamundo .fluidbox-overlay {
+		  background-color: rgba(68, 68, 68,.5);
+		}
+
+
+	/* ---- (3) ON DEMAND ---- */
 
 		.bg-ondemand, 
 		#ondemand #loader,
 		#ondemand .sy-pager li.sy-active a,
+		#ondemand .carousel-indicators .active,
 		#ondemand .navbar.open ul,
 		section#ondemand.case-study-summary,
 		#ondemand section.making-of, 
-		#ondemand .sy-controls li a:after {
+		#ondemand .sy-controls li a:after,
+		#ondemand .owl-theme .owl-controls .owl-page span {
 			background-color: #496884;
 		}
 
@@ -1660,73 +1769,157 @@
 		}
 
 
-	/* ---- On Demand2 ---- */
+	/* ---- (4) 16FOURS ---- */
 
-		.bg-ondemand2, 
-		#ondemand2 #loader,
-		#ondemand2 .sy-pager li.sy-active a,
-		#ondemand2 .navbar.open ul,
-		section#ondemand2.case-study-summary,
-		#ondemand2 section.making-of,
-		#ondemand2 .sy-controls li a:after   {
-			background-color: #A1C23B;
+		.bg-fours, 
+		#fours #loader,
+		#fours .sy-pager li.sy-active a,
+		#fours .carousel-indicators .active,
+		#fours .navbar.open ul,
+		section#fours.case-study-summary,
+		#fours section.making-of, 
+		#fours .sy-controls li a:after,
+		#fours .owl-theme .owl-controls .owl-page span {
+			background-color: #FF7979;
+			x-background-color: #29b3a4;
+		}
+
+		#fours .navbar, 
+		#fours .cd-top, 
+		#fours .no-touch .cd-top:hover {
+			background: none repeat scroll 0 0 #EA7070;
 		}
 
 
-		#ondemand2 .navbar,
-		#ondemand2 .cd-top, 
-		#ondemand2 .no-touch .cd-top:hover{
-			background-color: #8CA833;
+	/* ---- (5) DM-PROTO ---- */
+
+		.bg-dm-proto, 
+		#dm-proto #loader,
+		#dm-proto .sy-pager li.sy-active a,
+		#dm-proto .carousel-indicators .active,
+		#dm-proto .navbar.open ul,
+		section#dm-proto.case-study-summary,
+		#dm-proto section.making-of, 
+		#dm-proto .sy-controls li a:after,
+		#dm-proto .owl-theme .owl-controls .owl-page span  {
+			background-color: #F18F68;
+		}
+
+		#dm-proto .navbar, 
+		#dm-proto .cd-top, 
+		#dm-proto .navbar  {
+			background: none repeat scroll 0 0 #E08662;
+		}
+
+		#dm-proto .fluidbox-overlay {
+		  background-color: rgba(68, 68, 68,.5);
 		}
 
 
-	/* ---- Test ---- */
-
-		.bg-test, 
-		#test #loader,
-		#test .cd-top, 
-		#test .no-touch .cd-top:hover,
-		#test .carousel-indicators .active,
-		#test .navbar.open ul,
-		section#test.case-study-summary   {
-			background-color: #E85581;
-		}
-
-		#test .navbar {
-			background: none repeat scroll 0 0 #D64F75;
-		}
-
-		#test .hero img {
-			max-width: 70%;
-			max-height: 100%;
-			margin: auto 15%;
-		}
-
-		@media (min-width:320px) and (max-width:992px){
-			#test .hero img {
-				max-width: 100%;
-				width: 100%;
-				margin: auto 0;
-			}
-		}
-
-	/* ---- Disputes ---- */
+	/* ---- (6) DISPUTES ---- */
 
 		.bg-disputes, 
 		#disputes #loader,
 		#disputes .sy-pager li.sy-active a,
+		#disputes .carousel-indicators .active,
 		#disputes .navbar.open ul,
 		section#disputes.case-study-summary,
 		#disputes section.making-of, 
-		#disputes .sy-controls li a:after {
-			background-color: #A1C23B;
+		#disputes .sy-controls li a:after,
+		#disputes .owl-theme .owl-controls .owl-page span  {
+			background-color: #82CECB;
+
 		}
 
-		#disputes .navbar,
+		#disputes .navbar, 
 		#disputes .cd-top, 
-		#disputes .no-touch .cd-top:hover {
-			background-color: #8CA833;
+		#disputes .no-touch .cd-top:hover{
+			background-color: #7CC1BE;
+
 		}
 
 
+	/* ---- (7) OD-OP ---- */
 
+		.bg-od-op, 
+		#od-op #loader,
+		#od-op .sy-pager li.sy-active a,
+		#od-op .carousel-indicators .active,
+		#od-op .navbar.open ul,
+		section#od-op.case-study-summary,
+		#od-op section.making-of, 
+		#od-op .sy-controls li a:after,
+		#od-op .owl-theme .owl-controls .owl-page span  {
+			background-color: #F2CA68;
+		}
+
+
+		#od-op .navbar, 
+		#od-op .cd-top, 
+		#od-op .no-touch .cd-top:hover{
+			background-color: #E2BC61;
+		}
+	
+	/* ---- (8) BEST-SKETCHES ---- */
+
+		.bg-best-sketches, 
+		#best-sketches #loader,
+		#best-sketches .sy-pager li.sy-active a,
+		#best-sketches .carousel-indicators .active,
+		#best-sketches .navbar.open ul,
+		section#best-sketches.case-study-summary,
+		#best-sketches section.making-of, 
+		#best-sketches .sy-controls li a:after,
+		#best-sketches .owl-theme .owl-controls .owl-page span  {
+			background-color: #65D3E3;
+		}
+
+		#best-sketches .navbar, 
+		#best-sketches .cd-top, 
+		#best-sketches .no-touch .cd-top:hover{
+			background-color: #5FC6D3;
+			
+		}
+
+	
+	/* ---- (9) AIRENVY ---- */
+
+		.bg-airenvy, 
+		#airenvy #loader,
+		#airenvy .sy-pager li.sy-active a,
+		#airenvy .carousel-indicators .active,
+		#airenvy .navbar.open ul,
+		section#airenvy.case-study-summary,
+		#airenvy section.making-of, 
+		#airenvy .sy-controls li a:after,
+		#airenvy .owl-theme .owl-controls .owl-page span  {
+			background-color: #9675CC;
+		}
+
+		#airenvy .navbar, 
+		#airenvy .cd-top, 
+		#airenvy .no-touch .cd-top:hover{
+			background-color: #886BBA;
+		}
+
+
+	/* ---- (10) AB-DESIGNS ---- */
+
+		.bg-ab-designs, 
+		#ab-designs #loader,
+		#ab-designs .sy-pager li.sy-active a,
+		#ab-designs .carousel-indicators .active,
+		#ab-designs .navbar.open ul,
+		section#ab-designs.case-study-summary,
+		#ab-designs section.making-of, 
+		#ab-designs .sy-controls li a:after,
+		#ab-designs .owl-theme .owl-controls .owl-page span  {
+			background-color: #5BD18B;
+			
+		}
+
+		#ab-designs .navbar, 
+		#ab-designs .cd-top, 
+		#ab-designs .no-touch .cd-top:hover{
+			background-color: #6C7984;
+		}
