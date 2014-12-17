@@ -33,7 +33,7 @@
 
 
 	html {
-    font-size: 62.5%;
+	    font-size: 62.5%;
 		vertical-align: baseline;
 		margin: 0;
 		padding: 0;
@@ -41,8 +41,8 @@
 	}
 	body {
 		font-size: 1.8em;
-    line-height: 2;
-    font-family: 'open sans';
+	    line-height: 2;
+	    font-family: 'open sans';
 		color: #454545;
 		height:100%;
 		background:#fff;
@@ -56,29 +56,33 @@
 	    font-family: "Playfair Display",serif;
 	    color: #373737;
 	}
-
 	iframe{
 		border:0;
-		background:#000}
-	
+		background:#000
+	}
 	hr{
 		height:1px;
 		background:#dfdfdf;
 		border:0;
-		margin:20px 0}
-
-	i,blockquote{font-style:italic}
-	
-	p+p{margin-top:20px}	
-	
-	img{vertical-align:middle}
-	
+		margin:20px 0
+	}
+	i,blockquote{
+		font-style:italic
+	}
+	p+p{
+		margin-top:20px
+	}	
+	img{
+		vertical-align:middle
+	}
 	a{
 		text-decoration:none;
-		outline:0}
+		outline:0
+	}
 	b {
 		font-weight:700;
-		font-style:normal}
+		font-style:normal
+	}
 
 /************************************/
 /* =TEXT STYLES                     */
@@ -95,14 +99,14 @@
 			margin: 0 0 26px;
 		}
 		.jumbo-h1 {
-		  font-size: 4em;
-		  line-height: 1;
-		  margin-bottom: 64px;
+			font-size: 4em;
+			line-height: 1;
+			margin-bottom: 64px;
 		}
 		.standard-h1 {
-		  font-size: 32px;
-		  line-height: 48px;
-		  margin-bottom: 48px;
+			font-size: 32px;
+			line-height: 48px;
+			margin-bottom: 48px;
 		}
 
 
@@ -133,16 +137,23 @@
 			text-transform: uppercase;
 			margin-bottom: 8px;
 		}
+		.feaure-group h3 {
+			width: 50%;
+			margin: auto 15%;
+		}
+		.summary h3 {
+			padding-top: 30px;
+		}
 
 
 	/* ------------ P ------------ */
 
 		/* from paula */
 		p {
-	    font-size: 1em;
-	    font-weight: 300;
-	    line-height: 1.7;
-	    margin: 1.5em 0;
+		    font-size: 1em;
+		    font-weight: 300;
+		    line-height: 1.7;
+		    margin: 1.5em 0;
 		}
 		
 		/* from ARTICLE CSS */
@@ -151,15 +162,29 @@
 			line-height: 20px;
 			font-weight: 400;
 		}
-		.tiny-blurb p {
+		.tiny-blurb p, 
+		.tiny-blurb ul li{
 			font-family: "Open Sans", sans-serif;
 			font-size: 14px;
-			line-height: 20px;
+			line-height: 24px;
+		}
+		.tiny-blurb p {
 			margin: 0 0 18px;
 		}
 		.summary p, 
 		p.text-13 {
 			margin: 0 0;
+		}
+		p.lead {
+			width: 80%;
+			margin: auto 10%;
+		}
+		p.pad-right-40 {
+			padding-right: 40px
+		}
+		.feature-group p {
+			width: 86%;
+			margin: auto 7%;
 		}
 
 
@@ -170,27 +195,27 @@
 		a:focus{outline:0}
 		.decimal{list-style-type:decimal}
 		.bullet{list-style-type:disc}
-		.bullet li {margin-left: 40px;}
+		.bullet li {margin-left: 15px;}
 		.pointer {cursor: pointer !important;}
 		.uppercase {text-transform: uppercase;}
 
 
 
 	.caption-ab {
-	  font-style: italic;
-	  font-size: 14px;
-	  color: #AAA;
-	  margin-top: 16px;
+		font-style: italic;
+		font-size: 14px;
+		color: #AAA;
+		margin-top: 16px;
 	}
 	.sub-heading {
-	  font-weight: 600;
-	  font-size: 24px;
-	  margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 24px;
+		margin-bottom: 24px;
 	}
 	.handwritten {
 		font-family: "Shadows Into Light Two",cursive;
-	  margin-bottom: 10px;
-	  letter-spacing: 1px;
+		margin-bottom: 10px;
+		letter-spacing: 1px;
 	}
 	.post-info {
 		color: #b8b8b8;
@@ -203,34 +228,38 @@
 	}
 	.tiny-blurb {
 		height: 30%;
-		margin: 15% auto;}
-
-
-
-	
-
-	.subtitle {
+		margin: 15% auto;
+	}
+	.basic-title {
 		margin: 0 auto;
 		font-size: 36px;
-		letter-spacing: 2px}
-
-	.magnify {font-size: 2em;}
-
-	.text-centered {text-align: center;}
-
-	.text-light {color: #D6D6D6;}
-
-	.text-white {color: #fff;}
-
+		letter-spacing: 2px
+	}
+	.subtitle {
+		margin: 0 auto;
+		font-size: .8em;
+		letter-spacing: 2px
+	}
+	.magnify {
+		font-size: 2em;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.text-light {
+		color: #D6D6D6;
+	}
+	.text-white {
+		color: #fff;
+	}
 	.text-white-trans {
-		color: rgba(255,255,255,.5);}
-
+		color: rgba(255,255,255,.5);
+	}
 	.text-dark-trans {
 		color: rgba(0,0,0,.3);
-		font-weight: 400;}
+		font-weight: 400;
+	}
 
-
-	p.pad-right-40 {padding-right: 40px;}
 	
 /************************************/
 /* =LAYOUT STYLES                   */
@@ -250,83 +279,44 @@
 		transform: translate3d(0px, 0, 0);
 		overflow: hidden;
 	}
-
 	.level {
 		padding: 120px 0 120px;
 		margin: 0;
 	}
-
 	.summary {
 		margin: 30px auto 60px auto;
 	}
-
-	.summary h3 {
-		padding-top: 30px;
-	}
-
 	section {
 		position: relative;
 		overflow: hidden;
 	}
-
 	section.pad-large {
 		padding-top: 160px;
 		padding-bottom: 160px;
 	}
-
 	section.duplicatable-content {
 		padding-bottom: 40px;
 	}
-
 	section:nth-of-type(odd) {
-		background: #fdfdfd;
+		background: #fff;
 		border-top: 1px solid #eee;
 		border-bottom: 1px solid #eee;
 	}
-
 	section:nth-of-type(even) {
 		background: #f7f7f7;
 	}
-
-	.feature-group p {
-		width: 86%;
-		margin: auto 7%;
+	section.no-bord {
+		border: none;
 	}
-
-	.feaure-group h3 {
-		width: 50%;
-		margin: auto 15%;
-	}
-
-	.feature-group img {
-		max-width: 30%;
-		margin: 40px 35%;
-	}
-
-	@media (min-width: 480px) and (max-width: 768px) {
-		.feature-group .text-center img {
-			max-width: 30%;
-			margin: 60px 35% 10px 35%;
-		}
-	}
-
-	p.lead {
-		width: 80%;
-		margin: auto 10%;
-	}
-
 	.space-bottom-large {
 		margin-bottom: 80px !important;
 	}
-
 	.no-pad {
 		padding: 0px;
 	}
-
 	.no-pad-top {
 		padding-top: 0px !important;
 	}
-
 	.no-pad-left {
 		padding-left: 0px;
 	}
@@ -365,6 +355,10 @@
 
 	.img-right {
 		float: right;
+	}
+
+	.margin-left-40 {
+		margin-left: 40px;
 	}
 
 	.autofix_sb.fixed {
@@ -429,6 +423,19 @@
 		height: auto;
 		display: inline;
 	}
+
+	.feature-group img {
+		max-width: 30%;
+		margin: 40px 35%;
+	}
+
+	@media (min-width: 480px) and (max-width: 768px) {
+		.feature-group .text-center img {
+			max-width: 30%;
+			margin: 60px 35% 10px 35%;
+		}
+	}
+
 
 	/*  --------------------------------- FLUIDBOX --------------------------------- */
 
