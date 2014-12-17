@@ -1717,7 +1717,7 @@
 		#parkplease .navbar, 
 		#parkplease .cd-top, 
 		#parkplease.navbar  {
-			background: none repeat scroll 0 0 #29b3a4;
+			background-color: #29b3a4;
 		}
 
 
@@ -1737,7 +1737,7 @@
 		#dinamundo .navbar, 
 		#dinamundo .cd-top, 
 		#dinamundo .navbar {
-			background: none repeat scroll 0 0 #5193D6;
+			background-color: #5193D6;
 		}
 		#dinamundo .fluidbox-overlay {
 		  background-color: rgba(68, 68, 68,.5);
@@ -1787,7 +1787,7 @@
 		#fours .navbar, 
 		#fours .cd-top, 
 		#fours .no-touch .cd-top:hover {
-			background: none repeat scroll 0 0 #EA7070;
+			background-color:  #EA7070;
 		}
 
 
@@ -1808,7 +1808,7 @@
 		#dm-proto .navbar, 
 		#dm-proto .cd-top, 
 		#dm-proto .navbar  {
-			background: none repeat scroll 0 0 #E08662;
+			background-color:#E08662;
 		}
 
 		#dm-proto .fluidbox-overlay {
