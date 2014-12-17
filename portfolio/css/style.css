@@ -5,7 +5,7 @@
 
 	
 #loader {
-	x-display:none!important;
+	display:none!important;
 }
 
 
@@ -1601,21 +1601,21 @@
 	/* ---- Dinamundo Prototype ---- */
 
 		.bg-dinamundo-prototype, 
-		#dinamundo #loader,
-		#dinamundo .cd-top, 
-		#dinamundo .no-touch .cd-top:hover,
-		#dinamundo .carousel-indicators .active,
+		#dinamundo-prototype #loader,
+		#dinamundo-prototype .cd-top, 
+		#dinamundo-prototype .no-touch .cd-top:hover,
+		#dinamundo-prototype .carousel-indicators .active,
 		#dinamundo .navbar.open ul,
-		section#dinamundo.case-study-summary, 
-		#dinamundo .owl-theme .owl-controls .owl-page span {
-			background-color: #1D9FD3;
+		section#dinamundo-prototype.case-study-summary, 
+		#dinamundo-prototype .owl-theme .owl-controls .owl-page span {
+			background-color: #FFB100;
 		}
 
-		#dinamundo .navbar {
-			background: none repeat scroll 0 0 #198CB9;
+		#dinamundo-prototype .navbar {
+			background: none repeat scroll 0 0 #DF6A60;
 		}
 
-		#dinamundo .fluidbox-overlay {
+		#dinamundo-prototype .fluidbox-overlay {
 		  background-color: rgba(68, 68, 68,.5);
 		}
 

@@ -173,7 +173,9 @@
                      <div class="col-md-3">
                         <div class="tiny-blurb">
                            <h3> Framing the Problem </h3>
-                           <p> I found that the main pain points would be solved with (1) ability to stop the payment cycle from moving forward once a dispute was identified and (2) functionality to adjust amount [to be] charged to customers both before and after the charge has occurred and (3) ability to debit the operator after the charge or prevent him from being paid if the charge has not occurred.</p>
+                           <p> I found that the main pain points would be solved with: </p>
+                           <p> (1) ability to stop the payment cycle from moving forward once a dispute was identified </p><p> (2) functionality to adjust amount [to be] charged to customers both before and after the charge has occurred </p>
+                           <p> (3) ability to debit the operator after the charge or prevent him from being paid if the charge has not occurred.</p>
                         </div>
                      </div>
                      <div class="col-md-offset-1 col-md-8">
@@ -200,7 +202,7 @@
                   <div class="row top-200">
                      <div class="col-md-3">
                         <div class="tiny-blurb">
-                           <h3>Uncovering the Real Need</h3>
+                           <h3>Translating the Need into Requirements</h3>
                            <p>  Next, I went back to the Reservation Payment Timeline to find the holes in the current functionality. I found that admins already had sufficient functionality for adjusting payments before customer charge. What we needed was a <i>pause payment</i> functionality and the ability to issue refunds and debits after payment.</p>
                         </div>
                      </div>
@@ -218,7 +220,9 @@
                      <div class="col-md-offset-1 col-md-3">
                         <div class="tiny-blurb">
                            <h3> Understanding Limitations </h3>
-                           <p> The next step was to understand the technical complexities surrounding payment adjustments and derive the most technically simple solution. After a discussion with the engineers, I found that adjusting payments in State #6 was most complex, however, it was essential to the feature priorities. So I asked, how can we make it less complex? We determined that (1) keeping the customer refund equal to the Operator debit and (2) not supporting charging the customer more would reduce a significant amount of complexity with adjusting payments in state 6.</p>
+                           <p> The next step was to understand the technical complexities surrounding payment adjustments and derive the most technically simple solution. After a discussion with the engineers, I found that adjusting payments in State #6 was most complex, however, it was essential to the feature priorities. So I asked, how can we make it less complex? We determined that: </p>
+                           <p> (1) keeping the customer refund equal to the Operator debit </p>
+                           <p> (2) not supporting charging the customer more would reduce a significant amount of complexity with adjusting payments in state 6.</p>
                         </div>
                      </div>
                   </div> <!-- end row -->
@@ -256,7 +260,7 @@
                   <div class="row top-200">
                      <div class="col-md-3">
                         <div class="tiny-blurb">
-                           <h3>Leverage existing functionality.</h3>
+                           <h3>Leverage existing functionality</h3>
                            <p> As displayed in the Overall Flow document, agents would have two different flows for ending the dispute based on the state of the reservation; it’s not ideal, but it saved us a lot of time on development, so it was a necessary compromise.</p>
                         </div>
                      </div>
@@ -272,7 +276,7 @@
                      </div>
                      <div class="col-md-offset-1 col-md-3">
                         <div class="tiny-blurb">
-                           <h3> Create process flows. </h3>
+                           <h3> Create process flows</h3>
                            <p> Because the feature made compromises for time, I wanted to make sure the SVP of Customer Care and the Customer Care agents were all comfortable with the work flows before development began.</p>
                         </div>
                      </div>
