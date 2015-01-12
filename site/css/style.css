@@ -236,11 +236,11 @@
 /* =LAYOUT STYLES                   */
 /************************************/
 
-@media (min-width: 1024){
-	.container {
-		width: 1021px;
+	@media (min-width: 1024){
+		.container {
+			width: 1021px;
+		}
 	}
-}
 	.cd-container {
 		-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease;
