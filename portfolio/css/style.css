@@ -1395,7 +1395,7 @@
 	
 	.case-study-summary .btn{
 		display:inline-block;
-		color:rgba(255,255,255,.7);
+		color:rgba(255,255,255,1);
 		text-transform: uppercase;
 		font-size:11px;
 		line-height:16px;
@@ -1404,7 +1404,7 @@
 		padding:15px 42px;
 		border-radius:4px;
 		border:1px solid #fff;
-		border:1px solid rgba(255,255,255,0.4);
+		border:1px solid rgba(255,255,255,0.8);
 		-webkit-transition:border-color .2s ease-in;
 		-moz-transition:border-color .2s ease-in;
 		-o-transition:border-color .2s ease-in;
@@ -1827,14 +1827,14 @@
 		#disputes section.making-of, 
 		#disputes .sy-controls li a:after,
 		#disputes .owl-theme .owl-controls .owl-page span  {
-			background-color: #82CECB;
+			background-color: #79A809;
 
 		}
 
 		#disputes .navbar, 
 		#disputes .cd-top, 
 		#disputes .no-touch .cd-top:hover{
-			background-color: #7CC1BE;
+			background-color: #709909;
 
 		}
 
