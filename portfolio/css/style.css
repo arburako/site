@@ -1436,7 +1436,11 @@
 	section.case-study-summary {background: none repeat scroll 0% 0% #eee;}
 
 
-	
+	.hero-icon {
+		max-width: 20%;
+		margin: auto 40%;
+
+	}
 		
 	.lightbox-link-mrv .background-image-holder {
 		border: 1px solid rgba(0,0,0,.7);
@@ -1802,13 +1806,13 @@
 		#dm-proto section.making-of, 
 		#dm-proto .sy-controls li a:after,
 		#dm-proto .owl-theme .owl-controls .owl-page span  {
-			background-color: #F18F68;
+			background-color: #F9766B;
 		}
 
 		#dm-proto .navbar, 
 		#dm-proto .cd-top, 
 		#dm-proto .navbar  {
-			background-color:#E08662;
+			background-color:#E26A61;
 		}
 
 		#dm-proto .fluidbox-overlay {
@@ -1871,13 +1875,13 @@
 		#best-sketches section.making-of, 
 		#best-sketches .sy-controls li a:after,
 		#best-sketches .owl-theme .owl-controls .owl-page span  {
-			background-color: #65D3E3;
+			background-color: #E85581;
 		}
 
 		#best-sketches .navbar, 
 		#best-sketches .cd-top, 
 		#best-sketches .no-touch .cd-top:hover{
-			background-color: #5FC6D3;
+			background-color: #D34E74;
 			
 		}
 
