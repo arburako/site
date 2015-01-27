@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title> AB Portfolio: PP Pitch 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Bootstrap core -->
+        <!-- Bootstrap core -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- site specific styles -->
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage/jquery.fullPage.css" />
+        <link href="css/style.css" rel="stylesheet">
+
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/fullpage/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/fullpage/examples.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+    sectionsColor: ['#116189', '#EDEDED', '#EAE1C0'],
+    slidesNavigation: true,
+    responsive: 900
+    });
+    });
+    </script>
+
+    
+</head>
+
+
+
+<body id="pp-pitch">
+
+    <div class="navbar">
+        <div class="navbar-inner container">
+        <a href="index.html" class="brand"></a>
+        <a href="index.html" class="navbar-toggle">menu</a>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="twitter"><a href="#" target="_blank">Contact</a></li>
+        <li class="case-studies">
+        <ul>
+        <li class="prev-case"><a href="dm-prototype.html">Dinamundo Prototype</a></li>
+        <li class="next-case"><a href="disputes.html">Disputes</a></li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="fullpage">
+
+        <div class="section" id="section0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="intro">
+
+                            <h1>Sliders navigation dots</h1>
+                            <p>Create a navigation for your landscape sliders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+
+        <div class="section" id="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="slide" id="slide1" data-anchor="slide1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <iframe src="http://www.slideshare.net/slideshow/embed_code/43924193" width="1276" height="718" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+                                    <div style="margin-bottom:5px"> <strong> <a href="www.slideshare.net/abkoff/pp-copy-43924193" title="Pp copy" target="_blank">Pp copy</a> </strong> from <strong><a href="www.slideshare.net/abkoff" target="_blank">abkoff</a></strong> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end fullpage -->
+       
+
+    
+
+
+
+
+<!-- THUMBNAIL SLIDER -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+  
+  <script type="text/javascript">
+    /*
+    the images preload plugin
+    */
+    (function($) {
+      $.fn.preload = function(options) {
+        var opts  = $.extend({}, $.fn.preload.defaults, options),
+          o   = $.meta ? $.extend({}, opts, this.data()) : opts;
+        return this.each(function() {
+          var $e  = $(this),
+            t = $e.attr('rel'),
+            i = $e.attr('href'),
+            l = 0;
+          $('<img/>').load(function(i){
+            ++l;
+            if(l==2) o.onComplete();
+          }).attr('src',i); 
+          $('<img/>').load(function(i){
+            ++l;
+            if(l==2) o.onComplete();
+          }).attr('src',t); 
+        });
+      };
+      $.fn.preload.defaults = {
+        onComplete  : function(){return false;}
+      };
+    })(jQuery);
+  </script>
+  
+
+    
+
+ <script type="text/javascript" src="js/imagethumb.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+  </html>
