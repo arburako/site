@@ -1,0 +1,98 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Mostardesign
+ * License URL: http://www.fontspring.com/fflicense/mostardesign
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'SofiaProRegular';
+    src: url('webfonts/SofiaProRegular-webfont.eot');
+    src: url('webfonts/SofiaProRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/SofiaProRegular-webfont.woff') format('woff'),
+         url('webfonts/SofiaProRegular-webfont.ttf') format('truetype'),
+         url('webfonts/SofiaProRegular-webfont.svg#SofiaProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'SofiaProLightRegular';
+    src: url('webfonts/SofiaProLight-webfont.eot');
+    src: url('webfonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/SofiaProLight-webfont.woff') format('woff'),
+         url('webfonts/SofiaProLight-webfont.ttf') format('truetype'),
+         url('webfonts/SofiaProLight-webfont.svg#SofiaProLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'SofiaProLightItalic';
+	src: url('webfonts/SofiaProLightItalic-webfont.eot');
+	src: url('webfonts/SofiaProLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/SofiaProLightItalic-webfont.woff') format('woff'),
+		 url('webfonts/SofiaProLightItalic-webfont.ttf') format('truetype');
+	 font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SofiaProUltraLight';
+    src: url('webfonts/SofiaProUltraLight-webfont.eot');
+    src: url('webfonts/SofiaProUltraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/SofiaProUltraLight-webfont.woff') format('woff'),
+         url('webfonts/SofiaProUltraLight-webfont.ttf') format('truetype'),
+         url('webfonts/SofiaProUltraLight-webfont.svg#SofiaProUltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+	font-family: 'SofiaProBold';
+	src: url('webfonts/sofiaprobold-webfont.eot');
+	src: url('webfonts/sofiaprobold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/sofiaprobold-webfont.woff') format('woff'),
+		 url('webfonts/sofiaprobold-webfont.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SofiaProBlack';
+    src: url('webfonts/SofiaProBlack-webfont.eot');
+    src: url('webfonts/SofiaProBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/SofiaProBlack-webfont.woff') format('woff'),
+         url('webfonts/SofiaProBlack-webfont.ttf') format('truetype'),
+         url('webfonts/SofiaProBlack-webfont.svg#SofiaProBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

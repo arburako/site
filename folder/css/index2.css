@@ -1,0 +1,220 @@
+
+	/* ---- (1) PARKPLEASE ---- */
+
+		.bg-pp, 
+		#parkplease #loader,
+		#parkplease .sy-pager li.sy-active a,
+		#parkplease .carousel-indicators .active,
+		#parkplease .navbar.open ul,
+		section#parkplease.case-study-summary,
+		#parkplease section.making-of, 
+		#dparkplease .sy-controls li a:after,
+		#parkplease .owl-theme .owl-controls .owl-page span   {
+			background-color: #22C0AF;
+		}
+
+		#parkplease .navbar, 
+		#parkplease .cd-top, 
+		#parkplease.navbar  {
+			background: none repeat scroll 0 0 #29b3a4;
+		}
+
+
+
+	/* ---- (2) DINAMUNDO ---- */
+
+		.bg-dinamundo, 
+		#dinamundo #loader,
+		#dinamundo .sy-pager li.sy-active a,
+		#dinamundo .carousel-indicators .active,
+		#dinamundo .navbar.open ul,
+		section#dinamundo.case-study-summary,
+		#dinamundo section.making-of, 
+		#dinamundo .sy-controls li a:after,
+		#dinamundo .owl-theme .owl-controls .owl-page span  {
+			background-color: #58A2EC;
+		}
+		#dinamundo .navbar, 
+		#dinamundo .cd-top, 
+		#dinamundo .navbar {
+			background: none repeat scroll 0 0 #198CB9;
+		}
+		#dinamundo .fluidbox-overlay {
+		  background-color: rgba(68, 68, 68,.5);
+		}
+
+	/* ---- (3) ON DEMAND ---- */
+
+		.bg-ondemand, 
+		#ondemand #loader,
+		#ondemand .sy-pager li.sy-active a,
+		#ondemand .carousel-indicators .active,
+		#ondemand .navbar.open ul,
+		section#ondemand.case-study-summary,
+		#ondemand section.making-of, 
+		#ondemand .sy-controls li a:after,
+		#ondemand .owl-theme .owl-controls .owl-page span {
+			background-color: #34495E;
+		}
+
+		#ondemand .navbar, 
+		#ondemand .cd-top, 
+		#ondemand .no-touch .cd-top:hover{
+			background-color: #3f5c78;
+		}
+
+		#ondemand .fluidbox-overlay {
+		  background-color: rgba(39, 57, 73,.4);
+		}
+
+	/* ---- (4) 16FOURS ---- */
+
+		.bg-fours, 
+		#fours #loader,
+		#fours .sy-pager li.sy-active a,
+		#fours .carousel-indicators .active,
+		#fours .navbar.open ul,
+		section#fours.case-study-summary,
+		#fours section.making-of, 
+		#fours .sy-controls li a:after,
+		#fours .owl-theme .owl-controls .owl-page span {
+			background-color: #FF7979;
+			x-background-color: #29b3a4;
+		}
+
+		#fours .navbar, 
+		#fours .cd-top, 
+		#fours .no-touch .cd-top:hover {
+			background: none repeat scroll 0 0 #DF6A60;
+		}
+
+	/* ---- (5) DM-PROTO ---- */
+
+		.bg-dm-proto, 
+		#dm-proto #loader,
+		#dm-proto .sy-pager li.sy-active a,
+		#dm-proto .carousel-indicators .active,
+		#dm-proto .navbar.open ul,
+		section#dm-proto.case-study-summary,
+		#dm-proto section.making-of, 
+		#dm-proto .sy-controls li a:after,
+		#dm-proto .owl-theme .owl-controls .owl-page span  {
+			background-color: #F18F68;
+		}
+
+		#dm-proto .navbar, 
+		#dm-proto .cd-top, 
+		#dm-proto .navbar  {
+			background: none repeat scroll 0 0 #DF6A60;
+		}
+
+		#dm-proto .fluidbox-overlay {
+		  background-color: rgba(68, 68, 68,.5);
+		}
+
+
+	/* ---- (6) DISPUTES ---- */
+
+		.bg-disputes, 
+		#disputes #loader,
+		#disputes .sy-pager li.sy-active a,
+		#disputes .carousel-indicators .active,
+		#disputes .navbar.open ul,
+		section#disputes.case-study-summary,
+		#disputes section.making-of, 
+		#disputes .sy-controls li a:after,
+		#disputes .owl-theme .owl-controls .owl-page span  {
+			background-color: #7B8A97;
+		}
+
+		#disputes .navbar, 
+		#disputes .cd-top, 
+		#disputes .no-touch .cd-top:hover{
+			background-color: #8CA833;
+		}
+
+
+	/* ---- (7) OD-OP ---- */
+
+		.bg-od-op, 
+		#od-op #loader,
+		#od-op .sy-pager li.sy-active a,
+		#od-op .carousel-indicators .active,
+		#od-op .navbar.open ul,
+		section#od-op.case-study-summary,
+		#od-op section.making-of, 
+		#od-op .sy-controls li a:after,
+		#od-op .owl-theme .owl-controls .owl-page span  {
+			background-color: #F2CA68;
+		}
+
+
+		#od-op .navbar, 
+		#od-op .cd-top, 
+		#od-op .no-touch .cd-top:hover{
+			background-color: #8CA833;
+		}
+
+
+
+
+
+	/* ---- (8) AIRENVY ---- */
+
+		.bg-airenvy, 
+		#airenvy #loader,
+		#airenvy .sy-pager li.sy-active a,
+		#airenvy .carousel-indicators .active,
+		#airenvy .navbar.open ul,
+		section#airenvy.case-study-summary,
+		#airenvy section.making-of, 
+		#airenvy .sy-controls li a:after,
+		#airenvy .owl-theme .owl-controls .owl-page span  {
+			background-color: #7B8A97;
+		}
+
+		#airenvy .navbar, 
+		#airenvy .cd-top, 
+		#airenvy .no-touch .cd-top:hover{
+			background-color: #8CA833;
+		}
+
+	/* ---- (9) BEST-SKETCHES ---- */
+
+		.bg-best-sketches, 
+		#best-sketches #loader,
+		#best-sketches .sy-pager li.sy-active a,
+		#best-sketches .carousel-indicators .active,
+		#best-sketches .navbar.open ul,
+		section#best-sketches.case-study-summary,
+		#best-sketches section.making-of, 
+		#best-sketches .sy-controls li a:after,
+		#best-sketches .owl-theme .owl-controls .owl-page span  {
+			background-color: #7B8A97;
+		}
+
+		#best-sketches .navbar, 
+		#best-sketches .cd-top, 
+		#best-sketches .no-touch .cd-top:hover{
+			background-color: #8CA833;
+		}
+
+	/* ---- (10) AB-DESIGNS ---- */
+
+		.bg-ab-designs, 
+		#ab-designs #loader,
+		#ab-designs .sy-pager li.sy-active a,
+		#ab-designs .carousel-indicators .active,
+		#ab-designs .navbar.open ul,
+		section#ab-designs.case-study-summary,
+		#ab-designs section.making-of, 
+		#ab-designs .sy-controls li a:after,
+		#ab-designs .owl-theme .owl-controls .owl-page span  {
+			background-color: #7B8A97;
+		}
+
+		#ab-designs .navbar, 
+		#ab-designs .cd-top, 
+		#ab-designs .no-touch .cd-top:hover{
+			background-color: #8CA833;
+		}
